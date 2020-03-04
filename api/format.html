@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_format module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_idents module" href="idents.html" />
+    <link rel="prev" title="_flags module" href="flags.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_format module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/format.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._format">
+<span id="format-module"></span><h1>_format module<a class="headerlink" href="#module-pyflyby._format" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyflyby._format.FormatParams">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">FormatParams</code><a class="headerlink" href="#pyflyby._format.FormatParams" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pyflyby._format.FormatParams.hanging_indent">
+<code class="sig-name descname">hanging_indent</code><em class="property"> = 'never'</em><a class="headerlink" href="#pyflyby._format.FormatParams.hanging_indent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._format.FormatParams.indent">
+<code class="sig-name descname">indent</code><em class="property"> = 4</em><a class="headerlink" href="#pyflyby._format.FormatParams.indent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._format.FormatParams.max_line_length">
+<code class="sig-name descname">max_line_length</code><em class="property"> = 79</em><a class="headerlink" href="#pyflyby._format.FormatParams.max_line_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._format.FormatParams.wrap_paren">
+<code class="sig-name descname">wrap_paren</code><em class="property"> = True</em><a class="headerlink" href="#pyflyby._format.FormatParams.wrap_paren" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._format.fill">
+<code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">fill</code><span class="sig-paren">(</span><em class="sig-param">tokens</em>, <em class="sig-param">sep=('</em>, <em class="sig-param">'</em>, <em class="sig-param">'')</em>, <em class="sig-param">prefix=''</em>, <em class="sig-param">suffix=''</em>, <em class="sig-param">newline='\n'</em>, <em class="sig-param">max_line_length=80</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._format.fill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a sequences of strings, fill them into a single string with up to
+<code class="docutils literal notranslate"><span class="pre">max_line_length</span></code> characters each.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fill</span><span class="p">([</span><span class="s2">&quot;&#39;hello world&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;hello two&#39;&quot;</span><span class="p">],</span>
+<span class="gp">... </span>           <span class="n">prefix</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;print &quot;</span><span class="p">,</span> <span class="s2">&quot;      &quot;</span><span class="p">),</span> <span class="n">suffix</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot; </span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span>
+<span class="gp">... </span>           <span class="n">max_line_length</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+<span class="go">&quot;print &#39;hello world&#39;, \\\n      &#39;hello two&#39;\n&quot;</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tokens</strong> – Sequence of strings to fill.  There must be at least one token.</p></li>
+<li><p><strong>sep</strong> – Separator string to append to each token.  If a 2-element tuple, then
+indicates the separator between tokens and the separator after the last
+token.  Trailing whitespace is removed from each line before appending
+the suffix, but not from between tokens on the same line.</p></li>
+<li><p><strong>prefix</strong> – String to prepend at the beginning of each line.  If a 2-element tuple,
+then indicates the prefix for the first line and prefix for subsequent
+lines.</p></li>
+<li><p><strong>suffix</strong> – String to append to the end of each line.  If a 2-element tuple, then
+indicates the suffix for all lines except the last, and the suffix for
+the last line.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Filled string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._format.pyfill">
+<code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">pyfill</code><span class="sig-paren">(</span><em class="sig-param">prefix</em>, <em class="sig-param">tokens</em>, <em class="sig-param">params=&lt;pyflyby._format.FormatParams object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._format.pyfill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fill a Python statement.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pyfill</span><span class="p">(</span><span class="s1">&#39;print &#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;foo.bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">,</span> <span class="s2">&quot;quux&quot;</span><span class="p">,</span> <span class="s2">&quot;quuuuux&quot;</span><span class="p">]),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="go">print foo.bar, baz, quux, quuuuux</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pyfill</span><span class="p">(</span><span class="s1">&#39;print &#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;foo.bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">,</span> <span class="s2">&quot;quux&quot;</span><span class="p">,</span> <span class="s2">&quot;quuuuux&quot;</span><span class="p">],</span>
+<span class="gp">... </span>       <span class="n">FormatParams</span><span class="p">(</span><span class="n">max_line_length</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">hanging_indent</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="go">print (foo.bar,</span>
+<span class="go">       baz,</span>
+<span class="go">       quux,</span>
+<span class="go">       quuuuux)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pyfill</span><span class="p">(</span><span class="s1">&#39;print &#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;foo.bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">,</span> <span class="s2">&quot;quux&quot;</span><span class="p">,</span> <span class="s2">&quot;quuuuux&quot;</span><span class="p">],</span>
+<span class="gp">... </span>       <span class="n">FormatParams</span><span class="p">(</span><span class="n">max_line_length</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">hanging_indent</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="go">print (</span>
+<span class="go">    foo.bar,</span>
+<span class="go">    baz, quux,</span>
+<span class="go">    quuuuux)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prefix</strong> – Prefix for first line.</p></li>
+<li><p><strong>tokens</strong> – Sequence of string tokens</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="idents.html" class="btn btn-neutral float-right" title="_idents module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral float-left" title="_flags module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

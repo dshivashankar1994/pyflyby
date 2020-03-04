@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_imports2s module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_importstmt module" href="importstmt.html" />
+    <link rel="prev" title="_importdb module" href="importdb.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importdb.html">_importdb module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_imports2s module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/imports2s.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._imports2s">
+<span id="imports2s-module"></span><h1>_imports2s module<a class="headerlink" href="#module-pyflyby._imports2s" title="Permalink to this headline">¶</a></h1>
+<dl class="exception">
+<dt id="pyflyby._imports2s.ImportAlreadyExistsError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">ImportAlreadyExistsError</code><a class="headerlink" href="#pyflyby._imports2s.ImportAlreadyExistsError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._imports2s.ImportPathForRelativeImportsCtx">
+<code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">ImportPathForRelativeImportsCtx</code><span class="sig-paren">(</span><em class="sig-param">codeblock</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.ImportPathForRelativeImportsCtx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Context manager that temporarily modifies <code class="docutils literal notranslate"><span class="pre">sys.path</span></code> so that relative
+imports for the given <code class="docutils literal notranslate"><span class="pre">codeblock</span></code> work as expected.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._imports2s.LineNumberAmbiguousError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">LineNumberAmbiguousError</code><a class="headerlink" href="#pyflyby._imports2s.LineNumberAmbiguousError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._imports2s.LineNumberNotFoundError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">LineNumberNotFoundError</code><a class="headerlink" href="#pyflyby._imports2s.LineNumberNotFoundError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._imports2s.NoImportBlockError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">NoImportBlockError</code><a class="headerlink" href="#pyflyby._imports2s.NoImportBlockError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">SourceToSourceFileImportsTransformation</code><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.add_import">
+<code class="sig-name descname">add_import</code><span class="sig-paren">(</span><em class="sig-param">imp</em>, <em class="sig-param">lineno=inf</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.add_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the specified import.  Picks an existing global import block to
+add to, or if none found, creates a new one near the beginning of the
+module.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>lineno</strong> – Line before which to add the import.  <code class="docutils literal notranslate"><span class="pre">Inf</span></code> means no constraint.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.find_import_block_by_lineno">
+<code class="sig-name descname">find_import_block_by_lineno</code><span class="sig-paren">(</span><em class="sig-param">lineno</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.find_import_block_by_lineno" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the import block containing the given line number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>SourceToSourceImportBlockTransformation</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.insert_new_blocks_after_comments">
+<code class="sig-name descname">insert_new_blocks_after_comments</code><span class="sig-paren">(</span><em class="sig-param">blocks</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.insert_new_blocks_after_comments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.insert_new_import_block">
+<code class="sig-name descname">insert_new_import_block</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.insert_new_import_block" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a new empty imports block.  It is added before the first
+non-comment statement.  Intended to be used when the input contains no
+import blocks (before uses).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.pretty_print">
+<code class="sig-name descname">pretty_print</code><span class="sig-paren">(</span><em class="sig-param">params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.pretty_print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.remove_import">
+<code class="sig-name descname">remove_import</code><span class="sig-paren">(</span><em class="sig-param">imp</em>, <em class="sig-param">lineno</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.remove_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the given import.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceFileImportsTransformation.select_import_block_by_closest_prefix_match">
+<code class="sig-name descname">select_import_block_by_closest_prefix_match</code><span class="sig-paren">(</span><em class="sig-param">imp</em>, <em class="sig-param">max_lineno</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceFileImportsTransformation.select_import_block_by_closest_prefix_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Heuristically pick an import block that <code class="docutils literal notranslate"><span class="pre">imp</span></code> “fits” best into.  The
+selection is based on the block that contains the import with the
+longest common prefix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>max_lineno</strong> – Only return import blocks earlier than <code class="docutils literal notranslate"><span class="pre">max_lineno</span></code>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>SourceToSourceImportBlockTransformation</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._imports2s.SourceToSourceImportBlockTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">SourceToSourceImportBlockTransformation</code><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceImportBlockTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceImportBlockTransformation.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceImportBlockTransformation.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceImportBlockTransformation.pretty_print">
+<code class="sig-name descname">pretty_print</code><span class="sig-paren">(</span><em class="sig-param">params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceImportBlockTransformation.pretty_print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._imports2s.SourceToSourceTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">SourceToSourceTransformation</code><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceTransformation.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformation.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceTransformation.pretty_print">
+<code class="sig-name descname">pretty_print</code><span class="sig-paren">(</span><em class="sig-param">params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformation.pretty_print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._imports2s.SourceToSourceTransformationBase">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">SourceToSourceTransformationBase</code><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformationBase" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceTransformationBase._from_source_code">
+<em class="property">classmethod </em><code class="sig-name descname">_from_source_code</code><span class="sig-paren">(</span><em class="sig-param">codeblock</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformationBase._from_source_code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceTransformationBase.output">
+<code class="sig-name descname">output</code><span class="sig-paren">(</span><em class="sig-param">params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformationBase.output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pretty-print and return as a <cite>PythonBlock</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>PythonBlock</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceTransformationBase.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformationBase.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._imports2s.SourceToSourceTransformationBase.pretty_print">
+<code class="sig-name descname">pretty_print</code><span class="sig-paren">(</span><em class="sig-param">params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.SourceToSourceTransformationBase.pretty_print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._imports2s.fix_unused_and_missing_imports">
+<code class="sig-prename descclassname">pyflyby._imports2s.</code><code class="sig-name descname">fix_unused_and_missing_imports</code><span class="sig-paren">(</span><em class="sig-param">codeblock</em>, <em class="sig-param">add_missing=True</em>, <em class="sig-param">remove_unused='AUTOMATIC'</em>, <em class="sig-param">add_mandatory=True</em>, <em class="sig-param">db=None</em>, <em class="sig-param">params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._imports2s.fix_unused_and_missing_imports" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for unused and missing imports, and fix them automatically.</p>
+<p>Also formats imports.</p>
+<p>In the example below, <code class="docutils literal notranslate"><span class="pre">m1</span></code> and <code class="docutils literal notranslate"><span class="pre">m3</span></code> are unused, so are automatically
+removed.  <code class="docutils literal notranslate"><span class="pre">np</span></code> was undefined, so an <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span></code> was
+automatically added.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">codeblock</span> <span class="o">=</span> <span class="n">PythonBlock</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="s1">&#39;from foo import m1, m2, m3, m4</span><span class="se">\n</span><span class="s1">&#39;</span>
+<span class="gp">... </span>    <span class="s1">&#39;m2, m4, np.foo&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;/tmp/foo.py&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">fix_unused_and_missing_imports</span><span class="p">(</span><span class="n">codeblock</span><span class="p">,</span> <span class="n">add_mandatory</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="go">[PYFLYBY] /tmp/foo.py: removed unused &#39;from foo import m1&#39;</span>
+<span class="go">[PYFLYBY] /tmp/foo.py: removed unused &#39;from foo import m3&#39;</span>
+<span class="go">[PYFLYBY] /tmp/foo.py: added &#39;import numpy as np&#39;</span>
+<span class="go">import numpy as np</span>
+<span class="go">from foo import m2, m4</span>
+<span class="go">m2, m4, np.foo</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>PythonBlock</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="importstmt.html" class="btn btn-neutral float-right" title="_importstmt module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="importdb.html" class="btn btn-neutral float-left" title="_importdb module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

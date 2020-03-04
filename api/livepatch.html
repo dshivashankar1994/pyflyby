@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_livepatch module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_log module" href="log.html" />
+    <link rel="prev" title="_interactive module" href="interactive.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_livepatch module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/livepatch.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._livepatch">
+<span id="livepatch-module"></span><h1>_livepatch module<a class="headerlink" href="#module-pyflyby._livepatch" title="Permalink to this headline">¶</a></h1>
+<p>livepatch/xreload: Alternative to reload().</p>
+<p>xreload performs a “live patch” of the modules/classes/functions/etc that have
+already been loaded in memory.  It does so by executing the module in a
+scratch namespace, and then patching classes, methods and functions in-place.
+New objects are copied into the target namespace.</p>
+<p>This addresses cases where one module imported functions from another
+module.</p>
+<p>For example, suppose m1.py contains:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">m2</span> <span class="kn">import</span> <span class="n">foo</span>
+<span class="k">def</span> <span class="nf">print_foo</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">foo</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>and m2.py contains:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
+    <span class="k">return</span> <span class="mi">42</span>
+</pre></div>
+</div>
+<p>If you edit m2.py and modify <code class="docutils literal notranslate"><span class="pre">foo</span></code>, then reload(m2) on its own would not do
+what you want.  You would also need to reload(m1) after reload(m2).  This is
+because the built-in reload affects the module being reloaded, but references
+to the old module remain.  On the other hand, xreload() patches the existing
+m2.foo, so that live references to it are updated.</p>
+<p>In table form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Undesired</span> <span class="n">effect</span><span class="p">:</span>  <span class="n">reload</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+<span class="n">Undesired</span> <span class="n">effect</span><span class="p">:</span>  <span class="n">reload</span><span class="p">(</span><span class="n">m1</span><span class="p">);</span>  <span class="n">reload</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+<span class="n">Desired</span> <span class="n">effect</span><span class="p">:</span>    <span class="n">reload</span><span class="p">(</span><span class="n">m2</span><span class="p">);</span>  <span class="n">reload</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
+
+<span class="n">Desired</span> <span class="n">effect</span><span class="p">:</span>   <span class="n">xreload</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+<span class="n">Desired</span> <span class="n">effect</span><span class="p">:</span>   <span class="n">xreload</span><span class="p">(</span><span class="n">m1</span><span class="p">);</span> <span class="n">xreload</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+<span class="n">Desired</span> <span class="n">effect</span><span class="p">:</span>   <span class="n">xreload</span><span class="p">(</span><span class="n">m2</span><span class="p">);</span> <span class="n">xreload</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Even with just two modules, we can see that xreload() is an improvement.  When
+working with a large set of interdependent modules, it becomes infeasible to
+know the precise sequence of reload() calls that would be necessary.
+xreload() really shines in that case.</p>
+<p>This implementation of xreload() was originally based the following
+mailing-list post by Guido van Rossum:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://mail.python.org/pipermail/edu-sig/2007-February/007787.html">https://mail.python.org/pipermail/edu-sig/2007-February/007787.html</a></p>
+</div></blockquote>
+<div class="section" id="customizing-behavior">
+<h2>Customizing behavior<a class="headerlink" href="#customizing-behavior" title="Permalink to this headline">¶</a></h2>
+<p>If a class/function/module/etc has an attribute __livepatch__, then this
+function is called <em>instead</em> of performing the regular livepatch mechanism.</p>
+<p>The __livepatch__() function is called with the following arguments:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">old</span></code>         : The object to be updated with contents of <code class="docutils literal notranslate"><span class="pre">new</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">new</span></code>         : The object whose contents to put into <code class="docutils literal notranslate"><span class="pre">old</span></code></p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">do_livepatch</span></code>: A function that can be called to do the standard</dt><dd><p>livepatch, replacing the contents of <code class="docutils literal notranslate"><span class="pre">old</span></code> with <code class="docutils literal notranslate"><span class="pre">new</span></code>.
+If it’s not possible to livepatch <code class="docutils literal notranslate"><span class="pre">old</span></code>, it returns
+<code class="docutils literal notranslate"><span class="pre">new</span></code>.  The <code class="docutils literal notranslate"><span class="pre">do_livepatch</span></code> function takes no arguments.
+Calling the <code class="docutils literal notranslate"><span class="pre">do_livepatch</span></code> function is roughly
+equivalent to calling <code class="docutils literal notranslate"><span class="pre">pyflyby.livepatch(old,</span> <span class="pre">new,</span>
+<span class="pre">modname=modname,</span> <span class="pre">heed_hook=False)</span></code>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">modname</span></code><span class="classifier">The module currently being updated.  Recursively called</span></dt><dd><p>updates should keep track of the module being updated to
+avoid touching other modules.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p>These arguments are matched by <em>name</em> and are passed only if the
+<code class="docutils literal notranslate"><span class="pre">__livepatch__</span></code> function is declared to take such named arguments or it takes
+**kwargs.  If the <code class="docutils literal notranslate"><span class="pre">__livepatch__</span></code> function takes **kwargs, it should ignore
+unknown arguments, in case new parameters are added in the future.</p>
+<p>If the object being updated is an object instance, and <code class="docutils literal notranslate"><span class="pre">__livepatch__</span></code> is a
+method, then the function is bound to the new object, i.e. the <code class="docutils literal notranslate"><span class="pre">self</span></code>
+parameter is the same as <code class="docutils literal notranslate"><span class="pre">new</span></code>.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">__livepatch__</span></code> function successfully patched the <code class="docutils literal notranslate"><span class="pre">old</span></code> object, then
+it should return <code class="docutils literal notranslate"><span class="pre">old</span></code>.  If it is unable to patch, it should return <code class="docutils literal notranslate"><span class="pre">new</span></code>.</p>
+<p class="rubric">Examples</p>
+<p>By default, any attributes on an existing function are updated with ones from
+the new function.  If you want a memoized function to keep its cache across
+xreload, you could implement that like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">memoize</span><span class="p">(</span><span class="n">function</span><span class="p">):</span>
+    <span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">def</span> <span class="nf">wrapped_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">args</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+            <span class="n">cache</span><span class="p">[</span><span class="n">args</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
+            <span class="k">return</span> <span class="n">result</span>
+    <span class="n">wrapped_fn</span><span class="o">.</span><span class="n">cache</span> <span class="o">=</span> <span class="n">cache</span>
+    <span class="k">def</span> <span class="nf">my_livepatch</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">,</span> <span class="n">do_livepatch</span><span class="p">):</span>
+        <span class="n">keep_cache</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">old</span><span class="o">.</span><span class="n">cache</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">do_livepatch</span><span class="p">()</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">cache</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">keep_cache</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="n">wrapped_fn</span><span class="o">.</span><span class="n">__livepatch__</span> <span class="o">=</span> <span class="n">my_livepatch</span>
+    <span class="k">return</span> <span class="n">wrapped_fn</span>
+</pre></div>
+</div>
+<p>XXX change example b/c cache is already cleared by default
+XXX maybe global cache</p>
+<blockquote>
+<div><dl class="simple">
+<dt>class MyObj(…):</dt><dd><dl class="simple">
+<dt>def __livepatch__(self, old):</dt><dd><p>self.__dict__.update(old.__dict__)
+return self</p>
+</dd>
+</dl>
+</dd>
+<dt>class MyObj(…):</dt><dd><dl class="simple">
+<dt>def __init__(self):</dt><dd><p>self._my_cache = {}</p>
+</dd>
+<dt>def __livepatch__(self, old, do_livepatch):</dt><dd><p>keep_cache = dict(old._my_cache)
+result = do_livepatch()
+result._my_cache.update(keep_cache)
+return result</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>XXX test</p>
+<dl class="exception">
+<dt id="pyflyby._livepatch.UnknownModuleError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">UnknownModuleError</code><a class="headerlink" href="#pyflyby._livepatch.UnknownModuleError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._format_age">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_format_age</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._format_age" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._get_definition_module">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_get_definition_module</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._get_definition_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the name of the module that an object is defined in, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if
+unknown.</p>
+<p>For classes and functions, this returns the <code class="docutils literal notranslate"><span class="pre">__module__</span></code> attribute.</p>
+<p>For object instances, this returns <code class="docutils literal notranslate"><span class="pre">None</span></code>, ignoring the <code class="docutils literal notranslate"><span class="pre">__module__</span></code>
+attribute.  The reason is that the <code class="docutils literal notranslate"><span class="pre">__module__</span></code> attribute on an instance
+just gives the module that the class was defined in, which is not
+necessarily the module where the instance was constructed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._get_module_py_file">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_get_module_py_file</code><span class="sig-paren">(</span><em class="sig-param">module</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._get_module_py_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._interpret_module">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_interpret_module</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._interpret_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__class">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__class</code><span class="sig-paren">(</span><em class="sig-param">oldclass</em>, <em class="sig-param">newclass</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch a class.</p>
+<p>This is similar to _livepatch__dict(oldclass.__dict__, newclass.__dict__).
+However, we can’t just operate on the dict, because class dictionaries are
+special objects that don’t allow setitem, even though we can setattr on
+the class.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__dict">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__dict</code><span class="sig-paren">(</span><em class="sig-param">old_dict</em>, <em class="sig-param">new_dict</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch a dict.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__function">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__function</code><span class="sig-paren">(</span><em class="sig-param">old_func</em>, <em class="sig-param">new_func</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch a function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__method">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__method</code><span class="sig-paren">(</span><em class="sig-param">old_method</em>, <em class="sig-param">new_method</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch a method.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__module">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__module</code><span class="sig-paren">(</span><em class="sig-param">old_mod</em>, <em class="sig-param">new_mod</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch a module.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__object">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__object</code><span class="sig-paren">(</span><em class="sig-param">oldobj</em>, <em class="sig-param">newobj</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch a general object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._livepatch__setattr">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__setattr</code><span class="sig-paren">(</span><em class="sig-param">oldobj</em>, <em class="sig-param">newobj</em>, <em class="sig-param">name</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__setattr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Livepatch something via setattr, i.e.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">oldobj</span><span class="o">.</span><span class="p">{</span><span class="n">name</span><span class="p">}</span> <span class="o">=</span> <span class="n">livepatch</span><span class="p">(</span><span class="n">oldobj</span><span class="o">.</span><span class="p">{</span><span class="n">name</span><span class="p">},</span> <span class="n">newobj</span><span class="o">.</span><span class="p">{</span><span class="n">name</span><span class="p">},</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._livepatch._xreload_module">
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_xreload_module</code><span class="sig-paren">(</span><em class="sig-param">module</em>, <em class="sig-param">filename</em>, <em class="sig-param">force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._xreload_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reload a module in place, using livepatch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>module</strong> (<code class="docutils literal notranslate"><span class="pre">ModuleType</span></code>) – Module to reload.</p></li>
+<li><p><strong>force</strong> – Whether to reload even if the module has not been modified since the
+previous load.  If <code class="docutils literal notranslate"><span class="pre">False</span></code>, then do nothing.  If <code class="docutils literal notranslate"><span class="pre">True</span></code>, then reload.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="log.html" class="btn btn-neutral float-right" title="_log module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="interactive.html" class="btn btn-neutral float-left" title="_interactive module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

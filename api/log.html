@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_log module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_modules module" href="modules.html" />
+    <link rel="prev" title="_livepatch module" href="livepatch.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_log module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/log.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._log">
+<span id="log-module"></span><h1>_log module<a class="headerlink" href="#module-pyflyby._log" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyflyby._log.PyflybyLogger">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._log.</code><code class="sig-name descname">PyflybyLogger</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">level</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log.PyflybyLogger" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._log.PyflybyLogger.HookCtx">
+<code class="sig-name descname">HookCtx</code><span class="sig-paren">(</span><em class="sig-param">pre</em>, <em class="sig-param">post</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log.PyflybyLogger.HookCtx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._log.PyflybyLogger._LEVELS">
+<code class="sig-name descname">_LEVELS</code><em class="property"> = {'DEBUG': 10, 'ERROR': 40, 'INFO': 20, 'WARNING': 30}</em><a class="headerlink" href="#pyflyby._log.PyflybyLogger._LEVELS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._log.PyflybyLogger.debug_enabled">
+<em class="property">property </em><code class="sig-name descname">debug_enabled</code><a class="headerlink" href="#pyflyby._log.PyflybyLogger.debug_enabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._log.PyflybyLogger.info_enabled">
+<em class="property">property </em><code class="sig-name descname">info_enabled</code><a class="headerlink" href="#pyflyby._log.PyflybyLogger.info_enabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._log.PyflybyLogger.set_level">
+<code class="sig-name descname">set_level</code><span class="sig-paren">(</span><em class="sig-param">level</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log.PyflybyLogger.set_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pyflyby logger’s level to <code class="docutils literal notranslate"><span class="pre">level</span></code>.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._log._NoRegisterLoggerHandlerInHandlerListCtx">
+<code class="sig-prename descclassname">pyflyby._log.</code><code class="sig-name descname">_NoRegisterLoggerHandlerInHandlerListCtx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._NoRegisterLoggerHandlerInHandlerListCtx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Work around a bug in the <code class="docutils literal notranslate"><span class="pre">logging</span></code> module for Python 2.x-3.2.</p>
+<p>The Python stdlib <code class="docutils literal notranslate"><span class="pre">logging</span></code> module has a bug where you sometimes get the
+following warning at exit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ne">Exception</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="s2">&quot;&#39;NoneType&#39; object is not callable&quot;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">function</span>
+<span class="n">_removeHandlerRef</span> <span class="n">at</span> <span class="mh">0x10a1b3f50</span><span class="o">&gt;</span> <span class="n">ignored</span>
+</pre></div>
+</div>
+<p>This is caused by shutdown ordering affecting which globals in the logging
+module are available to the _removeHandlerRef function.</p>
+<p>Python 3.3 fixes this.</p>
+<p>For earlier versions of Python, this context manager works around the
+issue by avoiding registering a handler in the _handlerList.  This means
+that we no longer call “flush()” from the atexit callback.  However, that
+was a no-op anyway, and even if we needed it, we could call it ourselves
+atexit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://bugs.python.org/issue9501">http://bugs.python.org/issue9501</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._log._PromptToolkitStdoutProxyRawCtx">
+<code class="sig-prename descclassname">pyflyby._log.</code><code class="sig-name descname">_PromptToolkitStdoutProxyRawCtx</code><span class="sig-paren">(</span><em class="sig-param">proxy</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._PromptToolkitStdoutProxyRawCtx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hack to defeat the “feature” where
+prompt_toolkit.interface._StdoutProxy(sys.stderr) causes ANSI escape codes
+to not be written.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._log._PyflybyHandler">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._log.</code><code class="sig-name descname">_PyflybyHandler</code><span class="sig-paren">(</span><em class="sig-param">level=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._PyflybyHandler" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._log._PyflybyHandler.HookCtx">
+<code class="sig-name descname">HookCtx</code><span class="sig-paren">(</span><em class="sig-param">pre</em>, <em class="sig-param">post</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._PyflybyHandler.HookCtx" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Enter a context where:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pre</span></code> is called before the first time a log record is emitted
+during the context, and</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">post</span></code> is called at the end of the context, if any log records
+were emitted during the context.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pre</strong> (<code class="docutils literal notranslate"><span class="pre">callable</span></code>) – Function to call before the first time something is logged during
+this context.</p></li>
+<li><p><strong>post</strong> (<code class="docutils literal notranslate"><span class="pre">callable</span></code>) – Function to call before returning from the context, if anything was
+logged during the context.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._log._PyflybyHandler._interactive_prefix">
+<code class="sig-name descname">_interactive_prefix</code><em class="property"> = '\x1b[0m\x1b[33m[PYFLYBY]\x1b[0m '</em><a class="headerlink" href="#pyflyby._log._PyflybyHandler._interactive_prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._log._PyflybyHandler._logged_anything_during_context">
+<code class="sig-name descname">_logged_anything_during_context</code><em class="property"> = False</em><a class="headerlink" href="#pyflyby._log._PyflybyHandler._logged_anything_during_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._log._PyflybyHandler._noninteractive_prefix">
+<code class="sig-name descname">_noninteractive_prefix</code><em class="property"> = '[PYFLYBY] '</em><a class="headerlink" href="#pyflyby._log._PyflybyHandler._noninteractive_prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._log._PyflybyHandler._pre_log_function">
+<code class="sig-name descname">_pre_log_function</code><em class="property"> = None</em><a class="headerlink" href="#pyflyby._log._PyflybyHandler._pre_log_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._log._PyflybyHandler.emit">
+<code class="sig-name descname">emit</code><span class="sig-paren">(</span><em class="sig-param">record</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._PyflybyHandler.emit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emit a log record.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._log._is_interactive">
+<code class="sig-prename descclassname">pyflyby._log.</code><code class="sig-name descname">_is_interactive</code><span class="sig-paren">(</span><em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._is_interactive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._log._is_ipython">
+<code class="sig-prename descclassname">pyflyby._log.</code><code class="sig-name descname">_is_ipython</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._log._is_ipython" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if we’re currently running inside IPython.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="_modules module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="livepatch.html" class="btn btn-neutral float-left" title="_livepatch module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

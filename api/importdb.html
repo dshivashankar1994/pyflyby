@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_importdb module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_imports2s module" href="imports2s.html" />
+    <link rel="prev" title="_importclns module" href="importclns.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_importdb module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/importdb.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._importdb">
+<span id="importdb-module"></span><h1>_importdb module<a class="headerlink" href="#module-pyflyby._importdb" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pyflyby._importdb._ancestors_on_same_partition">
+<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_ancestors_on_same_partition</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._ancestors_on_same_partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate ancestors of <code class="docutils literal notranslate"><span class="pre">filename</span></code> that exist and are on the same partition
+as the first existing ancestor of <code class="docutils literal notranslate"><span class="pre">filename</span></code>.</p>
+<p>For example, suppose a partition is mounted on /u/homer; /u is a different
+partition.  Suppose /u/homer/aa exists but /u/homer/aa/bb does not exist.
+Then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_ancestors_on_same_partition</span><span class="p">(</span><span class="n">Filename</span><span class="p">(</span><span class="s2">&quot;/u/homer/aa/bb/cc&quot;</span><span class="p">))</span> 
+<span class="go">[Filename(&quot;/u/homer&quot;, Filename(&quot;/u/homer/aa&quot;)]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Filename</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._importdb._expand_tripledots">
+<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_expand_tripledots</code><span class="sig-paren">(</span><em class="sig-param">pathnames</em>, <em class="sig-param">target_dirname</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._expand_tripledots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand pathnames of the form <code class="docutils literal notranslate"><span class="pre">&quot;.../foo/bar&quot;</span></code> as “../../foo/bar”,
+“../foo/bar”, “./foo/bar” etc., up to the oldest ancestor with the same
+st_dev.</p>
+<p>For example, suppose a partition is mounted on /u/homer; /u is a different
+partition.  Then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_expand_tripledots</span><span class="p">([</span><span class="s2">&quot;/foo&quot;</span><span class="p">,</span> <span class="s2">&quot;.../tt&quot;</span><span class="p">],</span> <span class="s2">&quot;/u/homer/aa&quot;</span><span class="p">)</span> 
+<span class="go">[Filename(&quot;/foo&quot;), Filename(&quot;/u/homer/tt&quot;), Filename(&quot;/u/homer/aa/tt&quot;)]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> of <cite>Filename</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._importdb._get_env_var">
+<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_get_env_var</code><span class="sig-paren">(</span><em class="sig-param">env_var_name</em>, <em class="sig-param">default</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._get_env_var" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an environment variable and split on “:”, replacing <code class="docutils literal notranslate"><span class="pre">-</span></code> with the
+default.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._importdb._get_python_path">
+<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_get_python_path</code><span class="sig-paren">(</span><em class="sig-param">env_var_name</em>, <em class="sig-param">default_path</em>, <em class="sig-param">target_dirname</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._get_python_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand an environment variable specifying pyflyby input config files.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Default to <code class="docutils literal notranslate"><span class="pre">default_path</span></code> if the environment variable is undefined.</p></li>
+<li><p>Process colon delimiters.</p></li>
+<li><p>Replace “-” with <code class="docutils literal notranslate"><span class="pre">default_path</span></code>.</p></li>
+<li><p>Expand triple dots.</p></li>
+<li><p>Recursively traverse directories.</p></li>
+</ul>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">Filename</span></code> s</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="imports2s.html" class="btn btn-neutral float-right" title="_imports2s module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="importclns.html" class="btn btn-neutral float-left" title="_importclns module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_cmdline module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_comms module" href="comms.html" />
+    <link rel="prev" title="_autoimp module" href="autoimp.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_cmdline module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/cmdline.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._cmdline">
+<span id="cmdline-module"></span><h1>_cmdline module<a class="headerlink" href="#module-pyflyby._cmdline" title="Permalink to this headline">¶</a></h1>
+<dl class="exception">
+<dt id="pyflyby._cmdline.AbortActions">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">AbortActions</code><a class="headerlink" href="#pyflyby._cmdline.AbortActions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._cmdline.Modifier">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">Modifier</code><span class="sig-paren">(</span><em class="sig-param">modifier</em>, <em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.Modifier" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._cmdline.Modifier._tempfile">
+<code class="sig-name descname">_tempfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.Modifier._tempfile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._cmdline.Modifier.input_content">
+<code class="sig-name descname">input_content</code><a class="headerlink" href="#pyflyby._cmdline.Modifier.input_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes attribute value and caches it in instance.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="nd">@cached_attribute</span>
+    <span class="k">def</span> <span class="nf">myMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Use “del inst.myMethod” to clear cache.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._cmdline.Modifier.input_content_filename">
+<code class="sig-name descname">input_content_filename</code><a class="headerlink" href="#pyflyby._cmdline.Modifier.input_content_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes attribute value and caches it in instance.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="nd">@cached_attribute</span>
+    <span class="k">def</span> <span class="nf">myMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Use “del inst.myMethod” to clear cache.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._cmdline.Modifier.output_content">
+<code class="sig-name descname">output_content</code><a class="headerlink" href="#pyflyby._cmdline.Modifier.output_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes attribute value and caches it in instance.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="nd">@cached_attribute</span>
+    <span class="k">def</span> <span class="nf">myMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Use “del inst.myMethod” to clear cache.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyflyby._cmdline.Modifier.output_content_filename">
+<code class="sig-name descname">output_content_filename</code><a class="headerlink" href="#pyflyby._cmdline.Modifier.output_content_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes attribute value and caches it in instance.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="nd">@cached_attribute</span>
+    <span class="k">def</span> <span class="nf">myMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Use “del inst.myMethod” to clear cache.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline._default_on_error">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">_default_on_error</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline._default_on_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline._sigpipe_handler">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">_sigpipe_handler</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline._sigpipe_handler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.action_external_command">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">action_external_command</code><span class="sig-paren">(</span><em class="sig-param">command</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.action_external_command" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.action_ifchanged">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">action_ifchanged</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.action_ifchanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.action_print">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">action_print</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.action_print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.action_query">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">action_query</code><span class="sig-paren">(</span><em class="sig-param">prompt='Proceed?'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.action_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.action_replace">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">action_replace</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.action_replace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.filename_args">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">filename_args</code><span class="sig-paren">(</span><em class="sig-param">args</em>, <em class="sig-param">on_error=&lt;function _default_on_error&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.filename_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of filenames given command-line arguments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> of <cite>Filename</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.hfmt">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">hfmt</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.hfmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.maindoc">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">maindoc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.maindoc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.parse_args">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">parse_args</code><span class="sig-paren">(</span><em class="sig-param">addopts=None</em>, <em class="sig-param">import_format_params=False</em>, <em class="sig-param">modify_action_params=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.parse_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do setup for a top-level script and parse arguments.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.print_version_and_exit">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">print_version_and_exit</code><span class="sig-paren">(</span><em class="sig-param">extra=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.print_version_and_exit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.process_actions">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">process_actions</code><span class="sig-paren">(</span><em class="sig-param">filenames</em>, <em class="sig-param">actions</em>, <em class="sig-param">modify_function</em>, <em class="sig-param">reraise_exceptions=()</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.process_actions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.symlink_callback">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">symlink_callback</code><span class="sig-paren">(</span><em class="sig-param">option</em>, <em class="sig-param">opt_str</em>, <em class="sig-param">value</em>, <em class="sig-param">parser</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.symlink_callback" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.symlink_error">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">symlink_error</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.symlink_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.symlink_follow">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">symlink_follow</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.symlink_follow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.symlink_replace">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">symlink_replace</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.symlink_replace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.symlink_skip">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">symlink_skip</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.symlink_skip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._cmdline.syntax">
+<code class="sig-prename descclassname">pyflyby._cmdline.</code><code class="sig-name descname">syntax</code><span class="sig-paren">(</span><em class="sig-param">message=None</em>, <em class="sig-param">usage=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._cmdline.syntax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="comms.html" class="btn btn-neutral float-right" title="_comms module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="autoimp.html" class="btn btn-neutral float-left" title="_autoimp module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,637 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to the Pyflyby documentation! &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pyflyby API" href="api/api.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="api/api.html">pyflyby API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to the Pyflyby documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-the-pyflyby-documentation">
+<h1>Welcome to the Pyflyby documentation!<a class="headerlink" href="#welcome-to-the-pyflyby-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Pyflyby is a set of Python programming productivity tools.</p>
+<dl class="simple">
+<dt>For command-line interaction:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">py</span></code>: command-line multitool</p></li>
+</ul>
+</dd>
+<dt>For IPython interaction:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">autoimporter</span></code>: automatically imports symbols when needed.</p></li>
+</ul>
+</dd>
+<dt>For editing python source code:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code>: adds missing ‘import’s, removes unused ‘import’s,
+and also reformats import blocks.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">find-imports</span></code>: prints to stdout how to import a particular symbol.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reformat-imports</span></code>: reformats <code class="docutils literal notranslate"><span class="pre">import</span></code> blocks</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collect-imports</span></code>: prints out all the imports in a given set of files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collect-exports</span></code>: prints out definitions in a given set of modules,
+in the form of import statements.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transform-imports</span></code>: renames imported modules/functions.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="quick-start-autoimporter-ipython">
+<h1>Quick start: Autoimporter + IPython<a class="headerlink" href="#quick-start-autoimporter-ipython" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ py
+In <span class="o">[</span><span class="m">1</span><span class="o">]</span>: re.search<span class="o">(</span><span class="s2">&quot;[a-z]+&quot;</span>, <span class="s2">&quot;....hello...&quot;</span><span class="o">)</span>.group<span class="o">(</span><span class="m">0</span><span class="o">)</span>
+<span class="o">[</span>PYFLYBY<span class="o">]</span> import re
+Out<span class="o">[</span><span class="m">1</span><span class="o">]</span>: <span class="s1">&#39;hello&#39;</span>
+
+In <span class="o">[</span><span class="m">2</span><span class="o">]</span>: chisqprob<span class="o">(</span>arange<span class="o">(</span><span class="m">5</span><span class="o">)</span>, <span class="m">2</span><span class="o">)</span>
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from numpy import arange
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from scipy.stats import chisqprob
+Out<span class="o">[</span><span class="m">2</span><span class="o">]</span>: <span class="o">[</span> <span class="m">1</span>.      <span class="m">0</span>.6065  <span class="m">0</span>.3679  <span class="m">0</span>.2231  <span class="m">0</span>.1353<span class="o">]</span>
+</pre></div>
+</div>
+<p>To load pyflyby into an existing IPython session as a 1-off:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ipython
+In <span class="o">[</span><span class="m">1</span><span class="o">]</span>: %load_ext pyflyby
+</pre></div>
+</div>
+<p>To configure IPython/Jupyter Notebook to load pyflyby automatically:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ py pyflyby.install_in_ipython_config_file
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;c.InteractiveShellApp.extensions.append(&quot;pyflyby&quot;)&#39;</span> <span class="se">\</span>
+  &gt;&gt; ~/.ipython/profile_default/ipython_config.py
+
+$ ipython
+In <span class="o">[</span><span class="m">1</span><span class="o">]</span>: b64decode<span class="o">(</span><span class="s1">&#39;aGVsbG8=&#39;</span><span class="o">)</span>
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from base64 import b64decode
+Out<span class="o">[</span><span class="m">1</span><span class="o">]</span>: <span class="s1">&#39;hello&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="quick-start-py-command-line-multi-tool">
+<h1>Quick start: <code class="docutils literal notranslate"><span class="pre">py</span></code> command-line multi-tool<a class="headerlink" href="#quick-start-py-command-line-multi-tool" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ py b64decode <span class="nv">aGVsbG8</span><span class="o">=</span>
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from base64 import b64decode
+<span class="o">[</span>PYFLYBY<span class="o">]</span> b64decode<span class="o">(</span><span class="s1">&#39;aGVsbG8=&#39;</span>, <span class="nv">altchars</span><span class="o">=</span>None<span class="o">)</span>
+<span class="s1">&#39;hello&#39;</span>
+
+$ py log2 sys.maxint
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from numpy import log2
+<span class="o">[</span>PYFLYBY<span class="o">]</span> import sys
+<span class="o">[</span>PYFLYBY<span class="o">]</span> log2<span class="o">(</span><span class="m">9223372036854775807</span><span class="o">)</span>
+<span class="m">63</span>.0
+
+$ py <span class="s1">&#39;plot(cos(arange(30)))&#39;</span>
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from numpy import arange
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from numpy import cos
+<span class="o">[</span>PYFLYBY<span class="o">]</span> from matplotlib.pyplot import plot
+<span class="o">[</span>PYFLYBY<span class="o">]</span> plot<span class="o">(</span>cos<span class="o">(</span>arange<span class="o">(</span><span class="m">30</span><span class="o">)))</span>
+&lt;plot&gt;
+
+$ py <span class="m">38497631</span> / <span class="m">13951446</span>
+<span class="m">2</span>.7594007818257693
+
+$ py foo.py
+</pre></div>
+</div>
+</div>
+<div class="section" id="quick-start-tidy-imports">
+<h1>Quick start: <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code><a class="headerlink" href="#quick-start-tidy-imports" title="Permalink to this headline">¶</a></h1>
+<p>To use <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code>, just specify the filename(s) to tidy.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo &#39;re.search(&quot;[a-z]+&quot;, &quot;....hello...&quot;), chisqprob(arange(5), 2)&#39; &gt; foo.py
+
+$ tidy-imports foo.py
+--- /tmp/foo.py
++++ /tmp/foo.py
+@@ -1 +1,9 @@
++from __future__ import absolute_import, division, with_statement
++
++from   numpy                    import arange
++from   scipy.stats              import chisqprob
++import re
++
+ re.search(&quot;[a-z]+&quot;, &quot;....hello...&quot;), chisqprob(arange(5), 2)
+
+Replace /tmp/foo.py? [y/N]
+</pre></div>
+</div>
+</div>
+<div class="section" id="quick-start-import-libraries">
+<h1>Quick start: import libraries<a class="headerlink" href="#quick-start-import-libraries" title="Permalink to this headline">¶</a></h1>
+<p>Create a file named .pyflyby with lines such as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mypackage.mymodule</span> <span class="kn">import</span> <span class="n">MyClass</span><span class="p">,</span> <span class="n">my_function</span>
+<span class="kn">import</span> <span class="nn">anotherpackage.anothermodule</span>
+</pre></div>
+</div>
+<p>You can put this file in your home directory or in the same directory as your
+<code class="docutils literal notranslate"><span class="pre">*.py</span></code> files.</p>
+</div>
+<div class="section" id="details-automatic-imports">
+<h1>Details: automatic imports<a class="headerlink" href="#details-automatic-imports" title="Permalink to this headline">¶</a></h1>
+<p>AUTOMATIC IMPORTS - never type “import” again!</p>
+<p>This module allows your “known imports” to work automatically in your IPython
+interactive session without having to type the ‘import’ statements (and also
+without having to slow down your Python startup with imports you only use
+occasionally).</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;[a-z]+&quot;</span><span class="p">,</span> <span class="s2">&quot;....hello...&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="p">[</span><span class="n">PYFLYBY</span><span class="p">]</span> <span class="kn">import</span> <span class="nn">re</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="s1">&#39;hello&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">chisqprob</span><span class="p">(</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">[</span><span class="n">PYFLYBY</span><span class="p">]</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">arange</span>
+<span class="p">[</span><span class="n">PYFLYBY</span><span class="p">]</span> <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chisqprob</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="p">[</span> <span class="mf">1.</span>      <span class="mf">0.6065</span>  <span class="mf">0.3679</span>  <span class="mf">0.2231</span>  <span class="mf">0.1353</span><span class="p">]</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">arandom</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="p">[</span><span class="n">PYFLYBY</span><span class="p">]</span> <span class="kn">from</span> <span class="nn">numpy.random</span> <span class="kn">import</span> <span class="n">random</span> <span class="k">as</span> <span class="n">arandom</span>
+<span class="p">[</span><span class="n">PYFLYBY</span><span class="p">]</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[</span> <span class="mf">0.0282</span>  <span class="mf">0.0603</span>  <span class="mf">0.4653</span>  <span class="mf">0.8371</span>  <span class="mf">0.3347</span><span class="p">]</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="n">Number</span><span class="p">)</span>
+<span class="p">[</span><span class="n">PYFLYBY</span><span class="p">]</span> <span class="kn">from</span> <span class="nn">numbers</span> <span class="kn">import</span> <span class="n">Number</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<div class="section" id="it-just-works">
+<h2>It just works<a class="headerlink" href="#it-just-works" title="Permalink to this headline">¶</a></h2>
+<p>Tab completion works, even on modules that are not yet imported.  In the
+following example, notice that numpy is imported when we need to know its
+members, and only then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ipython
+In [1]: nump&lt;TAB&gt;
+In [1]: numpy
+In [1]: numpy.arang&lt;TAB&gt;
+[PYFLYBY] import numpy
+In [1]: numpy.arange
+</pre></div>
+</div>
+<p>The IPython “?” magic help (pinfo/pinfo2) automatically imports symbols first
+if necessary:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ipython
+In [1]: arange?
+[PYFLYBY] from numpy import arange
+... Docstring: arange([start,] stop[, step,], dtype=None) ...
+</pre></div>
+</div>
+<p>Other IPython magic commands work as well:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ipython
+In [1]: %timeit np.cos(pi)
+[PYFLYBY] import numpy as np
+[PYFLYBY] from numpy import pi
+100000 loops, best of 3: 2.51 us per loop
+
+$ echo &#39;print arange(4)&#39; &gt; foo.py
+$ ipython
+In [1]: %run foo.py
+[PYFLYBY] from numpy import arange
+[0 1 2 3]
+</pre></div>
+</div>
+</div>
+<div class="section" id="implementation-details">
+<h2>Implementation details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h2>
+<p>The automatic importing happens at parse time, before code is executed.  The
+namespace never contains entries for names that are not yet imported.</p>
+<p>This method of importing at parse time contrasts with previous implementations
+of automatic importing that use proxy objects.  Those implementations using
+proxy objects don’t work as well, because it is impossible to make proxy
+objects behave perfectly.  For example, instance(x, T) will return the wrong
+answer if either x or T is a proxy object.</p>
+</div>
+<div class="section" id="compatibility">
+<h2>Compatibility<a class="headerlink" href="#compatibility" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Tested with:</dt><dd><ul class="simple">
+<li><p>Python 2.6, 2.7, 3.7, 3.8</p></li>
+<li><p>IPython 0.10, 0.11, 0.12, 0.13, 1.0, 1.2, 2.0, 2.1, 2.2, 2.3, 2.4, 3.0,
+3.1, 3.2, 4.0., 7.11 (latest)</p></li>
+<li><p>IPython (text console), IPython Notebook, Spyder</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="details-import-libraries">
+<h1>Details: import libraries<a class="headerlink" href="#details-import-libraries" title="Permalink to this headline">¶</a></h1>
+<p>Pyflyby uses “import libraries” that tell how to import a given symbol.</p>
+<p>An import library file is simply a python source file containing ‘import’ (or
+‘from … import …’) lines.  These can be generated automatically with
+<code class="docutils literal notranslate"><span class="pre">collect-imports</span></code> and <code class="docutils literal notranslate"><span class="pre">collect-exports</span></code>.</p>
+<div class="section" id="known-imports">
+<h2>Known imports<a class="headerlink" href="#known-imports" title="Permalink to this headline">¶</a></h2>
+<p>Find-imports, <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code>, and autoimport consult the database of known
+imports to figure out where to get an import.  For example, if the
+imports database contains:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">arange</span><span class="p">,</span> <span class="n">NaN</span>
+</pre></div>
+</div>
+<p>then when you type the following in IPython:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>the autoimporter would automatically execute <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">numpy</span> <span class="pre">import</span> <span class="pre">arange</span></code>.</p>
+<p>The database can be one file or multiple files.  This makes it easy to have
+project-specific known_imports along with global and per-user defaults.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">PYFLYBY_PATH</span></code> environment variable specifies which files to read.
+This is a colon-separated list of filenames or directory names.  The default
+is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PYFLYBY_PATH</span><span class="o">=/</span><span class="n">etc</span><span class="o">/</span><span class="n">pyflyby</span><span class="p">:</span><span class="o">~/.</span><span class="n">pyflyby</span><span class="p">:</span><span class="o">.../.</span><span class="n">pyflyby</span>
+</pre></div>
+</div>
+<p>If you set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PYFLYBY_PATH</span><span class="o">=/</span><span class="n">foo1</span><span class="o">/</span><span class="n">bar1</span><span class="p">:</span><span class="o">/</span><span class="n">foo2</span><span class="o">/</span><span class="n">bar2</span>
+</pre></div>
+</div>
+<p>then this replaces the default.</p>
+<p>You can use a hyphen to include the default in the path.  If you set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PYFLYBY_PATH</span><span class="o">=/</span><span class="n">foo1</span><span class="o">/</span><span class="n">bar1</span><span class="p">:</span><span class="o">-</span><span class="p">:</span><span class="o">/</span><span class="n">foo2</span><span class="o">/</span><span class="n">bar2</span>
+</pre></div>
+</div>
+<p>then this reads <code class="docutils literal notranslate"><span class="pre">/foo1/bar1</span></code>, then the default locations, then <code class="docutils literal notranslate"><span class="pre">/foo2/bar2</span></code>.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>, <code class="docutils literal notranslate"><span class="pre">.../.pyflyby</span></code> (with _three_ dots) means that all ancestor
+directories are searched for a member named “.pyflyby”.</p>
+<p>For example, suppose the following files exist:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">stuff</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">u</span><span class="o">/</span><span class="n">quarl</span><span class="o">/.</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">blah1</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">u</span><span class="o">/</span><span class="n">quarl</span><span class="o">/.</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">more</span><span class="o">/</span><span class="n">blah2</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">proj</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">mypythonstuff</span><span class="o">/.</span><span class="n">pyflyby</span>
+<span class="o">/</span><span class="n">proj</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">mypythonstuff</span><span class="o">/</span><span class="n">foo</span><span class="o">/</span><span class="n">bar</span><span class="o">/.</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">baz</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/.</span><span class="n">pyflyby</span>
+</pre></div>
+</div>
+<p>Further, suppose:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/proj</span></code> is on a separate file system from <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$HOME=/u/quarl</span></code></p></li>
+</ul>
+</div></blockquote>
+<p>Then <code class="docutils literal notranslate"><span class="pre">tidy-imports</span> <span class="pre">/proj/share/mypythonstuff/foo/bar/quux/zot.py</span></code> will by
+default use the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">stuff</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">u</span><span class="o">/</span><span class="n">quarl</span><span class="o">/.</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">blah1</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">u</span><span class="o">/</span><span class="n">quarl</span><span class="o">/.</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">more</span><span class="o">/</span><span class="n">blah2</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">proj</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">mypythonstuff</span><span class="o">/</span><span class="n">foo</span><span class="o">/</span><span class="n">bar</span><span class="o">/.</span><span class="n">pyflyby</span><span class="o">/</span><span class="n">baz</span><span class="o">.</span><span class="n">py</span>
+<span class="o">/</span><span class="n">proj</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">mypythonstuff</span><span class="o">/.</span><span class="n">pyflyby</span> <span class="p">(</span><span class="n">a</span> <span class="n">file</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/.pyflyby</span></code> is not included, because traversal stops at file system
+boundaries, and in this example, <code class="docutils literal notranslate"><span class="pre">/proj</span></code> is on a different file system than
+<code class="docutils literal notranslate"><span class="pre">/</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.pyflyby</span></code> (in <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> or near the target file) can be a file or a directory.
+If it is a directory, then it is recursively searched for <code class="docutils literal notranslate"><span class="pre">*.py</span></code> files.</p></li>
+<li><p>The order usually doesn’t matter, but if there are “forget” instructions
+(see below), then the order matters.  In the default <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>,
+…/.pyflyby is placed last so that per-directory configuration can
+override per-user configuration, which can override systemwide
+configuration.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="forgetting-imports">
+<h2>Forgetting imports<a class="headerlink" href="#forgetting-imports" title="Permalink to this headline">¶</a></h2>
+<p>Occasionally you may have reason to tell pyflyby to “forget” entries from the
+database of known imports.</p>
+<p>You can put the following in any file reachable from <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__forget_imports__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;from numpy import NaN&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This is useful if you want to use a set of imports maintained by someone else
+except for a few particular imports.</p>
+<p>Entries in <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code> are processed left-to-right in the order specified,
+so put the files containing these at the end of your <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>.  By
+default, <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code> and friends process <code class="docutils literal notranslate"><span class="pre">/etc/pyflyby</span></code>, then <code class="docutils literal notranslate"><span class="pre">~/.pyflyby</span></code>,
+then the per-directory <code class="docutils literal notranslate"><span class="pre">.pyflyby</span></code>.</p>
+</div>
+<div class="section" id="mandatory-imports">
+<h2>Mandatory imports<a class="headerlink" href="#mandatory-imports" title="Permalink to this headline">¶</a></h2>
+<p>Within a certain project you may have a policy to always include certain
+imports.  For example, maybe you always want to do <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">__future__</span> <span class="pre">import</span>
+<span class="pre">division</span></code> in all files.</p>
+<p>You can put the following in any file reachable from <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__mandatory_imports__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;from __future__ import division&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>To undo mandatory imports inherited from other <code class="docutils literal notranslate"><span class="pre">.pyflyby</span></code> files, use
+<code class="docutils literal notranslate"><span class="pre">__forget_imports__</span></code> (see above).</p>
+</div>
+<div class="section" id="canonicalize-imports">
+<h2>Canonicalize imports<a class="headerlink" href="#canonicalize-imports" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you want every run of <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code> to automatically rename an import
+to a new name.</p>
+<p>You can put the following in any file reachable from <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__canonical_imports__</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;oldmodule.oldfunction&quot;</span><span class="p">:</span> <span class="s2">&quot;newmodule.newfunction&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>This is equivalent to running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tidy</span><span class="o">-</span><span class="n">imports</span> <span class="o">--</span><span class="n">transform</span><span class="o">=</span><span class="n">oldmodule</span><span class="o">.</span><span class="n">oldfunction</span><span class="o">=</span><span class="n">newmodule</span><span class="o">.</span><span class="n">newfunction</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="soapbox-avoid-star-imports">
+<h1>Soapbox: avoid “star” imports<a class="headerlink" href="#soapbox-avoid-star-imports" title="Permalink to this headline">¶</a></h1>
+<p>When programming in Python, a good software engineering practice is to avoid
+using <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">foopackage</span> <span class="pre">import</span> <span class="pre">*</span></code> in production code.</p>
+<p>This style is a maintenance nightmare:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It becomes difficult to figure out where various symbols
+(functions/classes/etc) come from.</p></li>
+<li><p>It’s hard to tell what gets shadowed by what.</p></li>
+<li><p>When the package changes in trivial ways, your code will be affected.
+Consider the following example: Suppose <code class="docutils literal notranslate"><span class="pre">foopackage.py</span></code> contains <code class="docutils literal notranslate"><span class="pre">import</span>
+<span class="pre">sys</span></code>, and <code class="docutils literal notranslate"><span class="pre">myprogram.py</span></code> contains <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">foopackage</span> <span class="pre">import</span> <span class="pre">*;</span> <span class="pre">if</span>
+<span class="pre">some_condition:</span> <span class="pre">sys.exit(0)</span></code>.  If <code class="docutils literal notranslate"><span class="pre">foopackage.py</span></code> changes so that <code class="docutils literal notranslate"><span class="pre">import</span>
+<span class="pre">sys</span></code> is removed, <code class="docutils literal notranslate"><span class="pre">myprogram.py</span></code> is now broken because it’s missing <code class="docutils literal notranslate"><span class="pre">import</span>
+<span class="pre">sys</span></code>.</p></li>
+</ul>
+</div></blockquote>
+<p>To fix such code, you can run <code class="docutils literal notranslate"><span class="pre">tidy-imports</span> <span class="pre">--replace-star-imports</span></code> to
+automatically replace star imports with the specific needed imports.</p>
+</div>
+<div class="section" id="emacs-support">
+<h1>Emacs support<a class="headerlink" href="#emacs-support" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p>To get a <code class="docutils literal notranslate"><span class="pre">M-x</span> <span class="pre">tidy-imports</span></code> command in GNU Emacs, add to your <code class="docutils literal notranslate"><span class="pre">~/.emacs</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">load</span> <span class="s2">&quot;/path/to/pyflyby/lib/emacs/pyflyby.el&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Pyflyby.el doesn’t yet work with XEmacs; patches welcome.</p></li>
+</ul>
+</div>
+<div class="section" id="authorship">
+<h1>Authorship<a class="headerlink" href="#authorship" title="Permalink to this headline">¶</a></h1>
+<p>Pyflyby is written by Karl Chen &lt;<a class="reference external" href="mailto:quarl&#37;&#52;&#48;8166&#46;clguba&#46;z&#46;quarl&#46;org">quarl<span>&#64;</span>8166<span>&#46;</span>clguba<span>&#46;</span>z<span>&#46;</span>quarl<span>&#46;</span>org</a>&gt;</p>
+</div>
+<div class="section" id="license">
+<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h1>
+<p>Pyflyby is released under a very permissive license, the MIT/X11 license; see
+LICENSE.txt.</p>
+</div>
+<div class="section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/api.html">pyflyby API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/parse.html">_parse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/py.html">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/py.html#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/py.html#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/py.html#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api/api.html" class="btn btn-neutral float-right" title="pyflyby API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

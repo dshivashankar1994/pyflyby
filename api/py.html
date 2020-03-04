@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>_py module &mdash; pyflyby 1.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="_util module" href="util.html" />
+    <link rel="prev" title="_parse module" href="parse.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyflyby
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">pyflyby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autoimp.html">_autoimp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">_cmdline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comms.html">_comms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">_dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">_flags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format.html">_format module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="idents.html">_idents module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importclns.html">_importclns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importdb.html">_importdb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imports2s.html">_imports2s module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="importstmt.html">_importstmt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">_interactive module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livepatch.html">_livepatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="livepatch.html#customizing-behavior">Customizing behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="log.html">_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">_modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parse.html">_parse module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">_py module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#invocation-summary">Invocation summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">_util module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyflyby</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">pyflyby API</a> &raquo;</li>
+        
+      <li>_py module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/py.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyflyby._py">
+<span id="py-module"></span><h1>_py module<a class="headerlink" href="#module-pyflyby._py" title="Permalink to this headline">¶</a></h1>
+<p>The <cite>py</cite> program (part of the pyflyby project) is a command-line multitool for
+running python code, with heuristic intention guessing, automatic importing,
+and debugging support.</p>
+<div class="section" id="invocation-summary">
+<h2>Invocation summary<a class="headerlink" href="#invocation-summary" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>py [--file]   filename.py arg1 arg2   Execute a file
+py [--eval]  &#39;function(arg1, arg2)&#39;   Evaluate an expression/statement
+py [--apply]  function arg1 arg2      Call function(arg1, arg2)
+py [--module] modname arg1 arg2       Run a module
+
+py  --map     function arg1 arg2      Call function(arg1); function(arg2)
+
+py  -i       &#39;function(arg1, arg2)&#39;   Run file/code/etc, then run IPython
+py  --debug  &#39;function(arg1, arg2)&#39;   Debug file/code/etc
+py  --debug   PID                     Attach debugger to PID
+
+py            function?               Get help for a function or module
+py            function??              Get source of a function or module
+
+py                                    Start IPython with autoimporter
+py nb                                 Start IPython Notebook with autoimporter
+</pre></div>
+</div>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p>Heuristic action mode guessing: If none of –file, –eval, –apply,
+–module, or –map is specified, then guess what to do, choosing one of
+these actions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Execute (run) a file</p></li>
+<li><p>Evaluate concatenated arguments</p></li>
+<li><p>Run a module</p></li>
+<li><p>Call (apply) a function</p></li>
+<li><p>Evaluate first argument</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Automatic importing: All action modes (except run_module) automatically
+import as needed.</p></li>
+<li><p>Heuristic argument evaluation: By default, <cite>py –eval</cite>, <cite>py –apply</cite>, and
+<cite>py –map</cite> guess whether the arguments should be interpreted as
+expressions or literal strings. A “–” by itself will designate subsequent
+args as strings.  A “-” by itself will be replaced by the contents of
+stdin as a string.</p></li>
+<li><p>Merged eval/exec: Code is eval()ed or exec()ed as appropriate.</p></li>
+<li><p>Result printing: By default, results are pretty-printed if not None.</p></li>
+<li><p>Heuristic flags: “print” can be used as a function or a statement.</p></li>
+<li><p>Matplotlib/pylab integration: show() is called if appropriate to block on
+plots.</p></li>
+<li><p>Enter debugger upon unhandled exception.  (This functionality is enabled
+by default when stdout is a tty.  Use –postmortem=no to never use the
+postmortem debugger.  Use –postmortem=yes enable even if stdout is not a
+tty.  If the postmortem debugger is enabled but /dev/tty is not available,
+then if an exception occurs, py will email instructions for attaching a
+debugger.)</p></li>
+<li><p>Control-\ (SIGQUIT) enters debugger while running (and allows continuing).</p></li>
+<li><p>New builtin functions such as “debugger()”.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><cite>py</cite> is intended as an interactive tool.  When writing shell aliases for
+interactive use, the <cite>–safe</cite> option can be useful.  When writing scripts,
+it’s better to avoid all heuristic guessing; use regular <cite>python -c …</cite>, or
+better yet, a full-fledged python program (and run tidy-imports).</p>
+</div>
+</div>
+<div class="section" id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Global options valid before code argument:
+
+  --args=string    Interpret all arguments as literal strings.
+                   (The &quot;--&quot; argument also specifies remaining arguments to be
+                   literal strings.)
+  --args=eval      Evaluate all arguments as expressions.
+  --args=auto      (Default) Heuristically guess whether to evaluate arguments
+                   as literal strings or expressions.
+  --output=silent  Don&#39;t print the result of evaluation.
+  --output=str     Print str(result).
+  --output=repr    Print repr(result).
+  --output=pprint  Print pprint.pformat(result).
+  --output=repr-if-not-none
+                   Print repr(result), but only if result is not None.
+  --output=pprint-if-not-none
+                   Print pprint.pformat(result), but only if result is not None.
+  --output=interactive
+                   (Default) Print result.__interactive_display__() if defined,
+                   else pprint if result is not None.
+  --output=exit    Raise SystemExit(result).
+  --safe           Equivalent to --args=strings and PYFLYBY_PATH=EMPTY.
+  --quiet, --q     Log only error messages to stderr; omit info and warnings.
+  --interactive, --i
+                   Run an IPython shell after completion
+  --debug, --d     Run the target code file etc under the debugger.  If a PID is
+                   given, then instead attach a debugger to the target PID.
+  --verbose        Turn on verbose messages from pyflyby.
+
+Pseudo-actions valid before, after, or without code argument:
+
+  --version        Print pyflyby version or version of a module.
+  --help, --h, --? Print this help or help for a function or module.
+  --source, --??   Print source code for a function or module.
+</pre></div>
+</div>
+<p class="rubric">Examples</p>
+<p>Start IPython with pyflyby autoimporter enabled:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py
+</pre></div>
+</div>
+<p>Start IPython/Jupyter Notebook with pyflyby autoimporter enabled:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py nb
+</pre></div>
+</div>
+<p>Find the ASCII value of the letter “j” (apply builtin function):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py ord j
+[PYFLYBY] ord(&#39;j&#39;)
+106
+</pre></div>
+</div>
+<p>Decode a base64-encoded string (apply autoimported function):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py b64decode aGVsbG8=
+[PYFLYBY] from base64 import b64decode
+[PYFLYBY] b64decode(&#39;aGVsbG8=&#39;, altchars=None)
+b&#39;hello&#39;
+</pre></div>
+</div>
+<p>Find the day of the week of some date (apply function in module):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py calendar.weekday 2014 7 18
+[PYFLYBY] import calendar
+[PYFLYBY] calendar.weekday(2014, 7, 18)
+4
+</pre></div>
+</div>
+<p>Using named arguments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py calendar.weekday --day=16 --month=7 --year=2014
+[PYFLYBY] import calendar
+[PYFLYBY] calendar.weekday(2014, 7, 16)
+2
+</pre></div>
+</div>
+<p>Using short named arguments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py calendar.weekday -m 7 -d 15 -y 2014
+[PYFLYBY] import calendar
+[PYFLYBY] calendar.weekday(2014, 7, 15)
+1
+</pre></div>
+</div>
+<p>Invert a matrix (evaluate expression, with autoimporting):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py &#39;matrix(&quot;1 3 3; 1 4 3; 1 3 4&quot;).I&#39;
+[PYFLYBY] from numpy import matrix
+[PYFLYBY] matrix(&quot;1 3 3; 1 4 3; 1 3 4&quot;).I
+matrix([[ 7., -3., -3.],
+        [-1.,  1.,  0.],
+        [-1.,  0.,  1.]])
+</pre></div>
+</div>
+<p>Plot cosine (evaluate expression, with autoimporting):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py &#39;plot(cos(arange(30)))&#39;
+[PYFLYBY] from numpy import arange
+[PYFLYBY] from numpy import cos
+[PYFLYBY] from matplotlib.pyplot import plot
+[PYFLYBY] plot(cos(arange(30)))
+&lt;plot&gt;
+</pre></div>
+</div>
+<p>Command-line calculator (multiple arguments):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py 3 / 4
+0.75
+</pre></div>
+</div>
+<p>Command-line calculator (single arguments):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py &#39;(5+7j) \** 12&#39;
+(65602966976-150532462080j)
+</pre></div>
+</div>
+<p>Rationalize a decimal (apply bound method):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py 2.5.as_integer_ratio
+[PYFLYBY] 2.5.as_integer_ratio()
+(5, 2)
+</pre></div>
+</div>
+<p>Rationalize a decimal (apply unbound method):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py float.as_integer_ratio 2.5
+[PYFLYBY] float.as_integer_ratio(2.5)
+(5, 2)
+</pre></div>
+</div>
+<p>Rationalize decimals (map/apply):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py --map float.as_integer_ratio 2.5 3.5
+[PYFLYBY] float.as_integer_ratio(2.5)
+(5, 2)
+[PYFLYBY] float.as_integer_ratio(3.5)
+(7, 2)
+</pre></div>
+</div>
+<p>Square numbers (map lambda):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py --map &#39;lambda x: x \**2&#39; 3 4 5
+[PYFLYBY] (lambda x: x \**2)(3)
+9
+[PYFLYBY] (lambda x: x \**2)(4)
+16
+[PYFLYBY] (lambda x: x \**2)(5)
+25
+</pre></div>
+</div>
+<p>Find length of string (using “-” for stdin):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo hello | py len -
+[PYFLYBY] len(&#39;hello\\n&#39;)
+6
+</pre></div>
+</div>
+<p>Run stdin as code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo &#39;print(sys.argv[1:])&#39; | py - hello world
+[PYFLYBY] import sys
+[&#39;hello&#39;, &#39;world&#39;]
+</pre></div>
+</div>
+<p>Run libc functions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py --quiet --output=none &#39;CDLL(&quot;libc.so.6&quot;).printf&#39; %03d 7
+007
+</pre></div>
+</div>
+<p>Download web page:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py --print &#39;requests.get(sys.argv[1]).text&#39; http://example.com
+</pre></div>
+</div>
+<p>Get function help:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py b64decode?
+[PYFLYBY] from base64 import b64decode
+Python signature::
+
+  &gt;&gt; b64decode(s, altchars=None, validate=False)
+
+Command-line signature::
+
+  $ py b64decode s [altchars [validate]]
+  $ py b64decode --s=... [--altchars=...] [--validate=...]
+...
+</pre></div>
+</div>
+<p>Get module help:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py pandas?
+[PYFLYBY] import pandas
+Version:
+  0.13.1
+Filename:
+  /usr/local/lib/python2.7/site-packages/pandas/__init__.pyc
+Docstring:
+  pandas - a powerful data analysis and manipulation library for Python
+  ...
+</pre></div>
+</div>
+<dl class="class">
+<dt id="pyflyby._py.LoggedList">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">LoggedList</code><span class="sig-paren">(</span><em class="sig-param">items</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>List that logs which members have not yet been accessed (nor removed).</p>
+<dl class="attribute">
+<dt id="pyflyby._py.LoggedList._ACCESSED">
+<code class="sig-name descname">_ACCESSED</code><em class="property"> = &lt;object object&gt;</em><a class="headerlink" href="#pyflyby._py.LoggedList._ACCESSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.count">
+<code class="sig-name descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.extend">
+<code class="sig-name descname">extend</code><span class="sig-paren">(</span><em class="sig-param">new_items</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.extend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.index">
+<code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">*start_stop</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.insert">
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param">index</em>, <em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.pop">
+<code class="sig-name descname">pop</code><span class="sig-paren">(</span><em class="sig-param">index</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.remove">
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.reverse">
+<code class="sig-name descname">reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.sort">
+<code class="sig-name descname">sort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.sort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py.LoggedList.unaccessed">
+<em class="property">property </em><code class="sig-name descname">unaccessed</code><a class="headerlink" href="#pyflyby._py.LoggedList.unaccessed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._py.NotAFunctionError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">NotAFunctionError</code><a class="headerlink" href="#pyflyby._py.NotAFunctionError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._py.ParseError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">ParseError</code><a class="headerlink" href="#pyflyby._py.ParseError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py.SysArgvCtx">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">SysArgvCtx</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.SysArgvCtx" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Context manager that:</dt><dd><ul class="simple">
+<li><p>Temporarily sets sys.argv = args.</p></li>
+<li><p>At end of context, complains if any args were never accessed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._py.UnimportableNameError">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">UnimportableNameError</code><a class="headerlink" href="#pyflyby._py.UnimportableNameError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._py.UserExpr">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">UserExpr</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">namespace</em>, <em class="sig-param">arg_mode</em>, <em class="sig-param">source=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.UserExpr" title="Permalink to this definition">¶</a></dt>
+<dd><p>An expression from user input, and its evaluated value.</p>
+<p>The expression can come from a string literal or other raw value, or a
+string that is evaluated as an expression, or heuristically chosen.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ns</span> <span class="o">=</span> <span class="n">_Namespace</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Heuristic auto-evaluation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s1">&#39;5+2&#39;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">7</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s1">&#39;5j+2&#39;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(2+5j)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s1">&#39;base64.b64decode(&quot;SGFsbG93ZWVu&quot;)&#39;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[PYFLYBY] import base64</span>
+<span class="go">b&#39;Halloween&#39;</span>
+</pre></div>
+</div>
+<p>Returning an unparsable argument as a string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s1">&#39;Victory Loop&#39;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">&#39;Victory Loop&#39;</span>
+</pre></div>
+</div>
+<p>Returning an undefined (and not auto-importable) argument as a string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s1">&#39;Willowbrook29817621+5&#39;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">&#39;Willowbrook29817621+5&#39;</span>
+</pre></div>
+</div>
+<p>Explicit literal string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s2">&quot;2+3&quot;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;raw_value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">&#39;2+3&#39;</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="s2">&quot;&#39;2+3&#39;&quot;</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;raw_value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">&quot;&#39;2+3&#39;&quot;</span>
+</pre></div>
+</div>
+<p>Other raw values:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">UserExpr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="s2">&quot;raw_value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">&lt;built-in function exit&gt;</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="pyflyby._py.UserExpr._infer_and_evaluate">
+<code class="sig-name descname">_infer_and_evaluate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.UserExpr._infer_and_evaluate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._py._Namespace">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_Namespace</code><a class="headerlink" href="#pyflyby._py._Namespace" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._py._Namespace.auto_eval">
+<code class="sig-name descname">auto_eval</code><span class="sig-paren">(</span><em class="sig-param">block</em>, <em class="sig-param">mode=None</em>, <em class="sig-param">info=False</em>, <em class="sig-param">auto_import=True</em>, <em class="sig-param">debug=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._Namespace.auto_eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate <code class="docutils literal notranslate"><span class="pre">block</span></code> with auto-importing.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._Namespace.auto_import">
+<code class="sig-name descname">auto_import</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._Namespace.auto_import" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._py._ParseInterruptedWantHelp">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_ParseInterruptedWantHelp</code><a class="headerlink" href="#pyflyby._py._ParseInterruptedWantHelp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="pyflyby._py._ParseInterruptedWantSource">
+<em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_ParseInterruptedWantSource</code><a class="headerlink" href="#pyflyby._py._ParseInterruptedWantSource" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="pyflyby._py._PyMain">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_PyMain</code><span class="sig-paren">(</span><em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyflyby._py._PyMain._enable_debug_tools">
+<code class="sig-name descname">_enable_debug_tools</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._enable_debug_tools" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain._parse_global_opts">
+<code class="sig-name descname">_parse_global_opts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._parse_global_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain._pre_exit">
+<code class="sig-name descname">_pre_exit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._pre_exit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain._pre_exit_interactive_shell">
+<code class="sig-name descname">_pre_exit_interactive_shell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._pre_exit_interactive_shell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain._pre_exit_matplotlib_show">
+<code class="sig-name descname">_pre_exit_matplotlib_show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._pre_exit_matplotlib_show" title="Permalink to this definition">¶</a></dt>
+<dd><p>If matplotlib.pyplot (pylab) is loaded, then call the show() function.
+This will cause the program to block until all figures are closed.
+Without this, a command like ‘py plot(…)’ would exit immediately.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain._run_action">
+<code class="sig-name descname">_run_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._run_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain._seems_like_runnable_module">
+<code class="sig-name descname">_seems_like_runnable_module</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._seems_like_runnable_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.apply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.create_ipython_app">
+<code class="sig-name descname">create_ipython_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.create_ipython_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an IPython application and initialize it, but don’t start it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.eval">
+<code class="sig-name descname">eval</code><span class="sig-paren">(</span><em class="sig-param">cmd</em>, <em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.exec_stdin">
+<code class="sig-name descname">exec_stdin</code><span class="sig-paren">(</span><em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.exec_stdin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.execfile">
+<code class="sig-name descname">execfile</code><span class="sig-paren">(</span><em class="sig-param">filename_arg</em>, <em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.execfile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.heuristic_cmd">
+<code class="sig-name descname">heuristic_cmd</code><span class="sig-paren">(</span><em class="sig-param">cmd</em>, <em class="sig-param">cmd_args</em>, <em class="sig-param">function_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.heuristic_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.heuristic_run_module">
+<code class="sig-name descname">heuristic_run_module</code><span class="sig-paren">(</span><em class="sig-param">module</em>, <em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.heuristic_run_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.print_help">
+<code class="sig-name descname">print_help</code><span class="sig-paren">(</span><em class="sig-param">objname</em>, <em class="sig-param">verbosity=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.print_help" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.print_version">
+<code class="sig-name descname">print_version</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.print_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.run_module">
+<code class="sig-name descname">run_module</code><span class="sig-paren">(</span><em class="sig-param">module</em>, <em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.run_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyflyby._py._PyMain.start_ipython">
+<code class="sig-name descname">start_ipython</code><span class="sig-paren">(</span><em class="sig-param">args=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.start_ipython" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._as_filename_if_seems_like_filename">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_as_filename_if_seems_like_filename</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._as_filename_if_seems_like_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <code class="docutils literal notranslate"><span class="pre">arg</span></code> seems like a filename, then return it as one.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bool</span><span class="p">(</span><span class="n">_as_filename_if_seems_like_filename</span><span class="p">(</span><span class="s2">&quot;foo.py&quot;</span><span class="p">))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bool</span><span class="p">(</span><span class="n">_as_filename_if_seems_like_filename</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%f</span><span class="s2">oo.py&quot;</span><span class="p">))</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bool</span><span class="p">(</span><span class="n">_as_filename_if_seems_like_filename</span><span class="p">(</span><span class="s2">&quot;foo(bar)&quot;</span><span class="p">))</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bool</span><span class="p">(</span><span class="n">_as_filename_if_seems_like_filename</span><span class="p">(</span><span class="s2">&quot;/foo/bar/baz.quux-660470&quot;</span><span class="p">))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bool</span><span class="p">(</span><span class="n">_as_filename_if_seems_like_filename</span><span class="p">(</span><span class="s2">&quot;../foo/bar-24084866&quot;</span><span class="p">))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">Filename</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._build_function_usage_string">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_build_function_usage_string</code><span class="sig-paren">(</span><em class="sig-param">function_name</em>, <em class="sig-param">argspec</em>, <em class="sig-param">prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._build_function_usage_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._format_call">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_format_call</code><span class="sig-paren">(</span><em class="sig-param">function_name</em>, <em class="sig-param">argspec</em>, <em class="sig-param">args</em>, <em class="sig-param">kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._format_call" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._format_call_spec">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_format_call_spec</code><span class="sig-paren">(</span><em class="sig-param">function_name</em>, <em class="sig-param">argspec</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._format_call_spec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._get_argspec">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_get_argspec</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">_recurse=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._get_argspec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._get_help">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_get_help</code><span class="sig-paren">(</span><em class="sig-param">expr</em>, <em class="sig-param">verbosity=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._get_help" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct a help string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>expr</strong> (<cite>UserExpr</cite>) – Object to generate help for.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._handle_user_exception">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_handle_user_exception</code><span class="sig-paren">(</span><em class="sig-param">exc_info=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._handle_user_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle an exception in user code.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._has_python_shebang">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_has_python_shebang</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._has_python_shebang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the first line contains #!…python…</p>
+<p>Used for confirming that an executable script found via which() is
+actually supposed to be a python script.</p>
+<p>Note that this test is only needed for scripts found via which(), since
+otherwise the shebang is not necessary.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._interpret_arg_mode">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_interpret_arg_mode</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">default='auto'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._interpret_arg_mode" title="Permalink to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_interpret_arg_mode</span><span class="p">(</span><span class="s2">&quot;Str&quot;</span><span class="p">)</span>
+<span class="go">&#39;string&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._interpret_output_mode">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_interpret_output_mode</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">default='interactive'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._interpret_output_mode" title="Permalink to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_interpret_output_mode</span><span class="p">(</span><span class="s1">&#39;Repr_If_Not_None&#39;</span><span class="p">)</span>
+<span class="go">&#39;repr-if-not-none&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._parse_auto_apply_args">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_parse_auto_apply_args</code><span class="sig-paren">(</span><em class="sig-param">argspec</em>, <em class="sig-param">commandline_args</em>, <em class="sig-param">namespace</em>, <em class="sig-param">arg_mode='auto'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._parse_auto_apply_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse command-line arguments heuristically.  Arguments that can be
+evaluated are evaluated; otherwise they are treated as strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">args</span></code>, <code class="docutils literal notranslate"><span class="pre">kwargs</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py._requires_parens_as_function">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_requires_parens_as_function</code><span class="sig-paren">(</span><em class="sig-param">function_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._requires_parens_as_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether the given string of a callable would require parentheses
+around it to call it.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_requires_parens_as_function</span><span class="p">(</span><span class="s2">&quot;foo.bar[4]&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_requires_parens_as_function</span><span class="p">(</span><span class="s2">&quot;foo+bar&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_requires_parens_as_function</span><span class="p">(</span><span class="s2">&quot;(foo+bar)()&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_requires_parens_as_function</span><span class="p">(</span><span class="s2">&quot;(foo+bar)&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_requires_parens_as_function</span><span class="p">(</span><span class="s2">&quot;(foo)+(bar)&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py.auto_apply">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">auto_apply</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">commandline_args</em>, <em class="sig-param">namespace</em>, <em class="sig-param">arg_mode=None</em>, <em class="sig-param">debug=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.auto_apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call <code class="docutils literal notranslate"><span class="pre">function</span></code> on command-line arguments.  Arguments can be positional
+or keyword arguments like “–foo=bar”.  Arguments are by default
+heuristically evaluated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>function</strong> (<code class="docutils literal notranslate"><span class="pre">UserExpr</span></code>) – Function to apply.</p></li>
+<li><p><strong>commandline_args</strong> (<code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Arguments to <code class="docutils literal notranslate"><span class="pre">function</span></code> as strings.</p></li>
+<li><p><strong>arg_mode</strong> – How to interpret <code class="docutils literal notranslate"><span class="pre">commandline_args</span></code>.  If <code class="docutils literal notranslate"><span class="pre">&quot;string&quot;</span></code>, then treat them
+as literal strings.  If <code class="docutils literal notranslate"><span class="pre">&quot;eval&quot;</span></code>, then evaluate all arguments as
+expressions.  If <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code> (the default), then heuristically decide
+whether to treat as expressions or strings.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py.print_result">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">print_result</code><span class="sig-paren">(</span><em class="sig-param">result</em>, <em class="sig-param">output_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.print_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pyflyby._py.py_main">
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">py_main</code><span class="sig-paren">(</span><em class="sig-param">args=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.py_main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="util.html" class="btn btn-neutral float-right" title="_util module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="parse.html" class="btn btn-neutral float-left" title="_parse module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Karl Chen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
