@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_comms module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_comms module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_dbg module" href="dbg.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -179,43 +182,43 @@
             
   <div class="section" id="module-pyflyby._comms">
 <span id="comms-module"></span><h1>_comms module<a class="headerlink" href="#module-pyflyby._comms" title="Permalink to this headline">¶</a></h1>
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms._register_target">
-<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">_register_target</code><span class="sig-paren">(</span><em class="sig-param">target_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms._register_target" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">_register_target</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms._register_target" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms.comm_close_handler">
-<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">comm_close_handler</code><span class="sig-paren">(</span><em class="sig-param">comm</em>, <em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.comm_close_handler" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">comm_close_handler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">comm</span></em>, <em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.comm_close_handler" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms.comm_open_handler">
-<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">comm_open_handler</code><span class="sig-paren">(</span><em class="sig-param">comm</em>, <em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.comm_open_handler" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">comm_open_handler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">comm</span></em>, <em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.comm_open_handler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Handles comm_open message for pyflyby custom comm messages.
 <a class="reference external" href="https://jupyter-client.readthedocs.io/en/stable/messaging.html#opening-a-comm">https://jupyter-client.readthedocs.io/en/stable/messaging.html#opening-a-comm</a>.</p>
 <p>Handler for all PYFLYBY custom comm messages that are opened by the frontend
 (at this point, just the jupyterlab frontend does this).</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms.in_jupyter">
 <code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">in_jupyter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.in_jupyter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms.initialize_comms">
 <code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">initialize_comms</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.initialize_comms" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms.remove_comms">
 <code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">remove_comms</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.remove_comms" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._comms.send_comm_message">
-<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">send_comm_message</code><span class="sig-paren">(</span><em class="sig-param">target_name</em>, <em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.send_comm_message" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._comms.</code><code class="sig-name descname">send_comm_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target_name</span></em>, <em class="sig-param"><span class="n">msg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._comms.send_comm_message" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>
@@ -240,11 +243,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -255,7 +266,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

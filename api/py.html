@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_py module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_py module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_util module" href="util.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -435,80 +438,80 @@ Docstring:
   ...
 </pre></div>
 </div>
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._py.LoggedList">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">LoggedList</code><span class="sig-paren">(</span><em class="sig-param">items</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">LoggedList</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList" title="Permalink to this definition">¶</a></dt>
 <dd><p>List that logs which members have not yet been accessed (nor removed).</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._py.LoggedList._ACCESSED">
 <code class="sig-name descname">_ACCESSED</code><em class="property"> = &lt;object object&gt;</em><a class="headerlink" href="#pyflyby._py.LoggedList._ACCESSED" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.append">
-<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.append" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.append" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.count">
 <code class="sig-name descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.count" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.extend">
-<code class="sig-name descname">extend</code><span class="sig-paren">(</span><em class="sig-param">new_items</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.extend" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">extend</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.extend" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.index">
-<code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">*start_stop</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.index" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">start_stop</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.index" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.insert">
-<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param">index</em>, <em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.insert" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.insert" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.pop">
-<code class="sig-name descname">pop</code><span class="sig-paren">(</span><em class="sig-param">index</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.pop" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">pop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.pop" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.remove">
-<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.remove" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.remove" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.reverse">
 <code class="sig-name descname">reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.reverse" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.sort">
 <code class="sig-name descname">sort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.LoggedList.sort" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.LoggedList.unaccessed">
 <em class="property">property </em><code class="sig-name descname">unaccessed</code><a class="headerlink" href="#pyflyby._py.LoggedList.unaccessed" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._py.NotAFunctionError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">NotAFunctionError</code><a class="headerlink" href="#pyflyby._py.NotAFunctionError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._py.ParseError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">ParseError</code><a class="headerlink" href="#pyflyby._py.ParseError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py.SysArgvCtx">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">SysArgvCtx</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.SysArgvCtx" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">SysArgvCtx</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.SysArgvCtx" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="simple">
 <dt>Context manager that:</dt><dd><ul class="simple">
 <li><p>Temporarily sets sys.argv = args.</p></li>
@@ -518,14 +521,14 @@ Docstring:
 </dl>
 </dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._py.UnimportableNameError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">UnimportableNameError</code><a class="headerlink" href="#pyflyby._py.UnimportableNameError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._py.UserExpr">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">UserExpr</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">namespace</em>, <em class="sig-param">arg_mode</em>, <em class="sig-param">source=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.UserExpr" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">UserExpr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">namespace</span></em>, <em class="sig-param"><span class="n">arg_mode</span></em>, <em class="sig-param"><span class="n">source</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.UserExpr" title="Permalink to this definition">¶</a></dt>
 <dd><p>An expression from user input, and its evaluated value.</p>
 <p>The expression can come from a string literal or other raw value, or a
 string that is evaluated as an expression, or heuristically chosen.</p>
@@ -567,63 +570,63 @@ string that is evaluated as an expression, or heuristically chosen.</p>
 <span class="go">&lt;built-in function exit&gt;</span>
 </pre></div>
 </div>
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py.UserExpr._infer_and_evaluate">
 <code class="sig-name descname">_infer_and_evaluate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.UserExpr._infer_and_evaluate" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._py._Namespace">
 <em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_Namespace</code><a class="headerlink" href="#pyflyby._py._Namespace" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><dl class="py method">
 <dt id="pyflyby._py._Namespace.auto_eval">
-<code class="sig-name descname">auto_eval</code><span class="sig-paren">(</span><em class="sig-param">block</em>, <em class="sig-param">mode=None</em>, <em class="sig-param">info=False</em>, <em class="sig-param">auto_import=True</em>, <em class="sig-param">debug=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._Namespace.auto_eval" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">auto_eval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">block</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">info</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">auto_import</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">debug</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._Namespace.auto_eval" title="Permalink to this definition">¶</a></dt>
 <dd><p>Evaluate <code class="docutils literal notranslate"><span class="pre">block</span></code> with auto-importing.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._Namespace.auto_import">
-<code class="sig-name descname">auto_import</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._Namespace.auto_import" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">auto_import</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._Namespace.auto_import" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._py._ParseInterruptedWantHelp">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_ParseInterruptedWantHelp</code><a class="headerlink" href="#pyflyby._py._ParseInterruptedWantHelp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._py._ParseInterruptedWantSource">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_ParseInterruptedWantSource</code><a class="headerlink" href="#pyflyby._py._ParseInterruptedWantSource" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._py._PyMain">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_PyMain</code><span class="sig-paren">(</span><em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_PyMain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
 <dt id="pyflyby._py._PyMain._enable_debug_tools">
 <code class="sig-name descname">_enable_debug_tools</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._enable_debug_tools" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain._parse_global_opts">
 <code class="sig-name descname">_parse_global_opts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._parse_global_opts" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain._pre_exit">
 <code class="sig-name descname">_pre_exit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._pre_exit" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain._pre_exit_interactive_shell">
 <code class="sig-name descname">_pre_exit_interactive_shell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._pre_exit_interactive_shell" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain._pre_exit_matplotlib_show">
 <code class="sig-name descname">_pre_exit_matplotlib_show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._pre_exit_matplotlib_show" title="Permalink to this definition">¶</a></dt>
 <dd><p>If matplotlib.pyplot (pylab) is loaded, then call the show() function.
@@ -631,82 +634,82 @@ This will cause the program to block until all figures are closed.
 Without this, a command like ‘py plot(…)’ would exit immediately.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain._run_action">
 <code class="sig-name descname">_run_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._run_action" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain._seems_like_runnable_module">
-<code class="sig-name descname">_seems_like_runnable_module</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._seems_like_runnable_module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">_seems_like_runnable_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain._seems_like_runnable_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.apply">
-<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.apply" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">cmd_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.apply" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.create_ipython_app">
 <code class="sig-name descname">create_ipython_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.create_ipython_app" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an IPython application and initialize it, but don’t start it.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.eval">
-<code class="sig-name descname">eval</code><span class="sig-paren">(</span><em class="sig-param">cmd</em>, <em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.eval" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">eval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd</span></em>, <em class="sig-param"><span class="n">cmd_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.eval" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.exec_stdin">
-<code class="sig-name descname">exec_stdin</code><span class="sig-paren">(</span><em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.exec_stdin" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">exec_stdin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.exec_stdin" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.execfile">
-<code class="sig-name descname">execfile</code><span class="sig-paren">(</span><em class="sig-param">filename_arg</em>, <em class="sig-param">cmd_args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.execfile" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">execfile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename_arg</span></em>, <em class="sig-param"><span class="n">cmd_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.execfile" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.heuristic_cmd">
-<code class="sig-name descname">heuristic_cmd</code><span class="sig-paren">(</span><em class="sig-param">cmd</em>, <em class="sig-param">cmd_args</em>, <em class="sig-param">function_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.heuristic_cmd" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">heuristic_cmd</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd</span></em>, <em class="sig-param"><span class="n">cmd_args</span></em>, <em class="sig-param"><span class="n">function_name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.heuristic_cmd" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.heuristic_run_module">
-<code class="sig-name descname">heuristic_run_module</code><span class="sig-paren">(</span><em class="sig-param">module</em>, <em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.heuristic_run_module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">heuristic_run_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.heuristic_run_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.print_help">
-<code class="sig-name descname">print_help</code><span class="sig-paren">(</span><em class="sig-param">objname</em>, <em class="sig-param">verbosity=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.print_help" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">print_help</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">objname</span></em>, <em class="sig-param"><span class="n">verbosity</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.print_help" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.print_version">
-<code class="sig-name descname">print_version</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.print_version" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">print_version</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.print_version" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.run">
 <code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.run" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.run_module">
-<code class="sig-name descname">run_module</code><span class="sig-paren">(</span><em class="sig-param">module</em>, <em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.run_module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">run_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.run_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._py._PyMain.start_ipython">
-<code class="sig-name descname">start_ipython</code><span class="sig-paren">(</span><em class="sig-param">args=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.start_ipython" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">start_ipython</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._PyMain.start_ipython" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._as_filename_if_seems_like_filename">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_as_filename_if_seems_like_filename</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._as_filename_if_seems_like_filename" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_as_filename_if_seems_like_filename</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._as_filename_if_seems_like_filename" title="Permalink to this definition">¶</a></dt>
 <dd><p>If <code class="docutils literal notranslate"><span class="pre">arg</span></code> seems like a filename, then return it as one.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bool</span><span class="p">(</span><span class="n">_as_filename_if_seems_like_filename</span><span class="p">(</span><span class="s2">&quot;foo.py&quot;</span><span class="p">))</span>
 <span class="go">True</span>
@@ -735,29 +738,29 @@ Without this, a command like ‘py plot(…)’ would exit immediately.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._build_function_usage_string">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_build_function_usage_string</code><span class="sig-paren">(</span><em class="sig-param">function_name</em>, <em class="sig-param">argspec</em>, <em class="sig-param">prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._build_function_usage_string" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_build_function_usage_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function_name</span></em>, <em class="sig-param"><span class="n">argspec</span></em>, <em class="sig-param"><span class="n">prefix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._build_function_usage_string" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._format_call">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_format_call</code><span class="sig-paren">(</span><em class="sig-param">function_name</em>, <em class="sig-param">argspec</em>, <em class="sig-param">args</em>, <em class="sig-param">kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._format_call" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_format_call</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function_name</span></em>, <em class="sig-param"><span class="n">argspec</span></em>, <em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._format_call" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._format_call_spec">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_format_call_spec</code><span class="sig-paren">(</span><em class="sig-param">function_name</em>, <em class="sig-param">argspec</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._format_call_spec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_format_call_spec</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function_name</span></em>, <em class="sig-param"><span class="n">argspec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._format_call_spec" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._get_argspec">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_get_argspec</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">_recurse=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._get_argspec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_get_argspec</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">_recurse</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._get_argspec" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._get_help">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_get_help</code><span class="sig-paren">(</span><em class="sig-param">expr</em>, <em class="sig-param">verbosity=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._get_help" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_get_help</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr</span></em>, <em class="sig-param"><span class="n">verbosity</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._get_help" title="Permalink to this definition">¶</a></dt>
 <dd><p>Construct a help string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -769,15 +772,15 @@ Without this, a command like ‘py plot(…)’ would exit immediately.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._handle_user_exception">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_handle_user_exception</code><span class="sig-paren">(</span><em class="sig-param">exc_info=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._handle_user_exception" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_handle_user_exception</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">exc_info</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._handle_user_exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Handle an exception in user code.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._has_python_shebang">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_has_python_shebang</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._has_python_shebang" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_has_python_shebang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._has_python_shebang" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether the first line contains #!…python…</p>
 <p>Used for confirming that an executable script found via which() is
 actually supposed to be a python script.</p>
@@ -785,27 +788,27 @@ actually supposed to be a python script.</p>
 otherwise the shebang is not necessary.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._interpret_arg_mode">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_interpret_arg_mode</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">default='auto'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._interpret_arg_mode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_interpret_arg_mode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">'auto'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._interpret_arg_mode" title="Permalink to this definition">¶</a></dt>
 <dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_interpret_arg_mode</span><span class="p">(</span><span class="s2">&quot;Str&quot;</span><span class="p">)</span>
 <span class="go">&#39;string&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._interpret_output_mode">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_interpret_output_mode</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">default='interactive'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._interpret_output_mode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_interpret_output_mode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">'interactive'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._interpret_output_mode" title="Permalink to this definition">¶</a></dt>
 <dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_interpret_output_mode</span><span class="p">(</span><span class="s1">&#39;Repr_If_Not_None&#39;</span><span class="p">)</span>
 <span class="go">&#39;repr-if-not-none&#39;</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._parse_auto_apply_args">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_parse_auto_apply_args</code><span class="sig-paren">(</span><em class="sig-param">argspec</em>, <em class="sig-param">commandline_args</em>, <em class="sig-param">namespace</em>, <em class="sig-param">arg_mode='auto'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._parse_auto_apply_args" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_parse_auto_apply_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">argspec</span></em>, <em class="sig-param"><span class="n">commandline_args</span></em>, <em class="sig-param"><span class="n">namespace</span></em>, <em class="sig-param"><span class="n">arg_mode</span><span class="o">=</span><span class="default_value">'auto'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._parse_auto_apply_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse command-line arguments heuristically.  Arguments that can be
 evaluated are evaluated; otherwise they are treated as strings.</p>
 <dl class="field-list simple">
@@ -815,9 +818,9 @@ evaluated are evaluated; otherwise they are treated as strings.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py._requires_parens_as_function">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_requires_parens_as_function</code><span class="sig-paren">(</span><em class="sig-param">function_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._requires_parens_as_function" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">_requires_parens_as_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py._requires_parens_as_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns whether the given string of a callable would require parentheses
 around it to call it.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_requires_parens_as_function</span><span class="p">(</span><span class="s2">&quot;foo.bar[4]&quot;</span><span class="p">)</span>
@@ -847,9 +850,9 @@ around it to call it.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py.auto_apply">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">auto_apply</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">commandline_args</em>, <em class="sig-param">namespace</em>, <em class="sig-param">arg_mode=None</em>, <em class="sig-param">debug=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.auto_apply" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">auto_apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">commandline_args</span></em>, <em class="sig-param"><span class="n">namespace</span></em>, <em class="sig-param"><span class="n">arg_mode</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">debug</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.auto_apply" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call <code class="docutils literal notranslate"><span class="pre">function</span></code> on command-line arguments.  Arguments can be positional
 or keyword arguments like “–foo=bar”.  Arguments are by default
 heuristically evaluated.</p>
@@ -867,14 +870,14 @@ whether to treat as expressions or strings.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py.print_result">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">print_result</code><span class="sig-paren">(</span><em class="sig-param">result</em>, <em class="sig-param">output_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.print_result" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">print_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">output_mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.print_result" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._py.py_main">
-<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">py_main</code><span class="sig-paren">(</span><em class="sig-param">args=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.py_main" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._py.</code><code class="sig-name descname">py_main</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._py.py_main" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>
@@ -900,11 +903,19 @@ whether to treat as expressions or strings.</p></li>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -915,7 +926,6 @@ whether to treat as expressions or strings.</p></li>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

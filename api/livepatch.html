@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_livepatch module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_livepatch module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_log module" href="log.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -303,19 +306,19 @@ return result</p>
 </dl>
 </div></blockquote>
 <p>XXX test</p>
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._livepatch.UnknownModuleError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">UnknownModuleError</code><a class="headerlink" href="#pyflyby._livepatch.UnknownModuleError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._format_age">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_format_age</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._format_age" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_format_age</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._format_age" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._get_definition_module">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_get_definition_module</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._get_definition_module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_get_definition_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._get_definition_module" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the name of the module that an object is defined in, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if
 unknown.</p>
 <p>For classes and functions, this returns the <code class="docutils literal notranslate"><span class="pre">__module__</span></code> attribute.</p>
@@ -330,19 +333,19 @@ necessarily the module where the instance was constructed.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._get_module_py_file">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_get_module_py_file</code><span class="sig-paren">(</span><em class="sig-param">module</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._get_module_py_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_get_module_py_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._get_module_py_file" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._interpret_module">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_interpret_module</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._interpret_module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_interpret_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._interpret_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__class">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__class</code><span class="sig-paren">(</span><em class="sig-param">oldclass</em>, <em class="sig-param">newclass</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__class" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__class</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">oldclass</span></em>, <em class="sig-param"><span class="n">newclass</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__class" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch a class.</p>
 <p>This is similar to _livepatch__dict(oldclass.__dict__, newclass.__dict__).
 However, we can’t just operate on the dict, because class dictionaries are
@@ -350,48 +353,48 @@ special objects that don’t allow setitem, even though we can setattr on
 the class.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__dict">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__dict</code><span class="sig-paren">(</span><em class="sig-param">old_dict</em>, <em class="sig-param">new_dict</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__dict" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">old_dict</span></em>, <em class="sig-param"><span class="n">new_dict</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch a dict.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__function">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__function</code><span class="sig-paren">(</span><em class="sig-param">old_func</em>, <em class="sig-param">new_func</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__function" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">old_func</span></em>, <em class="sig-param"><span class="n">new_func</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch a function.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__method">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__method</code><span class="sig-paren">(</span><em class="sig-param">old_method</em>, <em class="sig-param">new_method</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__method" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__method</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">old_method</span></em>, <em class="sig-param"><span class="n">new_method</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__method" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch a method.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__module">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__module</code><span class="sig-paren">(</span><em class="sig-param">old_mod</em>, <em class="sig-param">new_mod</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">old_mod</span></em>, <em class="sig-param"><span class="n">new_mod</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__module" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch a module.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__object">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__object</code><span class="sig-paren">(</span><em class="sig-param">oldobj</em>, <em class="sig-param">newobj</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__object" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">oldobj</span></em>, <em class="sig-param"><span class="n">newobj</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__object" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch a general object.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._livepatch__setattr">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__setattr</code><span class="sig-paren">(</span><em class="sig-param">oldobj</em>, <em class="sig-param">newobj</em>, <em class="sig-param">name</em>, <em class="sig-param">modname</em>, <em class="sig-param">cache</em>, <em class="sig-param">visit_stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__setattr" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_livepatch__setattr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">oldobj</span></em>, <em class="sig-param"><span class="n">newobj</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">modname</span></em>, <em class="sig-param"><span class="n">cache</span></em>, <em class="sig-param"><span class="n">visit_stack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._livepatch__setattr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Livepatch something via setattr, i.e.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">oldobj</span><span class="o">.</span><span class="p">{</span><span class="n">name</span><span class="p">}</span> <span class="o">=</span> <span class="n">livepatch</span><span class="p">(</span><span class="n">oldobj</span><span class="o">.</span><span class="p">{</span><span class="n">name</span><span class="p">},</span> <span class="n">newobj</span><span class="o">.</span><span class="p">{</span><span class="n">name</span><span class="p">},</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._livepatch._xreload_module">
-<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_xreload_module</code><span class="sig-paren">(</span><em class="sig-param">module</em>, <em class="sig-param">filename</em>, <em class="sig-param">force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._xreload_module" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._livepatch.</code><code class="sig-name descname">_xreload_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">force</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._livepatch._xreload_module" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reload a module in place, using livepatch.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -427,11 +430,19 @@ previous load.  If <code class="docutils literal notranslate"><span class="pre">
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -442,7 +453,6 @@ previous load.  If <code class="docutils literal notranslate"><span class="pre">
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_dbg module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_dbg module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_file module" href="file.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -179,24 +182,24 @@
             
   <div class="section" id="module-pyflyby._dbg">
 <span id="dbg-module"></span><h1>_dbg module<a class="headerlink" href="#module-pyflyby._dbg" title="Permalink to this headline">¶</a></h1>
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._dbg.DebuggerAttachTimeoutError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">DebuggerAttachTimeoutError</code><a class="headerlink" href="#pyflyby._dbg.DebuggerAttachTimeoutError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._dbg.Pty">
 <em class="property">class </em><code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">Pty</code><a class="headerlink" href="#pyflyby._dbg.Pty" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><dl class="py method">
 <dt id="pyflyby._dbg.Pty.communicate">
 <code class="sig-name descname">communicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.Pty.communicate" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._DebuggerCtx">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_DebuggerCtx</code><span class="sig-paren">(</span><em class="sig-param">tty='/dev/tty'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._DebuggerCtx" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_DebuggerCtx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tty</span><span class="o">=</span><span class="default_value">'/dev/tty'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._DebuggerCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>A context manager that sets up the environment (stdio, sys hooks) for a
 debugger, initializes IPython if necessary, and creates a debugger instance.</p>
 <dl class="field-list simple">
@@ -206,32 +209,32 @@ debugger, initializes IPython if necessary, and creates a debugger instance.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._DisplayHookCtx">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_DisplayHookCtx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._DisplayHookCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that resets <code class="docutils literal notranslate"><span class="pre">sys.displayhook</span></code> to the default value upon
 entry, and restores the pre-context value upon exit.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._ExceptHookCtx">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_ExceptHookCtx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._ExceptHookCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that restores <code class="docutils literal notranslate"><span class="pre">sys.excepthook</span></code> upon exit.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._FdCtx">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_FdCtx</code><span class="sig-paren">(</span><em class="sig-param">target_fd</em>, <em class="sig-param">src_fd</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._FdCtx" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_FdCtx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target_fd</span></em>, <em class="sig-param"><span class="n">src_fd</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._FdCtx" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._dbg._NoTtyError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_NoTtyError</code><a class="headerlink" href="#pyflyby._dbg._NoTtyError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._StdioCtx">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_StdioCtx</code><span class="sig-paren">(</span><em class="sig-param">tty='/dev/tty'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._StdioCtx" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_StdioCtx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tty</span><span class="o">=</span><span class="default_value">'/dev/tty'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._StdioCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Within the context, force fd {0, 1, 2}, sys.__{stdin,stdout,stderr}__,
 sys.{stdin,stdout,stderr} to fd.  This allows us to use the debugger even
 if stdio is otherwise redirected.</p>
@@ -242,27 +245,27 @@ if stdio is otherwise redirected.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._abbrev_filename">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_abbrev_filename</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._abbrev_filename" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_abbrev_filename</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._abbrev_filename" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._debug_code">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_debug_code</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">globals=None</em>, <em class="sig-param">locals=None</em>, <em class="sig-param">auto_import=True</em>, <em class="sig-param">tty='/dev/tty'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._debug_code" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_debug_code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">globals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">locals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">auto_import</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">tty</span><span class="o">=</span><span class="default_value">'/dev/tty'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._debug_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run code under the debugger.</p>
 <dl class="field-list simple">
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._debug_exception">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_debug_exception</code><span class="sig-paren">(</span><em class="sig-param">*exc_info</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._debug_exception" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_debug_exception</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">exc_info</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._debug_exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Debug an exception – print a stack trace and enter the debugger.</p>
 <p>Suitable to be assigned to sys.excepthook.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._dev_null_w">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_dev_null_w</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._dev_null_w" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a file object opened for writing to /dev/null.
@@ -274,25 +277,25 @@ Memoized.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._dev_tty_fd">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_dev_tty_fd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._dev_tty_fd" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a file descriptor opened to /dev/tty.
 Memoized.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._escape_for_gdb">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_escape_for_gdb</code><span class="sig-paren">(</span><em class="sig-param">string</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._escape_for_gdb" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_escape_for_gdb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._escape_for_gdb" title="Permalink to this definition">¶</a></dt>
 <dd><p>Escape a string to make it safe for passing to gdb.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._find_py_commandline">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_find_py_commandline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._find_py_commandline" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._get_caller_frame">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_get_caller_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._get_caller_frame" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the closest frame from outside this module.</p>
@@ -303,34 +306,34 @@ Memoized.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._remote_print_stack_to_file">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_remote_print_stack_to_file</code><span class="sig-paren">(</span><em class="sig-param">pid</em>, <em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._remote_print_stack_to_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_remote_print_stack_to_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._remote_print_stack_to_file" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._send_email_with_attach_instructions">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_send_email_with_attach_instructions</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">mailto</em>, <em class="sig-param">originalpid</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._send_email_with_attach_instructions" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_send_email_with_attach_instructions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">mailto</span></em>, <em class="sig-param"><span class="n">originalpid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._send_email_with_attach_instructions" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._signal_handler_debugger">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_signal_handler_debugger</code><span class="sig-paren">(</span><em class="sig-param">signal_number</em>, <em class="sig-param">interrupted_frame</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._signal_handler_debugger" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_signal_handler_debugger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">signal_number</span></em>, <em class="sig-param"><span class="n">interrupted_frame</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._signal_handler_debugger" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._sigterm_handler">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_sigterm_handler</code><span class="sig-paren">(</span><em class="sig-param">signum</em>, <em class="sig-param">frame</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._sigterm_handler" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_sigterm_handler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">signum</span></em>, <em class="sig-param"><span class="n">frame</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._sigterm_handler" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg._sleep_until_debugger_attaches">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_sleep_until_debugger_attaches</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">timeout=86400</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._sleep_until_debugger_attaches" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">_sleep_until_debugger_attaches</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">timeout</span><span class="o">=</span><span class="default_value">86400</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg._sleep_until_debugger_attaches" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.enable_sigterm_handler">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">enable_sigterm_handler</code><span class="sig-paren">(</span><em class="sig-param">on_existing_handler='raise'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.enable_sigterm_handler" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">enable_sigterm_handler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">on_existing_handler</span><span class="o">=</span><span class="default_value">'raise'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.enable_sigterm_handler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Install a handler for SIGTERM that causes Python to print a stack trace
 before exiting.</p>
 <dl class="field-list simple">
@@ -349,9 +352,9 @@ before exiting.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.get_executable">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">get_executable</code><span class="sig-paren">(</span><em class="sig-param">pid</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.get_executable" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">get_executable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.get_executable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the full path for the target process.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -360,9 +363,9 @@ before exiting.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.inject">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">inject</code><span class="sig-paren">(</span><em class="sig-param">pid</em>, <em class="sig-param">statements</em>, <em class="sig-param">wait=True</em>, <em class="sig-param">show_gdb_output=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.inject" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">inject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em>, <em class="sig-param"><span class="n">statements</span></em>, <em class="sig-param"><span class="n">wait</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_gdb_output</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.inject" title="Permalink to this definition">¶</a></dt>
 <dd><p>Execute <code class="docutils literal notranslate"><span class="pre">statements</span></code> in a running Python process.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -378,9 +381,9 @@ before exiting.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.kill_process">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">kill_process</code><span class="sig-paren">(</span><em class="sig-param">pid</em>, <em class="sig-param">kill_signals</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.kill_process" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">kill_process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em>, <em class="sig-param"><span class="n">kill_signals</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.kill_process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Kill process <code class="docutils literal notranslate"><span class="pre">pid</span></code> using various signals.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -390,9 +393,9 @@ waiting up to <code class="docutils literal notranslate"><span class="pre">delay
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.process_exists">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">process_exists</code><span class="sig-paren">(</span><em class="sig-param">pid</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.process_exists" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">process_exists</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.process_exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether <code class="docutils literal notranslate"><span class="pre">pid</span></code> exists.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -401,13 +404,13 @@ waiting up to <code class="docutils literal notranslate"><span class="pre">delay
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.syscall_marker">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">syscall_marker</code><span class="sig-paren">(</span><em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.syscall_marker" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">syscall_marker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.syscall_marker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Execute a dummy syscall that is visible in truss/strace.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.tty_is_usable">
 <code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">tty_is_usable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.tty_is_usable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether /dev/tty is usable.</p>
@@ -427,9 +430,9 @@ in a non-interactive terminal, we need to wait_for_debugger_to_attach.</p>
 return False if a program was piped, even though /dev/tty is usable.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._dbg.wait_for_debugger_to_attach">
-<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">wait_for_debugger_to_attach</code><span class="sig-paren">(</span><em class="sig-param">arg</em>, <em class="sig-param">mailto=None</em>, <em class="sig-param">background=False</em>, <em class="sig-param">timeout=86400</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.wait_for_debugger_to_attach" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._dbg.</code><code class="sig-name descname">wait_for_debugger_to_attach</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em>, <em class="sig-param"><span class="n">mailto</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">timeout</span><span class="o">=</span><span class="default_value">86400</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._dbg.wait_for_debugger_to_attach" title="Permalink to this definition">¶</a></dt>
 <dd><p>Send email to user and wait for debugger to attach.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -468,11 +471,19 @@ exits when the debugging session completes.</p></li>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -483,7 +494,6 @@ exits when the debugging session completes.</p></li>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to the Pyflyby documentation! &mdash; pyflyby 1.5.0 documentation</title>
+  <title>Pyflyby &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="pyflyby API" href="api/api.html" /> 
@@ -49,7 +50,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> pyflyby
+            <a href="#" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -72,6 +73,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -115,6 +117,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -153,9 +156,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to the Pyflyby documentation!</li>
+      <li>Pyflyby</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -174,8 +177,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-the-pyflyby-documentation">
-<h1>Welcome to the Pyflyby documentation!<a class="headerlink" href="#welcome-to-the-pyflyby-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pyflyby">
+<h1>Pyflyby<a class="headerlink" href="#pyflyby" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://pypi.org/project/pyflyby/"><img alt="https://badge.fury.io/py/pyflyby.svg" src="https://badge.fury.io/py/pyflyby.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.com/deshaw/pyflyby"><img alt="https://travis-ci.com/deshaw/pyflyby.png?branch=master" src="https://travis-ci.com/deshaw/pyflyby.png?branch=master" /></a>
 <p>Pyflyby is a set of Python programming productivity tools.</p>
 <dl class="simple">
 <dt>For command-line interaction:</dt><dd><ul class="simple">
@@ -198,9 +203,8 @@ in the form of import statements.</p></li>
 </ul>
 </dd>
 </dl>
-</div>
 <div class="section" id="quick-start-autoimporter-ipython">
-<h1>Quick start: Autoimporter + IPython<a class="headerlink" href="#quick-start-autoimporter-ipython" title="Permalink to this headline">¶</a></h1>
+<h2>Quick start: Autoimporter + IPython<a class="headerlink" href="#quick-start-autoimporter-ipython" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ py
 In <span class="o">[</span><span class="m">1</span><span class="o">]</span>: re.search<span class="o">(</span><span class="s2">&quot;[a-z]+&quot;</span>, <span class="s2">&quot;....hello...&quot;</span><span class="o">)</span>.group<span class="o">(</span><span class="m">0</span><span class="o">)</span>
 <span class="o">[</span>PYFLYBY<span class="o">]</span> import re
@@ -233,7 +237,7 @@ Out<span class="o">[</span><span class="m">1</span><span class="o">]</span>: <sp
 </div>
 </div>
 <div class="section" id="quick-start-py-command-line-multi-tool">
-<h1>Quick start: <code class="docutils literal notranslate"><span class="pre">py</span></code> command-line multi-tool<a class="headerlink" href="#quick-start-py-command-line-multi-tool" title="Permalink to this headline">¶</a></h1>
+<h2>Quick start: <code class="docutils literal notranslate"><span class="pre">py</span></code> command-line multi-tool<a class="headerlink" href="#quick-start-py-command-line-multi-tool" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ py b64decode <span class="nv">aGVsbG8</span><span class="o">=</span>
 <span class="o">[</span>PYFLYBY<span class="o">]</span> from base64 import b64decode
 <span class="o">[</span>PYFLYBY<span class="o">]</span> b64decode<span class="o">(</span><span class="s1">&#39;aGVsbG8=&#39;</span>, <span class="nv">altchars</span><span class="o">=</span>None<span class="o">)</span>
@@ -260,7 +264,7 @@ $ py foo.py
 </div>
 </div>
 <div class="section" id="quick-start-tidy-imports">
-<h1>Quick start: <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code><a class="headerlink" href="#quick-start-tidy-imports" title="Permalink to this headline">¶</a></h1>
+<h2>Quick start: <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code><a class="headerlink" href="#quick-start-tidy-imports" title="Permalink to this headline">¶</a></h2>
 <p>To use <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code>, just specify the filename(s) to tidy.</p>
 <p>For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo &#39;re.search(&quot;[a-z]+&quot;, &quot;....hello...&quot;), chisqprob(arange(5), 2)&#39; &gt; foo.py
@@ -282,7 +286,7 @@ Replace /tmp/foo.py? [y/N]
 </div>
 </div>
 <div class="section" id="quick-start-import-libraries">
-<h1>Quick start: import libraries<a class="headerlink" href="#quick-start-import-libraries" title="Permalink to this headline">¶</a></h1>
+<h2>Quick start: import libraries<a class="headerlink" href="#quick-start-import-libraries" title="Permalink to this headline">¶</a></h2>
 <p>Create a file named .pyflyby with lines such as</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mypackage.mymodule</span> <span class="kn">import</span> <span class="n">MyClass</span><span class="p">,</span> <span class="n">my_function</span>
 <span class="kn">import</span> <span class="nn">anotherpackage.anothermodule</span>
@@ -292,7 +296,7 @@ Replace /tmp/foo.py? [y/N]
 <code class="docutils literal notranslate"><span class="pre">*.py</span></code> files.</p>
 </div>
 <div class="section" id="details-automatic-imports">
-<h1>Details: automatic imports<a class="headerlink" href="#details-automatic-imports" title="Permalink to this headline">¶</a></h1>
+<h2>Details: automatic imports<a class="headerlink" href="#details-automatic-imports" title="Permalink to this headline">¶</a></h2>
 <p>AUTOMATIC IMPORTS - never type “import” again!</p>
 <p>This module allows your “known imports” to work automatically in your IPython
 interactive session without having to type the ‘import’ statements (and also
@@ -319,7 +323,7 @@ occasionally).</p>
 </pre></div>
 </div>
 <div class="section" id="it-just-works">
-<h2>It just works<a class="headerlink" href="#it-just-works" title="Permalink to this headline">¶</a></h2>
+<h3>It just works<a class="headerlink" href="#it-just-works" title="Permalink to this headline">¶</a></h3>
 <p>Tab completion works, even on modules that are not yet imported.  In the
 following example, notice that numpy is imported when we need to know its
 members, and only then:</p>
@@ -355,7 +359,7 @@ In [1]: %run foo.py
 </div>
 </div>
 <div class="section" id="implementation-details">
-<h2>Implementation details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h2>
+<h3>Implementation details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h3>
 <p>The automatic importing happens at parse time, before code is executed.  The
 namespace never contains entries for names that are not yet imported.</p>
 <p>This method of importing at parse time contrasts with previous implementations
@@ -365,7 +369,7 @@ objects behave perfectly.  For example, instance(x, T) will return the wrong
 answer if either x or T is a proxy object.</p>
 </div>
 <div class="section" id="compatibility">
-<h2>Compatibility<a class="headerlink" href="#compatibility" title="Permalink to this headline">¶</a></h2>
+<h3>Compatibility<a class="headerlink" href="#compatibility" title="Permalink to this headline">¶</a></h3>
 <dl class="simple">
 <dt>Tested with:</dt><dd><ul class="simple">
 <li><p>Python 2.6, 2.7, 3.7, 3.8</p></li>
@@ -378,13 +382,13 @@ answer if either x or T is a proxy object.</p>
 </div>
 </div>
 <div class="section" id="details-import-libraries">
-<h1>Details: import libraries<a class="headerlink" href="#details-import-libraries" title="Permalink to this headline">¶</a></h1>
+<h2>Details: import libraries<a class="headerlink" href="#details-import-libraries" title="Permalink to this headline">¶</a></h2>
 <p>Pyflyby uses “import libraries” that tell how to import a given symbol.</p>
 <p>An import library file is simply a python source file containing ‘import’ (or
 ‘from … import …’) lines.  These can be generated automatically with
 <code class="docutils literal notranslate"><span class="pre">collect-imports</span></code> and <code class="docutils literal notranslate"><span class="pre">collect-exports</span></code>.</p>
 <div class="section" id="known-imports">
-<h2>Known imports<a class="headerlink" href="#known-imports" title="Permalink to this headline">¶</a></h2>
+<h3>Known imports<a class="headerlink" href="#known-imports" title="Permalink to this headline">¶</a></h3>
 <p>Find-imports, <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code>, and autoimport consult the database of known
 imports to figure out where to get an import.  For example, if the
 imports database contains:</p>
@@ -458,7 +462,7 @@ configuration.</p></li>
 </div>
 </div>
 <div class="section" id="forgetting-imports">
-<h2>Forgetting imports<a class="headerlink" href="#forgetting-imports" title="Permalink to this headline">¶</a></h2>
+<h3>Forgetting imports<a class="headerlink" href="#forgetting-imports" title="Permalink to this headline">¶</a></h3>
 <p>Occasionally you may have reason to tell pyflyby to “forget” entries from the
 database of known imports.</p>
 <p>You can put the following in any file reachable from <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>:</p>
@@ -473,7 +477,7 @@ default, <code class="docutils literal notranslate"><span class="pre">tidy-impor
 then the per-directory <code class="docutils literal notranslate"><span class="pre">.pyflyby</span></code>.</p>
 </div>
 <div class="section" id="mandatory-imports">
-<h2>Mandatory imports<a class="headerlink" href="#mandatory-imports" title="Permalink to this headline">¶</a></h2>
+<h3>Mandatory imports<a class="headerlink" href="#mandatory-imports" title="Permalink to this headline">¶</a></h3>
 <p>Within a certain project you may have a policy to always include certain
 imports.  For example, maybe you always want to do <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">__future__</span> <span class="pre">import</span>
 <span class="pre">division</span></code> in all files.</p>
@@ -485,7 +489,7 @@ imports.  For example, maybe you always want to do <code class="docutils literal
 <code class="docutils literal notranslate"><span class="pre">__forget_imports__</span></code> (see above).</p>
 </div>
 <div class="section" id="canonicalize-imports">
-<h2>Canonicalize imports<a class="headerlink" href="#canonicalize-imports" title="Permalink to this headline">¶</a></h2>
+<h3>Canonicalize imports<a class="headerlink" href="#canonicalize-imports" title="Permalink to this headline">¶</a></h3>
 <p>Sometimes you want every run of <code class="docutils literal notranslate"><span class="pre">tidy-imports</span></code> to automatically rename an import
 to a new name.</p>
 <p>You can put the following in any file reachable from <code class="docutils literal notranslate"><span class="pre">$PYFLYBY_PATH</span></code>:</p>
@@ -499,7 +503,7 @@ to a new name.</p>
 </div>
 </div>
 <div class="section" id="soapbox-avoid-star-imports">
-<h1>Soapbox: avoid “star” imports<a class="headerlink" href="#soapbox-avoid-star-imports" title="Permalink to this headline">¶</a></h1>
+<h2>Soapbox: avoid “star” imports<a class="headerlink" href="#soapbox-avoid-star-imports" title="Permalink to this headline">¶</a></h2>
 <p>When programming in Python, a good software engineering practice is to avoid
 using <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">foopackage</span> <span class="pre">import</span> <span class="pre">*</span></code> in production code.</p>
 <p>This style is a maintenance nightmare:</p>
@@ -520,7 +524,7 @@ Consider the following example: Suppose <code class="docutils literal notranslat
 automatically replace star imports with the specific needed imports.</p>
 </div>
 <div class="section" id="emacs-support">
-<h1>Emacs support<a class="headerlink" href="#emacs-support" title="Permalink to this headline">¶</a></h1>
+<h2>Emacs support<a class="headerlink" href="#emacs-support" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p>To get a <code class="docutils literal notranslate"><span class="pre">M-x</span> <span class="pre">tidy-imports</span></code> command in GNU Emacs, add to your <code class="docutils literal notranslate"><span class="pre">~/.emacs</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">load</span> <span class="s2">&quot;/path/to/pyflyby/lib/emacs/pyflyby.el&quot;</span><span class="p">)</span>
@@ -533,16 +537,18 @@ automatically replace star imports with the specific needed imports.</p>
 </ul>
 </div>
 <div class="section" id="authorship">
-<h1>Authorship<a class="headerlink" href="#authorship" title="Permalink to this headline">¶</a></h1>
+<h2>Authorship<a class="headerlink" href="#authorship" title="Permalink to this headline">¶</a></h2>
+<p>This plugin was contributed back to the community by the <a class="reference external" href="https://www.deshaw.com/">D. E. Shaw group</a>.</p>
+<a class="reference external image-reference" href="https://www.deshaw.com"><img alt="https://www.deshaw.com/assets/logos/black_logo_417x125.png" src="https://www.deshaw.com/assets/logos/black_logo_417x125.png" style="height: 75px;" /></a>
 <p>Pyflyby is written by Karl Chen &lt;<a class="reference external" href="mailto:quarl&#37;&#52;&#48;8166&#46;clguba&#46;z&#46;quarl&#46;org">quarl<span>&#64;</span>8166<span>&#46;</span>clguba<span>&#46;</span>z<span>&#46;</span>quarl<span>&#46;</span>org</a>&gt;</p>
 </div>
 <div class="section" id="license">
-<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h1>
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
 <p>Pyflyby is released under a very permissive license, the MIT/X11 license; see
 LICENSE.txt.</p>
 </div>
 <div class="section" id="table-of-contents">
-<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/api.html">pyflyby API</a><ul>
@@ -579,12 +585,13 @@ LICENSE.txt.</p>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
+</div>
 </div>
 
 
@@ -605,11 +612,19 @@ LICENSE.txt.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -620,7 +635,6 @@ LICENSE.txt.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

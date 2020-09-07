@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_importstmt module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_importstmt module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_interactive module" href="interactive.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -179,10 +182,10 @@
             
   <div class="section" id="module-pyflyby._importstmt">
 <span id="importstmt-module"></span><h1>_importstmt module<a class="headerlink" href="#module-pyflyby._importstmt" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._importstmt.ImportFormatParams">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._importstmt.</code><code class="sig-name descname">ImportFormatParams</code><a class="headerlink" href="#pyflyby._importstmt.ImportFormatParams" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._importstmt.</code><code class="sig-name descname">ImportFormatParams</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportFormatParams" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
 <dt id="pyflyby._importstmt.ImportFormatParams.align_future">
 <code class="sig-name descname">align_future</code><em class="property"> = False</em><a class="headerlink" href="#pyflyby._importstmt.ImportFormatParams.align_future" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether ‘from __future__ import …’ statements should be aligned with
@@ -190,7 +193,7 @@ others.  If False, uses a single space after the ‘from’ and ‘import’
 keywords.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._importstmt.ImportFormatParams.align_imports">
 <code class="sig-name descname">align_imports</code><em class="property"> = True</em><a class="headerlink" href="#pyflyby._importstmt.ImportFormatParams.align_imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether and how to align ‘from modulename import aliases…’.  If <code class="docutils literal notranslate"><span class="pre">True</span></code>,
@@ -199,13 +202,13 @@ then the ‘import’ keyword will always be at that column.  They will be
 wrapped if necessary.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._importstmt.ImportFormatParams.from_spaces">
 <code class="sig-name descname">from_spaces</code><em class="property"> = 1</em><a class="headerlink" href="#pyflyby._importstmt.ImportFormatParams.from_spaces" title="Permalink to this definition">¶</a></dt>
 <dd><p>The number of spaces after the ‘from’ keyword.  (Must be at least 1.)</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._importstmt.ImportFormatParams.separate_from_imports">
 <code class="sig-name descname">separate_from_imports</code><em class="property"> = True</em><a class="headerlink" href="#pyflyby._importstmt.ImportFormatParams.separate_from_imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether all ‘from … import …’ in an import block should come after
@@ -215,9 +218,9 @@ wrapped if necessary.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._importstmt.ImportSplit">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._importstmt.</code><code class="sig-name descname">ImportSplit</code><span class="sig-paren">(</span><em class="sig-param">module_name</em>, <em class="sig-param">member_name</em>, <em class="sig-param">import_as</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._importstmt.</code><code class="sig-name descname">ImportSplit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module_name</span></em>, <em class="sig-param"><span class="n">member_name</span></em>, <em class="sig-param"><span class="n">import_as</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Representation of a single import at the token level:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span><span class="o">&lt;</span><span class="n">module_name</span><span class="o">&gt;</span> <span class="kn">import</span> <span class="o">&lt;</span><span class="n">member_name</span><span class="o">&gt;</span> <span class="k">as</span> <span class="o">&lt;</span><span class="n">import_as</span><span class="o">&gt;</span>
 </pre></div>
@@ -226,47 +229,47 @@ wrapped if necessary.</p>
 <dt>If &lt;module_name&gt; is <code class="docutils literal notranslate"><span class="pre">None</span></code>, then there is no “from” clause; instead just::</dt><dd><p>import &lt;member_name&gt; as &lt;import_as&gt;</p>
 </dd>
 </dl>
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._importstmt.ImportSplit._asdict">
 <code class="sig-name descname">_asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._asdict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new OrderedDict which maps field names to their values.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._importstmt.ImportSplit._fields">
 <code class="sig-name descname">_fields</code><em class="property"> = ('module_name', 'member_name', 'import_as')</em><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._fields" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._importstmt.ImportSplit._fields_defaults">
 <code class="sig-name descname">_fields_defaults</code><em class="property"> = {}</em><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._fields_defaults" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._importstmt.ImportSplit._make">
-<em class="property">classmethod </em><code class="sig-name descname">_make</code><span class="sig-paren">(</span><em class="sig-param">iterable</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._make" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">_make</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._make" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make a new ImportSplit object from a sequence or iterable</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._importstmt.ImportSplit._replace">
-<code class="sig-name descname">_replace</code><span class="sig-paren">(</span><em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._replace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">_replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importstmt.ImportSplit._replace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new ImportSplit object replacing specified fields with new values</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._importstmt.ImportSplit.import_as">
 <em class="property">property </em><code class="sig-name descname">import_as</code><a class="headerlink" href="#pyflyby._importstmt.ImportSplit.import_as" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 2</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._importstmt.ImportSplit.member_name">
 <em class="property">property </em><code class="sig-name descname">member_name</code><a class="headerlink" href="#pyflyby._importstmt.ImportSplit.member_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 1</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._importstmt.ImportSplit.module_name">
 <em class="property">property </em><code class="sig-name descname">module_name</code><a class="headerlink" href="#pyflyby._importstmt.ImportSplit.module_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 0</p>
@@ -296,11 +299,19 @@ wrapped if necessary.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -311,7 +322,6 @@ wrapped if necessary.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

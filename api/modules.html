@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_modules module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_modules module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_parse module" href="parse.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -179,7 +182,7 @@
             
   <div class="section" id="module-pyflyby._modules">
 <span id="modules-module"></span><h1>_modules module<a class="headerlink" href="#module-pyflyby._modules" title="Permalink to this headline">¶</a></h1>
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyflyby._modules.ErrorDuringImportError">
 <em class="property">exception </em><code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">ErrorDuringImportError</code><a class="headerlink" href="#pyflyby._modules.ErrorDuringImportError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exception raised by import_module if the module exists but an exception
@@ -188,31 +191,31 @@ ImportError, e.g. if a module tries to import another module that doesn’t
 exist.</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._modules.ModuleHandle">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">ModuleHandle</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">ModuleHandle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle" title="Permalink to this definition">¶</a></dt>
 <dd><p>A handle to a module.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle._cls_cache">
 <code class="sig-name descname">_cls_cache</code><em class="property"> = {}</em><a class="headerlink" href="#pyflyby._modules.ModuleHandle._cls_cache" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._modules.ModuleHandle._from_filename">
-<em class="property">classmethod </em><code class="sig-name descname">_from_filename</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_filename" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">_from_filename</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_filename" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._modules.ModuleHandle._from_module">
-<em class="property">classmethod </em><code class="sig-name descname">_from_module</code><span class="sig-paren">(</span><em class="sig-param">module</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_module" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">_from_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._modules.ModuleHandle._from_modulename">
-<em class="property">classmethod </em><code class="sig-name descname">_from_modulename</code><span class="sig-paren">(</span><em class="sig-param">modulename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_modulename" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">_from_modulename</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">modulename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_modulename" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.ancestors">
 <code class="sig-name descname">ancestors</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.ancestors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -226,7 +229,7 @@ exist.</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.block">
 <code class="sig-name descname">block</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.block" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -240,9 +243,9 @@ exist.</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._modules.ModuleHandle.containing">
-<em class="property">classmethod </em><code class="sig-name descname">containing</code><span class="sig-paren">(</span><em class="sig-param">identifier</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.containing" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">containing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">identifier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.containing" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to find the module that defines a name such as <code class="docutils literal notranslate"><span class="pre">a.b.c</span></code> by trying
 to import <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">a.b</span></code>, and <code class="docutils literal notranslate"><span class="pre">a.b.c</span></code>.</p>
 <dl class="field-list simple">
@@ -256,7 +259,7 @@ in this example).</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.exists">
 <code class="sig-name descname">exists</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -270,7 +273,7 @@ in this example).</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.exports">
 <code class="sig-name descname">exports</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.exports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -284,7 +287,7 @@ in this example).</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.filename">
 <code class="sig-name descname">filename</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.filename" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -298,12 +301,12 @@ in this example).</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._modules.ModuleHandle.list">
-<em class="property">static </em><code class="sig-name descname">list</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.list" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">list</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.list" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.module">
 <code class="sig-name descname">module</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.module" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -317,7 +320,7 @@ in this example).</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.parent">
 <code class="sig-name descname">parent</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.parent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -331,7 +334,7 @@ in this example).</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.submodules">
 <code class="sig-name descname">submodules</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.submodules" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -345,7 +348,7 @@ in this example).</p>
 <p>Use “del inst.myMethod” to clear cache.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._modules.ModuleHandle.text">
 <code class="sig-name descname">text</code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
@@ -361,14 +364,14 @@ in this example).</p>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._modules._my_iter_modules">
-<code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">_my_iter_modules</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">prefix=''</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules._my_iter_modules" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">_my_iter_modules</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="n">prefix</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules._my_iter_modules" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._modules.pyc_to_py">
-<code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">pyc_to_py</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.pyc_to_py" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._modules.</code><code class="sig-name descname">pyc_to_py</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.pyc_to_py" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>
@@ -393,11 +396,19 @@ in this example).</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -408,7 +419,6 @@ in this example).</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

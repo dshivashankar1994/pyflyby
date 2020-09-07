@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_parse module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_parse module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_py module" href="py.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -179,50 +182,50 @@
             
   <div class="section" id="module-pyflyby._parse">
 <span id="parse-module"></span><h1>_parse module<a class="headerlink" href="#module-pyflyby._parse" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._parse.AstNodeContext">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">AstNodeContext</code><span class="sig-paren">(</span><em class="sig-param">parent</em>, <em class="sig-param">field</em>, <em class="sig-param">index</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">AstNodeContext</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">field</span></em>, <em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
 <dt id="pyflyby._parse.AstNodeContext._asdict">
 <code class="sig-name descname">_asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext._asdict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new OrderedDict which maps field names to their values.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._parse.AstNodeContext._fields">
 <code class="sig-name descname">_fields</code><em class="property"> = ('parent', 'field', 'index')</em><a class="headerlink" href="#pyflyby._parse.AstNodeContext._fields" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._parse.AstNodeContext._fields_defaults">
 <code class="sig-name descname">_fields_defaults</code><em class="property"> = {}</em><a class="headerlink" href="#pyflyby._parse.AstNodeContext._fields_defaults" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._parse.AstNodeContext._make">
-<em class="property">classmethod </em><code class="sig-name descname">_make</code><span class="sig-paren">(</span><em class="sig-param">iterable</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext._make" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">_make</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext._make" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make a new AstNodeContext object from a sequence or iterable</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._parse.AstNodeContext._replace">
-<code class="sig-name descname">_replace</code><span class="sig-paren">(</span><em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext._replace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">_replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.AstNodeContext._replace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new AstNodeContext object replacing specified fields with new values</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._parse.AstNodeContext.field">
 <em class="property">property </em><code class="sig-name descname">field</code><a class="headerlink" href="#pyflyby._parse.AstNodeContext.field" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 1</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._parse.AstNodeContext.index">
 <em class="property">property </em><code class="sig-name descname">index</code><a class="headerlink" href="#pyflyby._parse.AstNodeContext.index" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 2</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyflyby._parse.AstNodeContext.parent">
 <em class="property">property </em><code class="sig-name descname">parent</code><a class="headerlink" href="#pyflyby._parse.AstNodeContext.parent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 0</p>
@@ -230,12 +233,12 @@
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._parse.IgnoreOptionsDocTestParser">
 <em class="property">class </em><code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">IgnoreOptionsDocTestParser</code><a class="headerlink" href="#pyflyby._parse.IgnoreOptionsDocTestParser" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><dl class="py method">
 <dt id="pyflyby._parse.IgnoreOptionsDocTestParser._find_options">
-<code class="sig-name descname">_find_options</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">name</em>, <em class="sig-param">lineno</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.IgnoreOptionsDocTestParser._find_options" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">_find_options</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">lineno</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.IgnoreOptionsDocTestParser._find_options" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a dictionary containing option overrides extracted from
 option directives in the given source string.</p>
 <p><cite>name</cite> is the string’s name, and <cite>lineno</cite> is the line number
@@ -244,14 +247,14 @@ where the example starts; both are used for error messages.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._parse._DummyAst_Node">
 <em class="property">class </em><code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_DummyAst_Node</code><a class="headerlink" href="#pyflyby._parse._DummyAst_Node" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._annotate_ast_context">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_annotate_ast_context</code><span class="sig-paren">(</span><em class="sig-param">ast_node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._annotate_ast_context" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_annotate_ast_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ast_node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._annotate_ast_context" title="Permalink to this definition">¶</a></dt>
 <dd><p>Recursively annotate <code class="docutils literal notranslate"><span class="pre">context</span></code> on ast nodes, setting <code class="docutils literal notranslate"><span class="pre">context</span></code> to
 a <cite>AstNodeContext</cite> named tuple with values
 <code class="docutils literal notranslate"><span class="pre">(parent,</span> <span class="pre">field,</span> <span class="pre">index)</span></code>.
@@ -259,9 +262,9 @@ Each ast_node satisfies <code class="docutils literal notranslate"><span class="
 <p>For non-list fields, the index part is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._annotate_ast_nodes">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_annotate_ast_nodes</code><span class="sig-paren">(</span><em class="sig-param">ast_node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._annotate_ast_nodes" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_annotate_ast_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ast_node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._annotate_ast_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="simple">
 <dt>Annotate AST with:</dt><dd><ul class="simple">
 <li><p>startpos and endpos</p></li>
@@ -279,9 +282,9 @@ Each ast_node satisfies <code class="docutils literal notranslate"><span class="
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._annotate_ast_startpos">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_annotate_ast_startpos</code><span class="sig-paren">(</span><em class="sig-param">ast_node</em>, <em class="sig-param">parent_ast_node</em>, <em class="sig-param">minpos</em>, <em class="sig-param">text</em>, <em class="sig-param">flags</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._annotate_ast_startpos" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_annotate_ast_startpos</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ast_node</span></em>, <em class="sig-param"><span class="n">parent_ast_node</span></em>, <em class="sig-param"><span class="n">minpos</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">flags</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._annotate_ast_startpos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Annotate <code class="docutils literal notranslate"><span class="pre">ast_node</span></code>.  Set <code class="docutils literal notranslate"><span class="pre">ast_node.startpos</span></code> to the starting position
 of the node within <code class="docutils literal notranslate"><span class="pre">text</span></code>.</p>
 <p>For “typical” nodes, i.e. those other than multiline strings, this is
@@ -322,9 +325,9 @@ such a node (recursively); <code class="docutils literal notranslate"><span clas
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._ast_node_is_in_docstring_position">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_ast_node_is_in_docstring_position</code><span class="sig-paren">(</span><em class="sig-param">ast_node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._ast_node_is_in_docstring_position" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_ast_node_is_in_docstring_position</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ast_node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._ast_node_is_in_docstring_position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a <code class="docutils literal notranslate"><span class="pre">Str</span></code> AST node, return whether its position within the AST makes
 it eligible as a docstring.</p>
 <p>The main way a <code class="docutils literal notranslate"><span class="pre">Str</span></code> can be a docstring is if it is a standalone string
@@ -350,27 +353,27 @@ that variable.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._ast_str_literal_value">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_ast_str_literal_value</code><span class="sig-paren">(</span><em class="sig-param">node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._ast_str_literal_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_ast_str_literal_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._ast_str_literal_value" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._flags_to_try">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_flags_to_try</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">flags</em>, <em class="sig-param">auto_flags</em>, <em class="sig-param">mode</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._flags_to_try" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_flags_to_try</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">flags</span></em>, <em class="sig-param"><span class="n">auto_flags</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._flags_to_try" title="Permalink to this definition">¶</a></dt>
 <dd><p>Flags to try for <code class="docutils literal notranslate"><span class="pre">auto_flags</span></code>.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">auto_flags</span></code> is False, then only yield <code class="docutils literal notranslate"><span class="pre">flags</span></code>.
 If <code class="docutils literal notranslate"><span class="pre">auto_flags</span></code> is True, then yield <code class="docutils literal notranslate"><span class="pre">flags</span></code> and <code class="docutils literal notranslate"><span class="pre">flags</span> <span class="pre">^</span> <span class="pre">print_function</span></code>.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._flatten_ast_nodes">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_flatten_ast_nodes</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._flatten_ast_nodes" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_flatten_ast_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._flatten_ast_nodes" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._is_comment_or_blank">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_is_comment_or_blank</code><span class="sig-paren">(</span><em class="sig-param">line</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._is_comment_or_blank" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_is_comment_or_blank</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._is_comment_or_blank" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns whether a line of python code contains only a comment is blank.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_is_comment_or_blank</span><span class="p">(</span><span class="s2">&quot;foo</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="go">False</span>
@@ -382,9 +385,9 @@ If <code class="docutils literal notranslate"><span class="pre">auto_flags</span
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._iter_child_nodes_in_order">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_iter_child_nodes_in_order</code><span class="sig-paren">(</span><em class="sig-param">node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._iter_child_nodes_in_order" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_iter_child_nodes_in_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._iter_child_nodes_in_order" title="Permalink to this definition">¶</a></dt>
 <dd><p>Yield all direct child nodes of <code class="docutils literal notranslate"><span class="pre">node</span></code>, that is, all fields that are nodes
 and all items of fields that are lists of nodes.</p>
 <p><code class="docutils literal notranslate"><span class="pre">_iter_child_nodes_in_order</span></code> yields nodes in the same order that they
@@ -393,14 +396,14 @@ appear in the source.</p>
 e.g. for <code class="docutils literal notranslate"><span class="pre">Dict</span></code> s, it yields all key nodes before all value nodes.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._iter_child_nodes_in_order_internal_1">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_iter_child_nodes_in_order_internal_1</code><span class="sig-paren">(</span><em class="sig-param">node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._iter_child_nodes_in_order_internal_1" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_iter_child_nodes_in_order_internal_1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._iter_child_nodes_in_order_internal_1" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._parse_ast_nodes">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_parse_ast_nodes</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">flags</em>, <em class="sig-param">auto_flags</em>, <em class="sig-param">mode</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._parse_ast_nodes" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_parse_ast_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">flags</span></em>, <em class="sig-param"><span class="n">auto_flags</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._parse_ast_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse a block of lines into an AST.</p>
 <p>Also annotate <code class="docutils literal notranslate"><span class="pre">input_flags</span></code>, <code class="docutils literal notranslate"><span class="pre">source_flags</span></code>, and <code class="docutils literal notranslate"><span class="pre">flags</span></code> on the
 resulting ast node.</p>
@@ -418,9 +421,9 @@ resulting ast node.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._split_code_lines">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_split_code_lines</code><span class="sig-paren">(</span><em class="sig-param">ast_nodes</em>, <em class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._split_code_lines" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_split_code_lines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ast_nodes</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._split_code_lines" title="Permalink to this definition">¶</a></dt>
 <dd><p>Split the given <code class="docutils literal notranslate"><span class="pre">ast_nodes</span></code> and corresponding <code class="docutils literal notranslate"><span class="pre">text</span></code> by code/noncode
 statement.</p>
 <p>Yield tuples of (nodes, subtext).  <code class="docutils literal notranslate"><span class="pre">nodes</span></code> is a list of <code class="docutils literal notranslate"><span class="pre">ast.AST</span></code> nodes,
@@ -431,9 +434,9 @@ lines (comments and blanks).</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._test_parse_string_literal">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_test_parse_string_literal</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">flags</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._test_parse_string_literal" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_test_parse_string_literal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">flags</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._test_parse_string_literal" title="Permalink to this definition">¶</a></dt>
 <dd><p>Attempt to parse <code class="docutils literal notranslate"><span class="pre">text</span></code>.  If it parses cleanly to a single string
 literal, return its value.  Otherwise return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_test_parse_string_literal</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&quot;foo\n&quot; r&quot;\nbar&quot;&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -442,17 +445,17 @@ literal, return its value.  Otherwise return <code class="docutils literal notra
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse._walk_ast_nodes_in_order">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_walk_ast_nodes_in_order</code><span class="sig-paren">(</span><em class="sig-param">node</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._walk_ast_nodes_in_order" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_walk_ast_nodes_in_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._walk_ast_nodes_in_order" title="Permalink to this definition">¶</a></dt>
 <dd><p>Recursively yield all child nodes of <code class="docutils literal notranslate"><span class="pre">node</span></code>, in the same order that the
 node appears in the source.</p>
 <p><code class="docutils literal notranslate"><span class="pre">ast.walk</span></code> does the same thing, but yields nodes in an arbitrary order.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._parse.infer_compile_mode">
-<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">infer_compile_mode</code><span class="sig-paren">(</span><em class="sig-param">arg</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.infer_compile_mode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">infer_compile_mode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse.infer_compile_mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Infer the mode needed to compile <code class="docutils literal notranslate"><span class="pre">arg</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -483,11 +486,19 @@ node appears in the source.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -498,7 +509,6 @@ node appears in the source.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

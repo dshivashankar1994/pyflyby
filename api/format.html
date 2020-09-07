@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_format module &mdash; pyflyby 1.5.0 documentation</title>
+  <title>_format module &mdash; pyflyby 1.6.4 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="_idents module" href="idents.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> pyflyby
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> pyflyby
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -116,6 +118,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -154,7 +157,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="api.html">pyflyby API</a> &raquo;</li>
         
@@ -179,34 +182,39 @@
             
   <div class="section" id="module-pyflyby._format">
 <span id="format-module"></span><h1>_format module<a class="headerlink" href="#module-pyflyby._format" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt id="pyflyby._format.FormatParams">
-<em class="property">class </em><code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">FormatParams</code><a class="headerlink" href="#pyflyby._format.FormatParams" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
+<em class="property">class </em><code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">FormatParams</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._format.FormatParams" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
 <dt id="pyflyby._format.FormatParams.hanging_indent">
 <code class="sig-name descname">hanging_indent</code><em class="property"> = 'never'</em><a class="headerlink" href="#pyflyby._format.FormatParams.hanging_indent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._format.FormatParams.indent">
 <code class="sig-name descname">indent</code><em class="property"> = 4</em><a class="headerlink" href="#pyflyby._format.FormatParams.indent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyflyby._format.FormatParams.max_line_length">
 <code class="sig-name descname">max_line_length</code><em class="property"> = 79</em><a class="headerlink" href="#pyflyby._format.FormatParams.max_line_length" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
+<dt id="pyflyby._format.FormatParams.use_black">
+<code class="sig-name descname">use_black</code><em class="property"> = False</em><a class="headerlink" href="#pyflyby._format.FormatParams.use_black" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt id="pyflyby._format.FormatParams.wrap_paren">
 <code class="sig-name descname">wrap_paren</code><em class="property"> = True</em><a class="headerlink" href="#pyflyby._format.FormatParams.wrap_paren" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._format.fill">
-<code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">fill</code><span class="sig-paren">(</span><em class="sig-param">tokens</em>, <em class="sig-param">sep=('</em>, <em class="sig-param">'</em>, <em class="sig-param">'')</em>, <em class="sig-param">prefix=''</em>, <em class="sig-param">suffix=''</em>, <em class="sig-param">newline='\n'</em>, <em class="sig-param">max_line_length=80</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._format.fill" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">fill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tokens</span></em>, <em class="sig-param"><span class="n">sep</span><span class="o">=</span><span class="default_value">', ', ''</span></em>, <em class="sig-param"><span class="n">prefix</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">suffix</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">newline</span><span class="o">=</span><span class="default_value">'\n'</span></em>, <em class="sig-param"><span class="n">max_line_length</span><span class="o">=</span><span class="default_value">80</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._format.fill" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a sequences of strings, fill them into a single string with up to
 <code class="docutils literal notranslate"><span class="pre">max_line_length</span></code> characters each.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fill</span><span class="p">([</span><span class="s2">&quot;&#39;hello world&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;hello two&#39;&quot;</span><span class="p">],</span>
@@ -237,7 +245,7 @@ the last line.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pyflyby._format.pyfill">
 <code class="sig-prename descclassname">pyflyby._format.</code><code class="sig-name descname">pyfill</code><span class="sig-paren">(</span><em class="sig-param">prefix</em>, <em class="sig-param">tokens</em>, <em class="sig-param">params=&lt;pyflyby._format.FormatParams object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._format.pyfill" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fill a Python statement.</p>
@@ -292,11 +300,19 @@ the last line.</p></li>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Karl Chen
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -307,7 +323,6 @@ the last line.</p></li>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
