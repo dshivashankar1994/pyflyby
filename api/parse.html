@@ -439,7 +439,7 @@ lines (comments and blanks).</p>
 <code class="sig-prename descclassname">pyflyby._parse.</code><code class="sig-name descname">_test_parse_string_literal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">flags</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._parse._test_parse_string_literal" title="Permalink to this definition">¶</a></dt>
 <dd><p>Attempt to parse <code class="docutils literal notranslate"><span class="pre">text</span></code>.  If it parses cleanly to a single string
 literal, return its value.  Otherwise return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_test_parse_string_literal</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&quot;foo\n&quot; r&quot;\nbar&quot;&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_test_parse_string_literal</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&quot;foo\n&quot; r&quot;\nbar&quot;&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="go">&#39;foo\n\\nbar&#39;</span>
 </pre></div>
 </div>

@@ -186,15 +186,15 @@
 <dt id="pyflyby._flags.CompilerFlags">
 <code class="sig-prename descclassname">pyflyby._flags.</code><code class="sig-name descname">CompilerFlags</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._flags.CompilerFlags" title="Permalink to this definition">¶</a></dt>
 <dd><p>Representation of Python “compiler flags”, i.e. features from __future__.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="mh">0x18000</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="mh">0x18000</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span> 
 <span class="go">CompilerFlags(0x18000) # from __future__ import with_statement, print_function</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="mh">0x10000</span><span class="p">,</span> <span class="mh">0x8000</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="mh">0x10000</span><span class="p">,</span> <span class="mh">0x8000</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span> 
 <span class="go">CompilerFlags(0x18000) # from __future__ import with_statement, print_function</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="s1">&#39;with_statement&#39;</span><span class="p">,</span> <span class="s1">&#39;print_function&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="s1">&#39;with_statement&#39;</span><span class="p">,</span> <span class="s1">&#39;print_function&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span> 
 <span class="go">CompilerFlags(0x18000) # from __future__ import with_statement, print_function</span>
 </pre></div>
 </div>
