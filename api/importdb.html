@@ -188,7 +188,7 @@
 <span id="importdb-module"></span><h1>_importdb module<a class="headerlink" href="#module-pyflyby._importdb" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="pyflyby._importdb._ancestors_on_same_partition">
-<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_ancestors_on_same_partition</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._ancestors_on_same_partition" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pyflyby._importdb.</span></code><code class="sig-name descname"><span class="pre">_ancestors_on_same_partition</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._ancestors_on_same_partition" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate ancestors of <code class="docutils literal notranslate"><span class="pre">filename</span></code> that exist and are on the same partition
 as the first existing ancestor of <code class="docutils literal notranslate"><span class="pre">filename</span></code>.</p>
 <p>For example, suppose a partition is mounted on /u/homer; /u is a different
@@ -207,7 +207,7 @@ Then:</p>
 
 <dl class="py function">
 <dt id="pyflyby._importdb._expand_tripledots">
-<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_expand_tripledots</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathnames</span></em>, <em class="sig-param"><span class="n">target_dirname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._expand_tripledots" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pyflyby._importdb.</span></code><code class="sig-name descname"><span class="pre">_expand_tripledots</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathnames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_dirname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._expand_tripledots" title="Permalink to this definition">¶</a></dt>
 <dd><p>Expand pathnames of the form <code class="docutils literal notranslate"><span class="pre">&quot;.../foo/bar&quot;</span></code> as “../../foo/bar”,
 “../foo/bar”, “./foo/bar” etc., up to the oldest ancestor with the same
 st_dev.</p>
@@ -226,14 +226,14 @@ partition.  Then:</p>
 
 <dl class="py function">
 <dt id="pyflyby._importdb._get_env_var">
-<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_get_env_var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env_var_name</span></em>, <em class="sig-param"><span class="n">default</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._get_env_var" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pyflyby._importdb.</span></code><code class="sig-name descname"><span class="pre">_get_env_var</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._get_env_var" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an environment variable and split on “:”, replacing <code class="docutils literal notranslate"><span class="pre">-</span></code> with the
 default.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pyflyby._importdb._get_python_path">
-<code class="sig-prename descclassname">pyflyby._importdb.</code><code class="sig-name descname">_get_python_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env_var_name</span></em>, <em class="sig-param"><span class="n">default_path</span></em>, <em class="sig-param"><span class="n">target_dirname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._get_python_path" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pyflyby._importdb.</span></code><code class="sig-name descname"><span class="pre">_get_python_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_dirname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importdb._get_python_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Expand an environment variable specifying pyflyby input config files.</p>
 <blockquote>
 <div><ul class="simple">
