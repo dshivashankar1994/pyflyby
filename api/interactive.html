@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,176 +190,176 @@
   <div class="section" id="module-pyflyby._interactive">
 <span id="interactive-module"></span><h1>_interactive module<a class="headerlink" href="#module-pyflyby._interactive" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="pyflyby._interactive.AutoImporter">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">AutoImporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">AutoImporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Auto importer enable state.</p>
 <p>The state is attached to an IPython “application”.</p>
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._advise">
-<code class="sig-name descname"><span class="pre">_advise</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._advise" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._advise">
+<span class="sig-name descname"><span class="pre">_advise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._advise" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._construct">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_construct</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._construct" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._construct">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_construct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._construct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new AutoImporter for <code class="docutils literal notranslate"><span class="pre">app</span></code>.</p>
 <dl class="field-list simple">
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._continue_enable">
-<code class="sig-name descname"><span class="pre">_continue_enable</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._continue_enable" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._continue_enable">
+<span class="sig-name descname"><span class="pre">_continue_enable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._continue_enable" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_ast_hook">
-<code class="sig-name descname"><span class="pre">_enable_ast_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ast_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_ast_hook">
+<span class="sig-name descname"><span class="pre">_enable_ast_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ast_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a hook somewhere in the source =&gt; parsed AST =&gt; compiled code
 pipeline.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_completer_hooks">
-<code class="sig-name descname"><span class="pre">_enable_completer_hooks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">completer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_completer_hooks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_completer_hooks">
+<span class="sig-name descname"><span class="pre">_enable_completer_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">completer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_completer_hooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_completion_hook">
-<code class="sig-name descname"><span class="pre">_enable_completion_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_completion_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_completion_hook">
+<span class="sig-name descname"><span class="pre">_enable_completion_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_completion_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a tab-completion hook.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_debugger_hook">
-<code class="sig-name descname"><span class="pre">_enable_debugger_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_debugger_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_debugger_hook">
+<span class="sig-name descname"><span class="pre">_enable_debugger_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_debugger_hook" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_initializer_hooks">
-<code class="sig-name descname"><span class="pre">_enable_initializer_hooks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_initializer_hooks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_initializer_hooks">
+<span class="sig-name descname"><span class="pre">_enable_initializer_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_initializer_hooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_internal">
-<code class="sig-name descname"><span class="pre">_enable_internal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_internal" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_internal">
+<span class="sig-name descname"><span class="pre">_enable_internal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_internal" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_ipython_bugfixes">
-<code class="sig-name descname"><span class="pre">_enable_ipython_bugfixes</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ipython_bugfixes" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_ipython_bugfixes">
+<span class="sig-name descname"><span class="pre">_enable_ipython_bugfixes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ipython_bugfixes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable some advice that’s actually just fixing bugs in IPython.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_ipython_bugfixes_LevelFormatter">
-<code class="sig-name descname"><span class="pre">_enable_ipython_bugfixes_LevelFormatter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ipython_bugfixes_LevelFormatter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_ipython_bugfixes_LevelFormatter">
+<span class="sig-name descname"><span class="pre">_enable_ipython_bugfixes_LevelFormatter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ipython_bugfixes_LevelFormatter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_ipython_shell_bugfixes">
-<code class="sig-name descname"><span class="pre">_enable_ipython_shell_bugfixes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ipython_shell_bugfixes" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_ipython_shell_bugfixes">
+<span class="sig-name descname"><span class="pre">_enable_ipython_shell_bugfixes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ipython_shell_bugfixes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable some advice that’s actually just fixing bugs in IPython.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_kernel_manager_hook">
-<code class="sig-name descname"><span class="pre">_enable_kernel_manager_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_kernel_manager_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_kernel_manager_hook">
+<span class="sig-name descname"><span class="pre">_enable_kernel_manager_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_kernel_manager_hook" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_ofind_hook">
-<code class="sig-name descname"><span class="pre">_enable_ofind_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ofind_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_ofind_hook">
+<span class="sig-name descname"><span class="pre">_enable_ofind_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_ofind_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a hook of _ofind(), which is used for pinfo, autocall, etc.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_prun_hook">
-<code class="sig-name descname"><span class="pre">_enable_prun_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_prun_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_prun_hook">
+<span class="sig-name descname"><span class="pre">_enable_prun_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_prun_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a hook so that %prun will autoimport.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_reset_hook">
-<code class="sig-name descname"><span class="pre">_enable_reset_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_reset_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_reset_hook">
+<span class="sig-name descname"><span class="pre">_enable_reset_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_reset_hook" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_run_hook">
-<code class="sig-name descname"><span class="pre">_enable_run_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_run_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_run_hook">
+<span class="sig-name descname"><span class="pre">_enable_run_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_run_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a hook so that %run will autoimport.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_shell_hooks">
-<code class="sig-name descname"><span class="pre">_enable_shell_hooks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_shell_hooks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_shell_hooks">
+<span class="sig-name descname"><span class="pre">_enable_shell_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_shell_hooks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable hooks to run auto_import before code execution.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_start_kernel_hook">
-<code class="sig-name descname"><span class="pre">_enable_start_kernel_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_manager</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_start_kernel_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_start_kernel_hook">
+<span class="sig-name descname"><span class="pre">_enable_start_kernel_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_manager</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_start_kernel_hook" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_time_hook">
-<code class="sig-name descname"><span class="pre">_enable_time_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_time_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_time_hook">
+<span class="sig-name descname"><span class="pre">_enable_time_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_time_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a hook so that %time will autoimport.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._enable_timeit_hook">
-<code class="sig-name descname"><span class="pre">_enable_timeit_hook</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_timeit_hook" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._enable_timeit_hook">
+<span class="sig-name descname"><span class="pre">_enable_timeit_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._enable_timeit_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enable a hook so that %timeit will autoimport.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._from_app">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_app</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._from_app" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._from_app">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._from_app" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter._safe_call">
-<code class="sig-name descname"><span class="pre">_safe_call</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._safe_call" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter._safe_call">
+<span class="sig-name descname"><span class="pre">_safe_call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter._safe_call" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter.auto_import">
-<code class="sig-name descname"><span class="pre">auto_import</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'if_debug'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.auto_import" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter.auto_import">
+<span class="sig-name descname"><span class="pre">auto_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'if_debug'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.auto_import" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter.compile_with_autoimport">
-<code class="sig-name descname"><span class="pre">compile_with_autoimport</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.compile_with_autoimport" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter.compile_with_autoimport">
+<span class="sig-name descname"><span class="pre">compile_with_autoimport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.compile_with_autoimport" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter.complete_symbol">
-<code class="sig-name descname"><span class="pre">complete_symbol</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'if_debug'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.complete_symbol" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter.complete_symbol">
+<span class="sig-name descname"><span class="pre">complete_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'if_debug'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.complete_symbol" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter.disable">
-<code class="sig-name descname"><span class="pre">disable</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.disable" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter.disable">
+<span class="sig-name descname"><span class="pre">disable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.disable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Turn off auto-importer in the current IPython session.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter.enable">
-<code class="sig-name descname"><span class="pre">enable</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">even_if_previously_errored</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.enable" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter.enable">
+<span class="sig-name descname"><span class="pre">enable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">even_if_previously_errored</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.enable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Turn on the auto-importer in the current IPython session.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive.AutoImporter.reset_state_new_cell">
-<code class="sig-name descname"><span class="pre">reset_state_new_cell</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.reset_state_new_cell" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.AutoImporter.reset_state_new_cell">
+<span class="sig-name descname"><span class="pre">reset_state_new_cell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.AutoImporter.reset_state_new_cell" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.InterceptPrintsDuringPromptCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">InterceptPrintsDuringPromptCtx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.InterceptPrintsDuringPromptCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.InterceptPrintsDuringPromptCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">InterceptPrintsDuringPromptCtx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.InterceptPrintsDuringPromptCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decorator that hooks our logger so that:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">Before</span> <span class="n">the</span> <span class="n">first</span> <span class="nb">print</span><span class="p">,</span> <span class="k">if</span> <span class="nb">any</span><span class="p">,</span> <span class="nb">print</span> <span class="n">an</span> <span class="n">extra</span> <span class="n">newline</span><span class="o">.</span>
 <span class="mf">2.</span> <span class="n">Upon</span> <span class="n">context</span> <span class="n">exit</span><span class="p">,</span> <span class="k">if</span> <span class="nb">any</span> <span class="n">lines</span> <span class="n">were</span> <span class="n">printed</span><span class="p">,</span> <span class="n">redisplay</span> <span class="n">the</span> <span class="n">prompt</span><span class="o">.</span>
@@ -367,90 +370,90 @@ pipeline.</p>
 </dd></dl>
 
 <dl class="py exception">
-<dt id="pyflyby._interactive.NoActiveIPythonAppError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">NoActiveIPythonAppError</span></code><a class="headerlink" href="#pyflyby._interactive.NoActiveIPythonAppError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.NoActiveIPythonAppError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">NoActiveIPythonAppError</span></span><a class="headerlink" href="#pyflyby._interactive.NoActiveIPythonAppError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exception raised when there is no current IPython application instance.</p>
 </dd></dl>
 
 <dl class="py exception">
-<dt id="pyflyby._interactive.NoIPythonPackageError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">NoIPythonPackageError</span></code><a class="headerlink" href="#pyflyby._interactive.NoIPythonPackageError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.NoIPythonPackageError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">NoIPythonPackageError</span></span><a class="headerlink" href="#pyflyby._interactive.NoIPythonPackageError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exception raised when the IPython package is not installed in the system.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.UpdateIPythonStdioCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">UpdateIPythonStdioCtx</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.UpdateIPythonStdioCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.UpdateIPythonStdioCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">UpdateIPythonStdioCtx</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.UpdateIPythonStdioCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that updates IPython’s cached stdin/stdout/stderr handles
 to match the current values of sys.stdin/sys.stdout/sys.stderr.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._interactive._DummyIPythonEmbeddedApp">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_DummyIPythonEmbeddedApp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shell</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._DummyIPythonEmbeddedApp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._DummyIPythonEmbeddedApp">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_DummyIPythonEmbeddedApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shell</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._DummyIPythonEmbeddedApp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Small wrapper around an <cite>InteractiveShellEmbed</cite>.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._interactive._EnableState">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_EnableState</span></code><a class="headerlink" href="#pyflyby._interactive._EnableState" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._EnableState">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_EnableState</span></span><a class="headerlink" href="#pyflyby._interactive._EnableState" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="py attribute">
-<dt id="pyflyby._interactive._EnableState.DISABLED">
-<code class="sig-name descname"><span class="pre">DISABLED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'DISABLED'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._EnableState.DISABLED">
+<span class="sig-name descname"><span class="pre">DISABLED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'DISABLED'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.DISABLED" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._interactive._EnableState.DISABLING">
-<code class="sig-name descname"><span class="pre">DISABLING</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'DISABLING'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.DISABLING" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._EnableState.DISABLING">
+<span class="sig-name descname"><span class="pre">DISABLING</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'DISABLING'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.DISABLING" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._interactive._EnableState.ENABLED">
-<code class="sig-name descname"><span class="pre">ENABLED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'ENABLED'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._EnableState.ENABLED">
+<span class="sig-name descname"><span class="pre">ENABLED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'ENABLED'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.ENABLED" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._interactive._EnableState.ENABLING">
-<code class="sig-name descname"><span class="pre">ENABLING</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'ENABLING'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.ENABLING" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._EnableState.ENABLING">
+<span class="sig-name descname"><span class="pre">ENABLING</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'ENABLING'</span></em><a class="headerlink" href="#pyflyby._interactive._EnableState.ENABLING" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._interactive._IPython010TerminalApplication">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_IPython010TerminalApplication</span></code><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._IPython010TerminalApplication">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_IPython010TerminalApplication</span></span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shim class that mimics IPython 0.11+ application classes, for use in
 IPython 0.10.</p>
 <dl class="py attribute">
-<dt id="pyflyby._interactive._IPython010TerminalApplication._instance">
-<code class="sig-name descname"><span class="pre">_instance</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication._instance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._IPython010TerminalApplication._instance">
+<span class="sig-name descname"><span class="pre">_instance</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication._instance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive._IPython010TerminalApplication.init_shell">
-<code class="sig-name descname"><span class="pre">init_shell</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.init_shell" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._IPython010TerminalApplication.init_shell">
+<span class="sig-name descname"><span class="pre">init_shell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.init_shell" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive._IPython010TerminalApplication.initialize">
-<code class="sig-name descname"><span class="pre">initialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.initialize" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._IPython010TerminalApplication.initialize">
+<span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.initialize" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive._IPython010TerminalApplication.instance">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">instance</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.instance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._IPython010TerminalApplication.instance">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.instance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._interactive._IPython010TerminalApplication.start">
-<code class="sig-name descname"><span class="pre">start</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.start" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._IPython010TerminalApplication.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._IPython010TerminalApplication.start" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._app_is_initialized">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_app_is_initialized</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._app_is_initialized" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._app_is_initialized">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_app_is_initialized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._app_is_initialized" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether <code class="docutils literal notranslate"><span class="pre">app.initialize()</span></code> has been called.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -460,23 +463,23 @@ IPython 0.10.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._auto_import_in_pdb_frame">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_auto_import_in_pdb_frame</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._auto_import_in_pdb_frame" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._auto_import_in_pdb_frame">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_auto_import_in_pdb_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._auto_import_in_pdb_frame" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._enable_pdb_hooks">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_enable_pdb_hooks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._enable_pdb_hooks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._enable_pdb_hooks">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_enable_pdb_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._enable_pdb_hooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._enable_terminal_pdb_hooks">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_enable_terminal_pdb_hooks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_importer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._enable_terminal_pdb_hooks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._enable_terminal_pdb_hooks">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_enable_terminal_pdb_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_importer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._enable_terminal_pdb_hooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._generate_enabler_code">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_generate_enabler_code</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._generate_enabler_code" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._generate_enabler_code">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_generate_enabler_code</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._generate_enabler_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate code for enabling the auto importer.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -486,20 +489,20 @@ IPython 0.10.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_IPdb_class">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_IPdb_class</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_IPdb_class" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_IPdb_class">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_IPdb_class</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_IPdb_class" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the IPython (core) Pdb class.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_TerminalPdb_class">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_TerminalPdb_class</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_TerminalPdb_class" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_TerminalPdb_class">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_TerminalPdb_class</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_TerminalPdb_class" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the IPython TerminalPdb class.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_ipython_app">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_ipython_app</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_ipython_app" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_ipython_app">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_ipython_app</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_ipython_app" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an IPython application instance, if we are inside an IPython session.</p>
 <p>If there isn’t already an IPython application, raise an exception; don’t
 create one.</p>
@@ -512,8 +515,8 @@ create one.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_ipython_color_scheme">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_ipython_color_scheme</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_ipython_color_scheme" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_ipython_color_scheme">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_ipython_color_scheme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_ipython_color_scheme" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the configured IPython color scheme.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -526,8 +529,8 @@ create one.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_or_create_ipython_kernel_app">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_or_create_ipython_kernel_app</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_or_create_ipython_kernel_app" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_or_create_ipython_kernel_app">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_or_create_ipython_kernel_app</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_or_create_ipython_kernel_app" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create/get the singleton IPython kernel application.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -540,8 +543,8 @@ create one.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_or_create_ipython_terminal_app">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_or_create_ipython_terminal_app</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_or_create_ipython_terminal_app" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_or_create_ipython_terminal_app">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_or_create_ipython_terminal_app</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_or_create_ipython_terminal_app" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create/get the singleton IPython terminal application.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -554,8 +557,8 @@ create one.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._get_pdb_if_is_in_pdb">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_get_pdb_if_is_in_pdb</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_pdb_if_is_in_pdb" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._get_pdb_if_is_in_pdb">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_get_pdb_if_is_in_pdb</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._get_pdb_if_is_in_pdb" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the current Pdb instance, if we’re currently called from Pdb.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -565,42 +568,42 @@ create one.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._initialize_and_start_app_with_autoimporter">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_initialize_and_start_app_with_autoimporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">argv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._initialize_and_start_app_with_autoimporter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._initialize_and_start_app_with_autoimporter">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_initialize_and_start_app_with_autoimporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">argv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._initialize_and_start_app_with_autoimporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize and start an IPython app, with autoimporting enabled.</p>
 <dl class="field-list simple">
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._install_in_ipython_config_file_010">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_install_in_ipython_config_file_010</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_010" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._install_in_ipython_config_file_010">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_install_in_ipython_config_file_010</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_010" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implementation of <cite>install_in_ipython_config_file</cite> for IPython 0.10.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._install_in_ipython_config_file_011">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_install_in_ipython_config_file_011</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_011" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._install_in_ipython_config_file_011">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_install_in_ipython_config_file_011</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_011" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implementation of <cite>install_in_ipython_config_file</cite> for IPython 0.11.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._install_in_ipython_config_file_012">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_install_in_ipython_config_file_012</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_012" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._install_in_ipython_config_file_012">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_install_in_ipython_config_file_012</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_012" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implementation of <cite>install_in_ipython_config_file</cite> for IPython 0.12+.
 Tested with IPython 0.12, 0.13, 1.0, 1.2, 2.0, 2.1, 2.2, 2.3, 2.4, 3.0,
 3.1, 3.2, 4.0.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._install_in_ipython_config_file_40">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_install_in_ipython_config_file_40</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_40" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._install_in_ipython_config_file_40">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_install_in_ipython_config_file_40</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._install_in_ipython_config_file_40" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implementation of <cite>install_in_ipython_config_file</cite> for IPython 4.0+.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._ipython_in_multiline">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_ipython_in_multiline</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._ipython_in_multiline" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._ipython_in_multiline">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_ipython_in_multiline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._ipython_in_multiline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">False</span></code> if the user has entered only one line of input so far,
 including the current line, or <code class="docutils literal notranslate"><span class="pre">True</span></code> if it is the second or later line.</p>
 <dl class="field-list simple">
@@ -611,8 +614,8 @@ including the current line, or <code class="docutils literal notranslate"><span 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._ipython_namespaces">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_ipython_namespaces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._ipython_namespaces" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._ipython_namespaces">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_ipython_namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._ipython_namespaces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the (global) namespaces used for IPython.</p>
 <p>The ordering follows IPython convention of most-local to most-global.</p>
 <dl class="field-list simple">
@@ -626,8 +629,8 @@ including the current line, or <code class="docutils literal notranslate"><span 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._list_members_for_completion">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_list_members_for_completion</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._list_members_for_completion" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._list_members_for_completion">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_list_members_for_completion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._list_members_for_completion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enumerate the existing member attributes of an object.
 This emulates the regular Python/IPython completion items.</p>
 <p>It does not include not-yet-imported submodules.</p>
@@ -642,20 +645,20 @@ This emulates the regular Python/IPython completion items.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._python_can_import_pyflyby">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_python_can_import_pyflyby</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expected_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sys_path_entry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._python_can_import_pyflyby" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._python_can_import_pyflyby">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_python_can_import_pyflyby</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expected_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sys_path_entry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._python_can_import_pyflyby" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to figure out whether python (when started from scratch) can get the
 same pyflyby package as the current process.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive._skip_frames">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">_skip_frames</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_pkgs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._skip_frames" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive._skip_frames">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">_skip_frames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_pkgs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive._skip_frames" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.complete_symbol">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">complete_symbol</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimported</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.complete_symbol" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.complete_symbol">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">complete_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimported</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.complete_symbol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enumerate possible completions for <code class="docutils literal notranslate"><span class="pre">fullname</span></code>.</p>
 <p>Includes globals and auto-importable symbols.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">complete_symbol</span><span class="p">(</span><span class="s2">&quot;threadi&quot;</span><span class="p">,</span> <span class="p">[{}])</span>                
@@ -703,8 +706,8 @@ user.</p></li>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.get_global_namespaces">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">get_global_namespaces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.get_global_namespaces" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.get_global_namespaces">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">get_global_namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.get_global_namespaces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the global interactive namespaces.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -717,8 +720,8 @@ user.</p></li>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.get_ipython_terminal_app_with_autoimporter">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">get_ipython_terminal_app_with_autoimporter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.get_ipython_terminal_app_with_autoimporter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.get_ipython_terminal_app_with_autoimporter">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">get_ipython_terminal_app_with_autoimporter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.get_ipython_terminal_app_with_autoimporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return an initialized <code class="docutils literal notranslate"><span class="pre">TerminalIPythonApp</span></code>.</p>
 <p>If a <code class="docutils literal notranslate"><span class="pre">TerminalIPythonApp</span></code> has already been created, then use it (whether
 we are inside that app or not).  If there isn’t already one, then create
@@ -736,8 +739,8 @@ it).</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.new_IPdb_instance">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">new_IPdb_instance</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.new_IPdb_instance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.new_IPdb_instance">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">new_IPdb_instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.new_IPdb_instance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new Pdb instance.</p>
 <p>If IPython is available, then use IPython’s Pdb.  Initialize a new IPython
 terminal application if necessary.</p>
@@ -751,8 +754,8 @@ terminal application if necessary.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.print_verbose_tb">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">print_verbose_tb</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">exc_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.print_verbose_tb" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.print_verbose_tb">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">print_verbose_tb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">exc_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.print_verbose_tb" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a traceback, using IPython’s ultraTB if possible.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -762,21 +765,21 @@ terminal application if necessary.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.run_ipython_line_magic">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">run_ipython_line_magic</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.run_ipython_line_magic" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.run_ipython_line_magic">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">run_ipython_line_magic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.run_ipython_line_magic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run IPython magic command.
 If necessary, start an IPython terminal app to do so.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.start_ipython_kernel_with_autoimporter">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">start_ipython_kernel_with_autoimporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.start_ipython_kernel_with_autoimporter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.start_ipython_kernel_with_autoimporter">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">start_ipython_kernel_with_autoimporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.start_ipython_kernel_with_autoimporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start IPython kernel with autoimporter enabled.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._interactive.start_ipython_with_autoimporter">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></code><code class="sig-name descname"><span class="pre">start_ipython_with_autoimporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_user_ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.start_ipython_with_autoimporter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._interactive.start_ipython_with_autoimporter">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._interactive.</span></span><span class="sig-name descname"><span class="pre">start_ipython_with_autoimporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_user_ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._interactive.start_ipython_with_autoimporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start IPython (terminal) with autoimporter enabled.</p>
 </dd></dl>
 

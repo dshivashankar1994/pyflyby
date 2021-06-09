@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,21 +190,21 @@
   <div class="section" id="module-pyflyby._idents">
 <span id="idents-module"></span><h1>_idents module<a class="headerlink" href="#module-pyflyby._idents" title="Permalink to this headline">¶</a></h1>
 <dl class="py exception">
-<dt id="pyflyby._idents.BadDottedIdentifierError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></code><code class="sig-name descname"><span class="pre">BadDottedIdentifierError</span></code><a class="headerlink" href="#pyflyby._idents.BadDottedIdentifierError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.BadDottedIdentifierError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></span><span class="sig-name descname"><span class="pre">BadDottedIdentifierError</span></span><a class="headerlink" href="#pyflyby._idents.BadDottedIdentifierError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._idents.DottedIdentifier">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></code><code class="sig-name descname"><span class="pre">DottedIdentifier</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.DottedIdentifier">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></span><span class="sig-name descname"><span class="pre">DottedIdentifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="py method">
-<dt id="pyflyby._idents.DottedIdentifier._from_name">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_name</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier._from_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.DottedIdentifier._from_name">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier._from_name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._idents.DottedIdentifier.parent">
-<code class="sig-name descname"><span class="pre">parent</span></code><a class="headerlink" href="#pyflyby._idents.DottedIdentifier.parent" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.DottedIdentifier.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier.parent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -214,8 +217,8 @@
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._idents.DottedIdentifier.prefixes">
-<code class="sig-name descname"><span class="pre">prefixes</span></code><a class="headerlink" href="#pyflyby._idents.DottedIdentifier.prefixes" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.DottedIdentifier.prefixes">
+<span class="sig-name descname"><span class="pre">prefixes</span></span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier.prefixes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -228,15 +231,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._idents.DottedIdentifier.startswith">
-<code class="sig-name descname"><span class="pre">startswith</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier.startswith" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.DottedIdentifier.startswith">
+<span class="sig-name descname"><span class="pre">startswith</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.DottedIdentifier.startswith" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._idents.brace_identifiers">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></code><code class="sig-name descname"><span class="pre">brace_identifiers</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.brace_identifiers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.brace_identifiers">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></span><span class="sig-name descname"><span class="pre">brace_identifiers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.brace_identifiers" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse a string and yield all tokens of the form “{some_token}”.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">brace_identifiers</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{salutation}</span><span class="s2">, </span><span class="si">{your_name}</span><span class="s2">.&quot;</span><span class="p">))</span>
 <span class="go">[&#39;salutation&#39;, &#39;your_name&#39;]</span>
@@ -245,8 +248,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._idents.dotted_prefixes">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></code><code class="sig-name descname"><span class="pre">dotted_prefixes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dotted_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.dotted_prefixes" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.dotted_prefixes">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></span><span class="sig-name descname"><span class="pre">dotted_prefixes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dotted_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.dotted_prefixes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the prefixes of a dotted name.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dotted_prefixes</span><span class="p">(</span><span class="s2">&quot;aa.bb.cc&quot;</span><span class="p">)</span>
 <span class="go">[&#39;aa&#39;, &#39;aa.bb&#39;, &#39;aa.bb.cc&#39;]</span>
@@ -268,8 +271,8 @@ to shortest.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._idents.is_identifier">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></code><code class="sig-name descname"><span class="pre">is_identifier</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dotted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.is_identifier" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._idents.is_identifier">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._idents.</span></span><span class="sig-name descname"><span class="pre">is_identifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dotted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._idents.is_identifier" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether <code class="docutils literal notranslate"><span class="pre">s</span></code> is a valid Python identifier name.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">is_identifier</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">)</span>
 <span class="go">True</span>

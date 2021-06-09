@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -186,13 +189,13 @@
   <div class="section" id="module-pyflyby._util">
 <span id="util-module"></span><h1>_util module<a class="headerlink" href="#module-pyflyby._util" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
-<dt id="pyflyby._util.AdviceCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">AdviceCtx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hook</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.AdviceCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.AdviceCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">AdviceCtx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hook</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.AdviceCtx" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._util.Aspect">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">Aspect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.Aspect" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.Aspect">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">Aspect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.Aspect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Monkey-patch a target method (joinpoint) with “around” advice.</p>
 <p>The advice can call “__original__(…)”.  At run time, a global named
 “__original__” will magically be available to the wrapped function.
@@ -229,43 +232,43 @@ This refers to the original function.</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt id="pyflyby._util.Aspect._wrapper">
-<code class="sig-name descname"><span class="pre">_wrapper</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#pyflyby._util.Aspect._wrapper" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.Aspect._wrapper">
+<span class="sig-name descname"><span class="pre">_wrapper</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#pyflyby._util.Aspect._wrapper" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._util.Aspect.advise">
-<code class="sig-name descname"><span class="pre">advise</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hook</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">once</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.Aspect.advise" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.Aspect.advise">
+<span class="sig-name descname"><span class="pre">advise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hook</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">once</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.Aspect.advise" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._util.Aspect.unadvise">
-<code class="sig-name descname"><span class="pre">unadvise</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.Aspect.unadvise" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.Aspect.unadvise">
+<span class="sig-name descname"><span class="pre">unadvise</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.Aspect.unadvise" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.CwdCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">CwdCtx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.CwdCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.CwdCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">CwdCtx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.CwdCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that temporarily enters a new working directory.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.EnvVarCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">EnvVarCtx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.EnvVarCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.EnvVarCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">EnvVarCtx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.EnvVarCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that temporarily modifies os.environ.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.ExcludeImplicitCwdFromPathCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">ExcludeImplicitCwdFromPathCtx</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.ExcludeImplicitCwdFromPathCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.ExcludeImplicitCwdFromPathCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">ExcludeImplicitCwdFromPathCtx</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.ExcludeImplicitCwdFromPathCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that temporarily removes “.” from <code class="docutils literal notranslate"><span class="pre">sys.path</span></code>.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._util.FunctionWithGlobals">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">FunctionWithGlobals</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">variables</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.FunctionWithGlobals" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.FunctionWithGlobals">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">FunctionWithGlobals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">variables</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.FunctionWithGlobals" title="Permalink to this definition">¶</a></dt>
 <dd><p>A callable that at runtime adds extra variables to the target function’s
 global namespace.</p>
 <p>This is written as a class with a __call__ method.  We do so rather than
@@ -274,48 +277,48 @@ through to the target.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.ImportPathCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">ImportPathCtx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_additions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.ImportPathCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.ImportPathCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">ImportPathCtx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_additions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.ImportPathCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that temporarily prepends <code class="docutils literal notranslate"><span class="pre">sys.path</span></code> with <code class="docutils literal notranslate"><span class="pre">path_additions</span></code>.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.NullCtx">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">NullCtx</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.NullCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.NullCtx">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">NullCtx</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.NullCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that does nothing.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._util.Object">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">Object</span></code><a class="headerlink" href="#pyflyby._util.Object" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.Object">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">Object</span></span><a class="headerlink" href="#pyflyby._util.Object" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py exception">
-<dt id="pyflyby._util.WrappedAttributeError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">WrappedAttributeError</span></code><a class="headerlink" href="#pyflyby._util.WrappedAttributeError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.WrappedAttributeError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">WrappedAttributeError</span></span><a class="headerlink" href="#pyflyby._util.WrappedAttributeError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._util._WritableDictProxy">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">_WritableDictProxy</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util._WritableDictProxy" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util._WritableDictProxy">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">_WritableDictProxy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util._WritableDictProxy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Writable equivalent of cls.__dict__.</p>
 <dl class="py method">
-<dt id="pyflyby._util._WritableDictProxy.get">
-<code class="sig-name descname"><span class="pre">get</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util._WritableDictProxy.get" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util._WritableDictProxy.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util._WritableDictProxy.get" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.advise">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">advise</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.advise" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.advise">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">advise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">joinpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.advise" title="Permalink to this definition">¶</a></dt>
 <dd><p>Advise <code class="docutils literal notranslate"><span class="pre">joinpoint</span></code>.</p>
 <p>See <cite>Aspect</cite>.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._util.cached_attribute">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">cached_attribute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.cached_attribute" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.cached_attribute">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">cached_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.cached_attribute" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -328,13 +331,13 @@ through to the target.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.cmp">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">cmp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.cmp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.cmp">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">cmp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.cmp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.indent">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">indent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.indent" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.indent">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">indent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.indent" title="Permalink to this definition">¶</a></dt>
 <dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">indent</span><span class="p">(</span><span class="s1">&#39;hello</span><span class="se">\n</span><span class="s1">world</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;@@&#39;</span><span class="p">)</span>
 <span class="go">&#39;@@hello\n@@world\n&#39;</span>
 </pre></div>
@@ -342,8 +345,8 @@ through to the target.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.longest_common_prefix">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">longest_common_prefix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.longest_common_prefix" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.longest_common_prefix">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">longest_common_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.longest_common_prefix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the longest common prefix.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">longest_common_prefix</span><span class="p">(</span><span class="s2">&quot;abcde&quot;</span><span class="p">,</span> <span class="s2">&quot;abcxy&quot;</span><span class="p">)</span>
 <span class="go">&#39;abc&#39;</span>
@@ -357,18 +360,18 @@ through to the target.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.memoize">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">memoize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.memoize" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.memoize">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">memoize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.memoize" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.nested">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">nested</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mgrs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.nested" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.nested">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">nested</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mgrs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.nested" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.partition">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">partition</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.partition" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.partition">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">partition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.partition" title="Permalink to this definition">¶</a></dt>
 <dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;12321233221&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
 <span class="go">([&#39;2&#39;, &#39;2&#39;, &#39;2&#39;, &#39;2&#39;, &#39;2&#39;], [&#39;1&#39;, &#39;3&#39;, &#39;1&#39;, &#39;3&#39;, &#39;3&#39;, &#39;1&#39;])</span>
 </pre></div>
@@ -376,8 +379,8 @@ through to the target.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.prefixes">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">prefixes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.prefixes" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.prefixes">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">prefixes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.prefixes" title="Permalink to this definition">¶</a></dt>
 <dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">prefixes</span><span class="p">(</span><span class="s2">&quot;abcd&quot;</span><span class="p">))</span>
 <span class="go">[&#39;a&#39;, &#39;ab&#39;, &#39;abc&#39;, &#39;abcd&#39;]</span>
 </pre></div>
@@ -385,8 +388,8 @@ through to the target.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._util.stable_unique">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></code><code class="sig-name descname"><span class="pre">stable_unique</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.stable_unique" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._util.stable_unique">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._util.</span></span><span class="sig-name descname"><span class="pre">stable_unique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._util.stable_unique" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a copy of <code class="docutils literal notranslate"><span class="pre">items</span></code> without duplicates.  The order of other items is
 unchanged.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">stable_unique</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>

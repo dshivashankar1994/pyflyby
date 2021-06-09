@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,8 +190,8 @@
   <div class="section" id="module-pyflyby._flags">
 <span id="flags-module"></span><h1>_flags module<a class="headerlink" href="#module-pyflyby._flags" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
-<dt id="pyflyby._flags.CompilerFlags">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._flags.</span></code><code class="sig-name descname"><span class="pre">CompilerFlags</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._flags.CompilerFlags" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._flags.CompilerFlags">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._flags.</span></span><span class="sig-name descname"><span class="pre">CompilerFlags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._flags.CompilerFlags" title="Permalink to this definition">¶</a></dt>
 <dd><p>Representation of Python “compiler flags”, i.e. features from __future__.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">CompilerFlags</span><span class="p">(</span><span class="mh">0x18000</span><span class="p">)</span><span class="o">.</span><span class="n">__interactive_display__</span><span class="p">())</span> 
 <span class="go">CompilerFlags(0x18000) # from __future__ import with_statement, print_function</span>

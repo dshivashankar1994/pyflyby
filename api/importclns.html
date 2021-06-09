@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,13 +190,13 @@
   <div class="section" id="module-pyflyby._importclns">
 <span id="importclns-module"></span><h1>_importclns module<a class="headerlink" href="#module-pyflyby._importclns" title="Permalink to this headline">¶</a></h1>
 <dl class="py exception">
-<dt id="pyflyby._importclns.ConflictingImportsError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></code><code class="sig-name descname"><span class="pre">ConflictingImportsError</span></code><a class="headerlink" href="#pyflyby._importclns.ConflictingImportsError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ConflictingImportsError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></span><span class="sig-name descname"><span class="pre">ConflictingImportsError</span></span><a class="headerlink" href="#pyflyby._importclns.ConflictingImportsError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._importclns.ImportMap">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></code><code class="sig-name descname"><span class="pre">ImportMap</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></span><span class="sig-name descname"><span class="pre">ImportMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap" title="Permalink to this definition">¶</a></dt>
 <dd><p>A map from import fullname identifier to fullname identifier.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ImportMap</span><span class="p">({</span><span class="s1">&#39;a.b&#39;</span><span class="p">:</span> <span class="s1">&#39;aa.bb&#39;</span><span class="p">,</span> <span class="s1">&#39;a.b.c&#39;</span><span class="p">:</span> <span class="s1">&#39;aa.bb.cc&#39;</span><span class="p">})</span>
 <span class="go">ImportMap({&#39;a.b&#39;: &#39;aa.bb&#39;, &#39;a.b.c&#39;: &#39;aa.bb.cc&#39;})</span>
@@ -201,48 +204,48 @@
 </div>
 <p>An <code class="docutils literal notranslate"><span class="pre">ImportMap</span></code> is an immutable data structure.</p>
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportMap._EMPTY">
-<code class="sig-name descname"><span class="pre">_EMPTY</span></code><em class="property"> <span class="pre">=</span> <span class="pre">ImportMap({})</span></em><a class="headerlink" href="#pyflyby._importclns.ImportMap._EMPTY" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap._EMPTY">
+<span class="sig-name descname"><span class="pre">_EMPTY</span></span><em class="property"> <span class="pre">=</span> <span class="pre">ImportMap({})</span></em><a class="headerlink" href="#pyflyby._importclns.ImportMap._EMPTY" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap._from_map">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_map</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap._from_map" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap._from_map">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap._from_map" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap._merge">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_merge</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap._merge" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap._merge">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap._merge" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap.items">
-<code class="sig-name descname"><span class="pre">items</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.items" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap.items">
+<span class="sig-name descname"><span class="pre">items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.items" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap.iteritems">
-<code class="sig-name descname"><span class="pre">iteritems</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.iteritems" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap.iteritems">
+<span class="sig-name descname"><span class="pre">iteritems</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.iteritems" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap.iterkeys">
-<code class="sig-name descname"><span class="pre">iterkeys</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.iterkeys" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap.iterkeys">
+<span class="sig-name descname"><span class="pre">iterkeys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.iterkeys" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap.keys">
-<code class="sig-name descname"><span class="pre">keys</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.keys" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap.keys">
+<span class="sig-name descname"><span class="pre">keys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.keys" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap.values">
-<code class="sig-name descname"><span class="pre">values</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.values" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap.values">
+<span class="sig-name descname"><span class="pre">values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.values" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportMap.without_imports">
-<code class="sig-name descname"><span class="pre">without_imports</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">removals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.without_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportMap.without_imports">
+<span class="sig-name descname"><span class="pre">without_imports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">removals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportMap.without_imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a copy of self without the given imports.
 Matches both keys and values.</p>
 </dd></dl>
@@ -250,8 +253,8 @@ Matches both keys and values.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._importclns.ImportSet">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></code><code class="sig-name descname"><span class="pre">ImportSet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_nonimports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_shadowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></span><span class="sig-name descname"><span class="pre">ImportSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_nonimports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_shadowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Representation of a set of imports organized into import statements.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ImportSet</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
 <span class="gp">... </span><span class="s1">    from m1 import f1</span>
@@ -268,13 +271,13 @@ Matches both keys and values.</p>
 </div>
 <p>An <code class="docutils literal notranslate"><span class="pre">ImportSet</span></code> is an immutable data structure.</p>
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet._EMPTY">
-<code class="sig-name descname"><span class="pre">_EMPTY</span></code><em class="property"> <span class="pre">=</span> <span class="pre">ImportSet('''</span> <span class="pre">''')</span></em><a class="headerlink" href="#pyflyby._importclns.ImportSet._EMPTY" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet._EMPTY">
+<span class="sig-name descname"><span class="pre">_EMPTY</span></span><em class="property"> <span class="pre">=</span> <span class="pre">ImportSet('''</span> <span class="pre">''')</span></em><a class="headerlink" href="#pyflyby._importclns.ImportSet._EMPTY" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet._by_module_name">
-<code class="sig-name descname"><span class="pre">_by_module_name</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet._by_module_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet._by_module_name">
+<span class="sig-name descname"><span class="pre">_by_module_name</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet._by_module_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -287,8 +290,8 @@ Matches both keys and values.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportSet._from_args">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_nonimports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_shadowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet._from_args" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet._from_args">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_nonimports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_shadowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet._from_args" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -304,8 +307,8 @@ non-imports.</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportSet._from_imports">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_imports</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imports</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_shadowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet._from_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet._from_imports">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_imports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imports</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_shadowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet._from_imports" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>ignore_shadowed</strong> – See <cite>ImportSet.__new__</cite>.</p>
@@ -317,8 +320,8 @@ non-imports.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet.by_import_as">
-<code class="sig-name descname"><span class="pre">by_import_as</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet.by_import_as" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.by_import_as">
+<span class="sig-name descname"><span class="pre">by_import_as</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet.by_import_as" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -331,8 +334,8 @@ non-imports.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet.conflicting_imports">
-<code class="sig-name descname"><span class="pre">conflicting_imports</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet.conflicting_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.conflicting_imports">
+<span class="sig-name descname"><span class="pre">conflicting_imports</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet.conflicting_imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -345,8 +348,8 @@ non-imports.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet.flags">
-<code class="sig-name descname"><span class="pre">flags</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet.flags" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.flags">
+<span class="sig-name descname"><span class="pre">flags</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet.flags" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -359,8 +362,8 @@ non-imports.</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportSet.get_statements">
-<code class="sig-name descname"><span class="pre">get_statements</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">separate_from_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.get_statements" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.get_statements">
+<span class="sig-name descname"><span class="pre">get_statements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">separate_from_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.get_statements" title="Permalink to this definition">¶</a></dt>
 <dd><p>Canonicalized <cite>ImportStatement</cite> s.
 These have been merged by module and sorted.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">importset</span> <span class="o">=</span> <span class="n">ImportSet</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -390,8 +393,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet.imports">
-<code class="sig-name descname"><span class="pre">imports</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet.imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.imports">
+<span class="sig-name descname"><span class="pre">imports</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet.imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -404,8 +407,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet.member_names">
-<code class="sig-name descname"><span class="pre">member_names</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet.member_names" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.member_names">
+<span class="sig-name descname"><span class="pre">member_names</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet.member_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -418,8 +421,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportSet.pretty_print">
-<code class="sig-name descname"><span class="pre">pretty_print</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_conflicts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.pretty_print" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.pretty_print">
+<span class="sig-name descname"><span class="pre">pretty_print</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_conflicts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.pretty_print" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pretty-print a block of import statements into a single string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -429,8 +432,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._importclns.ImportSet.statements">
-<code class="sig-name descname"><span class="pre">statements</span></code><a class="headerlink" href="#pyflyby._importclns.ImportSet.statements" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.statements">
+<span class="sig-name descname"><span class="pre">statements</span></span><a class="headerlink" href="#pyflyby._importclns.ImportSet.statements" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -443,8 +446,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportSet.with_imports">
-<code class="sig-name descname"><span class="pre">with_imports</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.with_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.with_imports">
+<span class="sig-name descname"><span class="pre">with_imports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.with_imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new <cite>ImportSet</cite> that is the union of <code class="docutils literal notranslate"><span class="pre">self</span></code> and
 <code class="docutils literal notranslate"><span class="pre">new_imports</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">impset</span> <span class="o">=</span> <span class="n">ImportSet</span><span class="p">(</span><span class="s1">&#39;from m import t1, t2, t3&#39;</span><span class="p">)</span>
@@ -462,8 +465,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._importclns.ImportSet.without_imports">
-<code class="sig-name descname"><span class="pre">without_imports</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">removals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.without_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.ImportSet.without_imports">
+<span class="sig-name descname"><span class="pre">without_imports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">removals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._importclns.ImportSet.without_imports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a copy of self without the given imports.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">imports</span> <span class="o">=</span> <span class="n">ImportSet</span><span class="p">(</span><span class="s1">&#39;from m import t1, t2, t3, t4&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">imports</span><span class="o">.</span><span class="n">without_imports</span><span class="p">([</span><span class="s1">&#39;from m import t3&#39;</span><span class="p">])</span>
@@ -482,8 +485,8 @@ These have been merged by module and sorted.</p>
 </dd></dl>
 
 <dl class="py exception">
-<dt id="pyflyby._importclns.NoSuchImportError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></code><code class="sig-name descname"><span class="pre">NoSuchImportError</span></code><a class="headerlink" href="#pyflyby._importclns.NoSuchImportError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._importclns.NoSuchImportError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._importclns.</span></span><span class="sig-name descname"><span class="pre">NoSuchImportError</span></span><a class="headerlink" href="#pyflyby._importclns.NoSuchImportError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>

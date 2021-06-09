@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,8 +190,8 @@
   <div class="section" id="module-pyflyby._modules">
 <span id="modules-module"></span><h1>_modules module<a class="headerlink" href="#module-pyflyby._modules" title="Permalink to this headline">¶</a></h1>
 <dl class="py exception">
-<dt id="pyflyby._modules.ErrorDuringImportError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></code><code class="sig-name descname"><span class="pre">ErrorDuringImportError</span></code><a class="headerlink" href="#pyflyby._modules.ErrorDuringImportError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ErrorDuringImportError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></span><span class="sig-name descname"><span class="pre">ErrorDuringImportError</span></span><a class="headerlink" href="#pyflyby._modules.ErrorDuringImportError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exception raised by import_module if the module exists but an exception
 occurred while attempting to import it.  That nested exception could be
 ImportError, e.g. if a module tries to import another module that doesn’t
@@ -196,32 +199,32 @@ exist.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._modules.ModuleHandle">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></code><code class="sig-name descname"><span class="pre">ModuleHandle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></span><span class="sig-name descname"><span class="pre">ModuleHandle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle" title="Permalink to this definition">¶</a></dt>
 <dd><p>A handle to a module.</p>
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle._cls_cache">
-<code class="sig-name descname"><span class="pre">_cls_cache</span></code><em class="property"> <span class="pre">=</span> <span class="pre">{}</span></em><a class="headerlink" href="#pyflyby._modules.ModuleHandle._cls_cache" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle._cls_cache">
+<span class="sig-name descname"><span class="pre">_cls_cache</span></span><em class="property"> <span class="pre">=</span> <span class="pre">{}</span></em><a class="headerlink" href="#pyflyby._modules.ModuleHandle._cls_cache" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._modules.ModuleHandle._from_filename">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_filename</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_filename" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle._from_filename">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_filename" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._modules.ModuleHandle._from_module">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_module</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_module" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle._from_module">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._modules.ModuleHandle._from_modulename">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_modulename</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_modulename" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle._from_modulename">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_modulename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle._from_modulename" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.ancestors">
-<code class="sig-name descname"><span class="pre">ancestors</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.ancestors" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.ancestors">
+<span class="sig-name descname"><span class="pre">ancestors</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.ancestors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -234,8 +237,8 @@ exist.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.block">
-<code class="sig-name descname"><span class="pre">block</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.block" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.block">
+<span class="sig-name descname"><span class="pre">block</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.block" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -248,8 +251,8 @@ exist.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._modules.ModuleHandle.containing">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">containing</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.containing" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.containing">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">containing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.containing" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to find the module that defines a name such as <code class="docutils literal notranslate"><span class="pre">a.b.c</span></code> by trying
 to import <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">a.b</span></code>, and <code class="docutils literal notranslate"><span class="pre">a.b.c</span></code>.</p>
 <dl class="field-list simple">
@@ -264,8 +267,8 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.exists">
-<code class="sig-name descname"><span class="pre">exists</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.exists" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.exists">
+<span class="sig-name descname"><span class="pre">exists</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -278,8 +281,8 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.exports">
-<code class="sig-name descname"><span class="pre">exports</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.exports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.exports">
+<span class="sig-name descname"><span class="pre">exports</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.exports" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -292,8 +295,8 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.filename">
-<code class="sig-name descname"><span class="pre">filename</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.filename" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.filename">
+<span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.filename" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -306,13 +309,13 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._modules.ModuleHandle.list">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">list</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.list" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.list">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.list" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.module">
-<code class="sig-name descname"><span class="pre">module</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.module" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.module">
+<span class="sig-name descname"><span class="pre">module</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.module" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -325,8 +328,8 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.parent">
-<code class="sig-name descname"><span class="pre">parent</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.parent" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.parent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -339,8 +342,8 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.submodules">
-<code class="sig-name descname"><span class="pre">submodules</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.submodules" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.submodules">
+<span class="sig-name descname"><span class="pre">submodules</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.submodules" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -353,8 +356,8 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._modules.ModuleHandle.text">
-<code class="sig-name descname"><span class="pre">text</span></code><a class="headerlink" href="#pyflyby._modules.ModuleHandle.text" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.ModuleHandle.text">
+<span class="sig-name descname"><span class="pre">text</span></span><a class="headerlink" href="#pyflyby._modules.ModuleHandle.text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -369,13 +372,13 @@ in this example).</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._modules._my_iter_modules">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></code><code class="sig-name descname"><span class="pre">_my_iter_modules</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules._my_iter_modules" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules._my_iter_modules">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></span><span class="sig-name descname"><span class="pre">_my_iter_modules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules._my_iter_modules" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._modules.pyc_to_py">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></code><code class="sig-name descname"><span class="pre">pyc_to_py</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.pyc_to_py" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._modules.pyc_to_py">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._modules.</span></span><span class="sig-name descname"><span class="pre">pyc_to_py</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._modules.pyc_to_py" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>

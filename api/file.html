@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,59 +190,59 @@
   <div class="section" id="module-pyflyby._file">
 <span id="file-module"></span><h1>_file module<a class="headerlink" href="#module-pyflyby._file" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="pyflyby._file.FilePos">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">FilePos</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FilePos" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FilePos">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">FilePos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FilePos" title="Permalink to this definition">¶</a></dt>
 <dd><p>A (lineno, colno) position within a <cite>FileText</cite>.
 Both lineno and colno are 1-indexed.</p>
 <dl class="py attribute">
-<dt id="pyflyby._file.FilePos._ONE_ONE">
-<code class="sig-name descname"><span class="pre">_ONE_ONE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">FilePos(1,1)</span></em><a class="headerlink" href="#pyflyby._file.FilePos._ONE_ONE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FilePos._ONE_ONE">
+<span class="sig-name descname"><span class="pre">_ONE_ONE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">FilePos(1,1)</span></em><a class="headerlink" href="#pyflyby._file.FilePos._ONE_ONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pyflyby._file.FilePos._data">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">_data</span></span><a class="headerlink" href="#pyflyby._file.FilePos._data" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FilePos._data">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">_data</span></code><a class="headerlink" href="#pyflyby._file.FilePos._data" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FilePos._from_lc">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_lc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FilePos._from_lc" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FilePos._from_lc">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_lc</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FilePos._from_lc" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pyflyby._file.FilePos._intint">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">_intint</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FilePos._intint" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FilePos._intint">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">_intint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FilePos._intint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._file.FileText">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">FileText</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startpos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">FileText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startpos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText" title="Permalink to this definition">¶</a></dt>
 <dd><p>Represents a contiguous sequence of lines from a file.</p>
 <dl class="py method">
-<dt id="pyflyby._file.FileText._colno_to_index">
-<code class="sig-name descname"><span class="pre">_colno_to_index</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineindex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText._colno_to_index" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText._colno_to_index">
+<span class="sig-name descname"><span class="pre">_colno_to_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineindex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText._colno_to_index" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FileText._from_lines">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">_from_lines</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startpos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText._from_lines" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText._from_lines">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_from_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startpos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText._from_lines" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FileText._lineno_to_index">
-<code class="sig-name descname"><span class="pre">_lineno_to_index</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText._lineno_to_index" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText._lineno_to_index">
+<span class="sig-name descname"><span class="pre">_lineno_to_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText._lineno_to_index" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FileText.alter">
-<code class="sig-name descname"><span class="pre">alter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startpos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText.alter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText.alter">
+<span class="sig-name descname"><span class="pre">alter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startpos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText.alter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FileText.concatenate">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">concatenate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText.concatenate" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText.concatenate">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">concatenate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText.concatenate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Concatenate a bunch of <cite>FileText</cite> arguments.  Uses the <code class="docutils literal notranslate"><span class="pre">filename</span></code>
 and <code class="docutils literal notranslate"><span class="pre">startpos</span></code> from the first argument.</p>
 <dl class="field-list simple">
@@ -250,8 +253,8 @@ and <code class="docutils literal notranslate"><span class="pre">startpos</span>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._file.FileText.endpos">
-<code class="sig-name descname"><span class="pre">endpos</span></code><a class="headerlink" href="#pyflyby._file.FileText.endpos" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText.endpos">
+<span class="sig-name descname"><span class="pre">endpos</span></span><a class="headerlink" href="#pyflyby._file.FileText.endpos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -264,13 +267,13 @@ and <code class="docutils literal notranslate"><span class="pre">startpos</span>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._file.FileText.from_filename">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_filename</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText.from_filename" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText.from_filename">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">from_filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.FileText.from_filename" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._file.FileText.joined">
-<code class="sig-name descname"><span class="pre">joined</span></code><a class="headerlink" href="#pyflyby._file.FileText.joined" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText.joined">
+<span class="sig-name descname"><span class="pre">joined</span></span><a class="headerlink" href="#pyflyby._file.FileText.joined" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -283,8 +286,8 @@ and <code class="docutils literal notranslate"><span class="pre">startpos</span>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._file.FileText.lines">
-<code class="sig-name descname"><span class="pre">lines</span></code><a class="headerlink" href="#pyflyby._file.FileText.lines" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.FileText.lines">
+<span class="sig-name descname"><span class="pre">lines</span></span><a class="headerlink" href="#pyflyby._file.FileText.lines" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes attribute value and caches it in instance.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -299,18 +302,18 @@ and <code class="docutils literal notranslate"><span class="pre">startpos</span>
 </dd></dl>
 
 <dl class="py exception">
-<dt id="pyflyby._file.UnsafeFilenameError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">UnsafeFilenameError</span></code><a class="headerlink" href="#pyflyby._file.UnsafeFilenameError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.UnsafeFilenameError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">UnsafeFilenameError</span></span><a class="headerlink" href="#pyflyby._file.UnsafeFilenameError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._file.atomic_write_file">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">atomic_write_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.atomic_write_file" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.atomic_write_file">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">atomic_write_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.atomic_write_file" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._file.expand_py_files_from_args">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">expand_py_files_from_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">pathnames</span></em>, <em class="sig-param"><span class="pre">on_error=&lt;function</span> <span class="pre">&lt;lambda&gt;&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.expand_py_files_from_args" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.expand_py_files_from_args">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">expand_py_files_from_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">pathnames</span></em>, <em class="sig-param"><span class="pre">on_error=&lt;function</span> <span class="pre">&lt;lambda&gt;&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.expand_py_files_from_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enumerate <code class="docutils literal notranslate"><span class="pre">*.py</span></code> files, recursively.</p>
 <p>Arguments that are files are always included.
 Arguments that are directories are recursively searched for <code class="docutils literal notranslate"><span class="pre">*.py</span></code> files.</p>
@@ -326,13 +329,13 @@ that don’t exist or are otherwise inaccessible.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._file.read_file">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">read_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.read_file" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.read_file">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">read_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.read_file" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._file.which">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">which</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">program</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.which" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.which">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">which</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">program</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.which" title="Permalink to this definition">¶</a></dt>
 <dd><p>Find <code class="docutils literal notranslate"><span class="pre">program</span></code> on $PATH.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -345,8 +348,8 @@ that don’t exist or are otherwise inaccessible.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._file.write_file">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></code><code class="sig-name descname"><span class="pre">write_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.write_file" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._file.write_file">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._file.</span></span><span class="sig-name descname"><span class="pre">write_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._file.write_file" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>

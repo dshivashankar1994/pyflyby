@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -187,45 +190,45 @@
   <div class="section" id="module-pyflyby._autoimp">
 <span id="autoimp-module"></span><h1>_autoimp module<a class="headerlink" href="#module-pyflyby._autoimp" title="Permalink to this headline">¶</a></h1>
 <dl class="py exception">
-<dt id="pyflyby._autoimp.LoadSymbolError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">LoadSymbolError</span></code><a class="headerlink" href="#pyflyby._autoimp.LoadSymbolError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.LoadSymbolError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">LoadSymbolError</span></span><a class="headerlink" href="#pyflyby._autoimp.LoadSymbolError" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._autoimp.ScopeStack">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">ScopeStack</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">ScopeStack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack" title="Permalink to this definition">¶</a></dt>
 <dd><p>A stack of namespace scopes, as a tuple of <code class="docutils literal notranslate"><span class="pre">dict</span></code> s.</p>
 <p>Each entry is a <code class="docutils literal notranslate"><span class="pre">dict</span></code>.</p>
 <p>Ordered from most-global to most-local.
 Builtins are always included.
 Duplicates are removed.</p>
 <dl class="py attribute">
-<dt id="pyflyby._autoimp.ScopeStack._abc_impl">
-<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyflyby._autoimp.ScopeStack._abc_impl" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyflyby._autoimp.ScopeStack._abc_impl" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="pyflyby._autoimp.ScopeStack._cached_has_star_import">
-<code class="sig-name descname"><span class="pre">_cached_has_star_import</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#pyflyby._autoimp.ScopeStack._cached_has_star_import" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack._cached_has_star_import">
+<span class="sig-name descname"><span class="pre">_cached_has_star_import</span></span><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#pyflyby._autoimp.ScopeStack._cached_has_star_import" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp.ScopeStack.clone_top">
-<code class="sig-name descname"><span class="pre">clone_top</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.clone_top" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack.clone_top">
+<span class="sig-name descname"><span class="pre">clone_top</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.clone_top" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new <code class="docutils literal notranslate"><span class="pre">ScopeStack</span></code> referencing the same namespaces as <code class="docutils literal notranslate"><span class="pre">self</span></code>,
 but cloning the topmost namespace (and aliasing the others).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp.ScopeStack.has_star_import">
-<code class="sig-name descname"><span class="pre">has_star_import</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.has_star_import" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack.has_star_import">
+<span class="sig-name descname"><span class="pre">has_star_import</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.has_star_import" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether there are any star-imports in this ScopeStack.
 Only relevant in AST-based static analysis mode.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp.ScopeStack.merged_to_two">
-<code class="sig-name descname"><span class="pre">merged_to_two</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.merged_to_two" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack.merged_to_two">
+<span class="sig-name descname"><span class="pre">merged_to_two</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.merged_to_two" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a 2-tuple of dicts.</p>
 <p>These can be used for functions that take a <code class="docutils literal notranslate"><span class="pre">globals</span></code> and <code class="docutils literal notranslate"><span class="pre">locals</span></code>
 argument, such as <code class="docutils literal notranslate"><span class="pre">eval</span></code>.</p>
@@ -241,8 +244,8 @@ the existing ScopeStack.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp.ScopeStack.with_new_scope">
-<code class="sig-name descname"><span class="pre">with_new_scope</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include_class_scopes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_class_scope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.with_new_scope" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.ScopeStack.with_new_scope">
+<span class="sig-name descname"><span class="pre">with_new_scope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include_class_scopes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_class_scope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.ScopeStack.with_new_scope" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a new <code class="docutils literal notranslate"><span class="pre">ScopeStack</span></code> with an additional empty scope.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -260,19 +263,19 @@ the existing ScopeStack.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._autoimp._ClassScope">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_ClassScope</span></code><a class="headerlink" href="#pyflyby._autoimp._ClassScope" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._ClassScope">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_ClassScope</span></span><a class="headerlink" href="#pyflyby._autoimp._ClassScope" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
-<dt id="pyflyby._autoimp._IMPORT_FAILED">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_IMPORT_FAILED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">{}</span></em><a class="headerlink" href="#pyflyby._autoimp._IMPORT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._IMPORT_FAILED">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_IMPORT_FAILED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">{}</span></em><a class="headerlink" href="#pyflyby._autoimp._IMPORT_FAILED" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set of imports we’ve already attempted and failed.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._autoimp._MissingImportFinder">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_MissingImportFinder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scopestack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_unused_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_docstrings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_MissingImportFinder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scopestack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_unused_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_docstrings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder" title="Permalink to this definition">¶</a></dt>
 <dd><p>A helper class to be used only by <cite>_find_missing_imports_in_ast</cite>.</p>
 <p>This class visits every AST node and collects symbols that require
 importing.  A symbol requires importing if it is not already imported or
@@ -284,205 +287,205 @@ further import.  We decide as follows.  If foo.bar is not a module, then
 we assume whatever’s under it can’t be imported.  If foo.bar is a module
 but does not have a ‘baz’ attribute, then it does require import.</p>
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._NewScopeCtx">
-<code class="sig-name descname"><span class="pre">_NewScopeCtx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._NewScopeCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._NewScopeCtx">
+<span class="sig-name descname"><span class="pre">_NewScopeCtx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._NewScopeCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that temporarily pushes a new empty namespace onto the
 stack of namespaces.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._UpScopeCtx">
-<code class="sig-name descname"><span class="pre">_UpScopeCtx</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._UpScopeCtx" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._UpScopeCtx">
+<span class="sig-name descname"><span class="pre">_UpScopeCtx</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._UpScopeCtx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Context manager that temporarily moves up one in the scope stack</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._check_load">
-<code class="sig-name descname"><span class="pre">_check_load</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopestack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._check_load" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._check_load">
+<span class="sig-name descname"><span class="pre">_check_load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopestack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._check_load" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._finish_deferred_load_checks">
-<code class="sig-name descname"><span class="pre">_finish_deferred_load_checks</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._finish_deferred_load_checks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._finish_deferred_load_checks">
+<span class="sig-name descname"><span class="pre">_finish_deferred_load_checks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._finish_deferred_load_checks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._scan_node">
-<code class="sig-name descname"><span class="pre">_scan_node</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._scan_node" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._scan_node">
+<span class="sig-name descname"><span class="pre">_scan_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._scan_node" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._scan_unused_imports">
-<code class="sig-name descname"><span class="pre">_scan_unused_imports</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._scan_unused_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._scan_unused_imports">
+<span class="sig-name descname"><span class="pre">_scan_unused_imports</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._scan_unused_imports" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._visit_Load">
-<code class="sig-name descname"><span class="pre">_visit_Load</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_Load" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._visit_Load">
+<span class="sig-name descname"><span class="pre">_visit_Load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_Load" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._visit_Store">
-<code class="sig-name descname"><span class="pre">_visit_Store</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_Store" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._visit_Store">
+<span class="sig-name descname"><span class="pre">_visit_Store</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_Store" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._visit_StoreImport">
-<code class="sig-name descname"><span class="pre">_visit_StoreImport</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modulename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_StoreImport" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._visit_StoreImport">
+<span class="sig-name descname"><span class="pre">_visit_StoreImport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modulename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_StoreImport" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._visit__all__">
-<code class="sig-name descname"><span class="pre">_visit__all__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit__all__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._visit__all__">
+<span class="sig-name descname"><span class="pre">_visit__all__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit__all__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._visit_fullname">
-<code class="sig-name descname"><span class="pre">_visit_fullname</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_fullname" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._visit_fullname">
+<span class="sig-name descname"><span class="pre">_visit_fullname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_fullname" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder._visit_typecomment">
-<code class="sig-name descname"><span class="pre">_visit_typecomment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typecomment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_typecomment" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder._visit_typecomment">
+<span class="sig-name descname"><span class="pre">_visit_typecomment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typecomment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder._visit_typecomment" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.find_missing_imports">
-<code class="sig-name descname"><span class="pre">find_missing_imports</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.find_missing_imports" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.find_missing_imports">
+<span class="sig-name descname"><span class="pre">find_missing_imports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.find_missing_imports" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.generic_visit">
-<code class="sig-name descname"><span class="pre">generic_visit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.generic_visit" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.generic_visit">
+<span class="sig-name descname"><span class="pre">generic_visit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.generic_visit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generic visitor that visits all of the node’s field values, in the
 order declared by <code class="docutils literal notranslate"><span class="pre">node._fields</span></code>.</p>
 <p>Called if no explicit visitor function exists for a node.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.scan_for_import_issues">
-<code class="sig-name descname"><span class="pre">scan_for_import_issues</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">codeblock</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.scan_for_import_issues" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.scan_for_import_issues">
+<span class="sig-name descname"><span class="pre">scan_for_import_issues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">codeblock</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.scan_for_import_issues" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit">
-<code class="sig-name descname"><span class="pre">visit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit">
+<span class="sig-name descname"><span class="pre">visit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Visit a node.</p>
 <dl class="field-list simple">
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_Assign">
-<code class="sig-name descname"><span class="pre">visit_Assign</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Assign" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_Assign">
+<span class="sig-name descname"><span class="pre">visit_Assign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Assign" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_AsyncFunctionDef">
-<code class="sig-name descname"><span class="pre">visit_AsyncFunctionDef</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_AsyncFunctionDef" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_AsyncFunctionDef">
+<span class="sig-name descname"><span class="pre">visit_AsyncFunctionDef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_AsyncFunctionDef" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_Attribute">
-<code class="sig-name descname"><span class="pre">visit_Attribute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Attribute" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_Attribute">
+<span class="sig-name descname"><span class="pre">visit_Attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Attribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_ClassDef">
-<code class="sig-name descname"><span class="pre">visit_ClassDef</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ClassDef" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_ClassDef">
+<span class="sig-name descname"><span class="pre">visit_ClassDef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ClassDef" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_Delete">
-<code class="sig-name descname"><span class="pre">visit_Delete</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Delete" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_Delete">
+<span class="sig-name descname"><span class="pre">visit_Delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Delete" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_Dict">
-<code class="sig-name descname"><span class="pre">visit_Dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Dict" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_Dict">
+<span class="sig-name descname"><span class="pre">visit_Dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Dict" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_DictComp">
-<code class="sig-name descname"><span class="pre">visit_DictComp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_DictComp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_DictComp">
+<span class="sig-name descname"><span class="pre">visit_DictComp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_DictComp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_ExceptHandler">
-<code class="sig-name descname"><span class="pre">visit_ExceptHandler</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ExceptHandler" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_ExceptHandler">
+<span class="sig-name descname"><span class="pre">visit_ExceptHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ExceptHandler" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_FunctionDef">
-<code class="sig-name descname"><span class="pre">visit_FunctionDef</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_FunctionDef" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_FunctionDef">
+<span class="sig-name descname"><span class="pre">visit_FunctionDef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_FunctionDef" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_GeneratorExp">
-<code class="sig-name descname"><span class="pre">visit_GeneratorExp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_GeneratorExp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_GeneratorExp">
+<span class="sig-name descname"><span class="pre">visit_GeneratorExp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_GeneratorExp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_ImportFrom">
-<code class="sig-name descname"><span class="pre">visit_ImportFrom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ImportFrom" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_ImportFrom">
+<span class="sig-name descname"><span class="pre">visit_ImportFrom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ImportFrom" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_Lambda">
-<code class="sig-name descname"><span class="pre">visit_Lambda</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Lambda" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_Lambda">
+<span class="sig-name descname"><span class="pre">visit_Lambda</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Lambda" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_ListComp">
-<code class="sig-name descname"><span class="pre">visit_ListComp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ListComp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_ListComp">
+<span class="sig-name descname"><span class="pre">visit_ListComp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_ListComp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_Name">
-<code class="sig-name descname"><span class="pre">visit_Name</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_Name">
+<span class="sig-name descname"><span class="pre">visit_Name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_Name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_SetComp">
-<code class="sig-name descname"><span class="pre">visit_SetComp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_SetComp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_SetComp">
+<span class="sig-name descname"><span class="pre">visit_SetComp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_SetComp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_alias">
-<code class="sig-name descname"><span class="pre">visit_alias</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modulename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_alias" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_alias">
+<span class="sig-name descname"><span class="pre">visit_alias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modulename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_alias" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_arg">
-<code class="sig-name descname"><span class="pre">visit_arg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_arg" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_arg">
+<span class="sig-name descname"><span class="pre">visit_arg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_arg" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_arguments">
-<code class="sig-name descname"><span class="pre">visit_arguments</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_arguments" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_arguments">
+<span class="sig-name descname"><span class="pre">visit_arguments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_arguments" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pyflyby._autoimp._MissingImportFinder.visit_comprehension">
-<code class="sig-name descname"><span class="pre">visit_comprehension</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_comprehension" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._MissingImportFinder.visit_comprehension">
+<span class="sig-name descname"><span class="pre">visit_comprehension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._MissingImportFinder.visit_comprehension" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="pyflyby._autoimp._UseChecker">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_UseChecker</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._UseChecker" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._UseChecker">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_UseChecker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._UseChecker" title="Permalink to this definition">¶</a></dt>
 <dd><p>An object that can check whether it was used.</p>
 <dl class="py attribute">
-<dt id="pyflyby._autoimp._UseChecker.used">
-<code class="sig-name descname"><span class="pre">used</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#pyflyby._autoimp._UseChecker.used" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._UseChecker.used">
+<span class="sig-name descname"><span class="pre">used</span></span><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#pyflyby._autoimp._UseChecker.used" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp._find_earliest_backjump_label">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_find_earliest_backjump_label</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytecode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_earliest_backjump_label" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._find_earliest_backjump_label">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_find_earliest_backjump_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytecode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_earliest_backjump_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Find the earliest target of a backward jump.</p>
 <p>These normally represent loops.</p>
 <p>For example, given the source code:</p>
@@ -559,8 +562,8 @@ of the bytecode.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp._find_loads_without_stores_in_code">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_find_loads_without_stores_in_code</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">co</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loads_without_stores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_loads_without_stores_in_code" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._find_loads_without_stores_in_code">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_find_loads_without_stores_in_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">co</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loads_without_stores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_loads_without_stores_in_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Find global LOADs without corresponding STOREs, by disassembling code.
 Recursive helper for <cite>_find_missing_imports_in_code</cite>.</p>
 <dl class="field-list simple">
@@ -577,8 +580,8 @@ Recursive helper for <cite>_find_missing_imports_in_code</cite>.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp._find_missing_imports_in_ast">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_find_missing_imports_in_ast</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_missing_imports_in_ast" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._find_missing_imports_in_ast">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_find_missing_imports_in_ast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_missing_imports_in_ast" title="Permalink to this definition">¶</a></dt>
 <dd><p>Find missing imports in an AST node.
 Helper function to <cite>find_missing_imports</cite>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">node</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;import numpy; numpy.arange(x) + arange(x)&quot;</span><span class="p">)</span>
@@ -594,8 +597,8 @@ Helper function to <cite>find_missing_imports</cite>.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp._find_missing_imports_in_code">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_find_missing_imports_in_code</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">co</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_missing_imports_in_code" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._find_missing_imports_in_code">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_find_missing_imports_in_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">co</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._find_missing_imports_in_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Find missing imports in a code object.
 Helper function to <cite>find_missing_imports</cite>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">foo</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">baz</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
@@ -616,13 +619,13 @@ Helper function to <cite>find_missing_imports</cite>.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp._op">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_op</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._op" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._op">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_op</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._op" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp._try_import">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">_try_import</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._try_import" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp._try_import">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">_try_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp._try_import" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to execute an import.  Import the result into the namespace
 <code class="docutils literal notranslate"><span class="pre">namespace</span></code>.</p>
 <p>Print to stdout what we’re about to do.</p>
@@ -641,8 +644,8 @@ Helper function to <cite>find_missing_imports</cite>.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp.auto_import_symbol">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">auto_import_symbol</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimported</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_import_hook</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.auto_import_symbol" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.auto_import_symbol">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">auto_import_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimported</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_import_hook</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.auto_import_symbol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to auto-import a single name.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -670,14 +673,14 @@ succeeded; <code class="docutils literal notranslate"><span class="pre">False</s
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp.clear_failed_imports_cache">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">clear_failed_imports_cache</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.clear_failed_imports_cache" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.clear_failed_imports_cache">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">clear_failed_imports_cache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.clear_failed_imports_cache" title="Permalink to this definition">¶</a></dt>
 <dd><p>Clear the cache of previously failed imports.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp.get_known_import">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">get_known_import</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.get_known_import" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.get_known_import">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">get_known_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.get_known_import" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the deepest known import.</p>
 <p>For example, suppose:</p>
 <blockquote>
@@ -695,8 +698,8 @@ succeeded; <code class="docutils literal notranslate"><span class="pre">False</s
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp.load_symbol">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">load_symbol</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimported</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.load_symbol" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.load_symbol">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">load_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoimported</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.load_symbol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load the symbol <code class="docutils literal notranslate"><span class="pre">fullname</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">load_symbol</span><span class="p">(</span><span class="s2">&quot;os.path.join.__name__&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;os&quot;</span><span class="p">:</span> <span class="n">os</span><span class="p">})</span>
@@ -740,8 +743,8 @@ did not succeed.</p></li>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp.scan_for_import_issues">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">scan_for_import_issues</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">codeblock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_unused_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_docstrings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.scan_for_import_issues" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.scan_for_import_issues">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">scan_for_import_issues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">codeblock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_unused_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_docstrings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.scan_for_import_issues" title="Permalink to this definition">¶</a></dt>
 <dd><p>Find missing and unused imports, by lineno.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">arg</span> <span class="o">=</span> <span class="s2">&quot;import numpy, aa.bb as cc</span><span class="se">\n</span><span class="s2">numpy.arange(x)</span><span class="se">\n</span><span class="s2">arange(x)&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">missing</span><span class="p">,</span> <span class="n">unused</span> <span class="o">=</span> <span class="n">scan_for_import_issues</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
@@ -769,8 +772,8 @@ braces:</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pyflyby._autoimp.symbol_needs_import">
-<code class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></code><code class="sig-name descname"><span class="pre">symbol_needs_import</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.symbol_needs_import" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyflyby._autoimp.symbol_needs_import">
+<span class="sig-prename descclassname"><span class="pre">pyflyby._autoimp.</span></span><span class="sig-name descname"><span class="pre">symbol_needs_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyflyby._autoimp.symbol_needs_import" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether <code class="docutils literal notranslate"><span class="pre">fullname</span></code> is a symbol that needs to be imported, given
 the current namespace scopes.</p>
 <p>A symbol needs importing if it is not previously imported or otherwise
