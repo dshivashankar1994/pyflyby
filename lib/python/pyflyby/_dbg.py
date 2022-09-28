@@ -291,6 +291,7 @@ def _prompt_continue_waiting_for_debugger():
             print("Invalid response: {}".format(repr(response)))
         else:
             break
+    print("Exiting after multiple ({}) invalid responses.".format(max_invalid_entries))
 
 
 def _debug_exception(*exc_info, **kwargs):
